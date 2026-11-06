@@ -1,0 +1,2 @@
+video_id,continuity_id,direction,from_track,to_track,frame_before,frame_after,gap_s,center_err_bh,dh_frac,appearance_dist,accepted,chosen,reject_reason
+C38_8,0,forward,3,11,49,49,0.0,0.216,0.01,0.366,True,True,

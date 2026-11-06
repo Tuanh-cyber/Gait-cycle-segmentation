@@ -1,0 +1,3 @@
+video_id,continuity_id,obj,frame,bad_from,bad_to,action,round
+F22_3,0,2,6,6,6,prompt_lai,2
+F22_3,0,2,52,52,52,prompt_lai,2

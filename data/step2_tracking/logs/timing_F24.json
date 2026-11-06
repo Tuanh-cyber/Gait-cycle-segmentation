@@ -1,0 +1,12 @@
+{
+ "track_s": 4.86,
+ "n_use": 147,
+ "n_read": 149,
+ "select_s": 0.006,
+ "pose_s": 0.66,
+ "pose_device": "mps",
+ "n_pose": 147,
+ "report_s": 0.12,
+ "total_s": 0.79,
+ "imgsz": 640
+}

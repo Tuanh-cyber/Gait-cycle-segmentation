@@ -1,0 +1,213 @@
+[1/66] C01: select+pose+report
+  select C01: {'tracked': 96}, nối 0
+  RTMPose device=mps, providers=['CoreMLExecutionProvider', 'CPUExecutionProvider']
+  pose   C01: 96/96 frame, 0.7s
+[2/66] C04_1: select+pose+report
+  select C04_1: {'tracked': 114}, nối 0
+  pose   C04_1: 114/114 frame, 0.8s
+[3/66] C04_2: select+pose+report
+  select C04_2: {'tracked': 46, 'excluded': 1}, nối 0
+  pose   C04_2: 46/46 frame, 0.2s
+[4/66] C04_3: select+pose+report
+  select C04_3: {'tracked': 155, 'missing': 5, 'interpolated': 3}, nối 0
+  pose   C04_3: 158/163 frame, 0.8s
+[5/66] C09_1: select+pose+report
+  select C09_1: {'tracked': 56, 'excluded': 3}, nối 0
+  pose   C09_1: 56/56 frame, 0.4s
+[6/66] C09_2: select+pose+report
+  select C09_2: {'tracked': 98}, nối 0
+  pose   C09_2: 98/98 frame, 1.8s
+[7/66] C11: select+pose+report
+  select C11: {'tracked': 228, 'excluded': 157}, nối 0
+  pose   C11: 228/228 frame, 1.0s
+[8/66] C12: select+pose+report
+  select C12: {'tracked': 195, 'excluded': 162}, nối 1
+  pose   C12: 195/195 frame, 1.2s
+[9/66] C13_1: select+pose+report
+  select C13_1: {'tracked': 662}, nối 0
+  pose   C13_1: 662/662 frame, 3.3s
+[10/66] C13_2: select+pose+report
+  select C13_2: {'tracked': 597}, nối 0
+  pose   C13_2: 597/597 frame, 2.9s
+[11/66] C17: select+pose+report
+  select C17: {'tracked': 170}, nối 0
+  pose   C17: 170/170 frame, 0.9s
+[12/66] C18: select+pose+report
+  select C18: {'tracked': 108, 'excluded': 1}, nối 0
+  pose   C18: 108/108 frame, 0.6s
+[13/66] C19: select+pose+report
+  select C19: {'tracked': 173, 'excluded': 1}, nối 0
+  pose   C19: 173/173 frame, 0.9s
+[14/66] C20: select+pose+report
+  select C20: {'tracked': 183}, nối 0
+  pose   C20: 183/183 frame, 1.0s
+[15/66] C21: select+pose+report
+  select C21: {'tracked': 143, 'excluded': 1}, nối 0
+  pose   C21: 143/143 frame, 0.8s
+[16/66] C23_1: select+pose+report
+  select C23_1: {'tracked': 53}, nối 0
+  pose   C23_1: 53/53 frame, 0.3s
+[17/66] C23_2: select+pose+report
+  select C23_2: {'tracked': 45}, nối 0
+  pose   C23_2: 45/45 frame, 0.3s
+[18/66] C23_3: select+pose+report
+  select C23_3: {'tracked': 127}, nối 0
+  pose   C23_3: 127/127 frame, 0.6s
+[19/66] C24: select+pose+report
+  select C24: {'tracked': 136}, nối 0
+  pose   C24: 136/136 frame, 0.6s
+[20/66] C25: select+pose+report
+  select C25: {'tracked': 79, 'excluded': 2}, nối 0
+  pose   C25: 79/79 frame, 0.4s
+[21/66] C26: select+pose+report
+  select C26: {'tracked': 125, 'excluded': 2}, nối 0
+  pose   C26: 125/125 frame, 0.5s
+[22/66] C27: select+pose+report
+  select C27: {'tracked': 114}, nối 0
+  pose   C27: 114/114 frame, 0.5s
+[23/66] C28_1: select+pose+report
+  select C28_1: {'tracked': 34}, nối 0
+  pose   C28_1: 34/34 frame, 0.2s
+[24/66] C28_2: select+pose+report
+  select C28_2: {'tracked': 33}, nối 0
+  pose   C28_2: 33/33 frame, 0.2s
+[25/66] C28_3: select+pose+report
+  select C28_3: {'tracked': 34}, nối 0
+  pose   C28_3: 34/34 frame, 0.2s
+[26/66] C28_4: select+pose+report
+  select C28_4: {'tracked': 33}, nối 0
+  pose   C28_4: 33/33 frame, 0.2s
+[27/66] C29: select+pose+report
+  select C29: {'tracked': 303}, nối 0
+  pose   C29: 303/303 frame, 1.3s
+[28/66] C30: select+pose+report
+  select C30: {'tracked': 253}, nối 0
+  pose   C30: 253/253 frame, 1.5s
+[29/66] C31: select+pose+report
+  select C31: {'tracked': 147}, nối 0
+  pose   C31: 147/147 frame, 0.7s
+[30/66] C38_1: select+pose+report
+  select C38_1: {'tracked': 58}, nối 0
+  pose   C38_1: 58/58 frame, 0.3s
+[31/66] C38_10: select+pose+report
+  select C38_10: {'tracked': 173}, nối 0
+  pose   C38_10: 173/173 frame, 0.8s
+[32/66] C38_2: select+pose+report
+  select C38_2: {'tracked': 96}, nối 0
+  pose   C38_2: 96/96 frame, 0.4s
+[33/66] C38_3: select+pose+report
+  select C38_3: {'tracked': 90}, nối 0
+  pose   C38_3: 90/90 frame, 0.4s
+[34/66] C38_4: select+pose+report
+  select C38_4: {'tracked': 71}, nối 0
+  pose   C38_4: 71/71 frame, 0.3s
+[35/66] C38_5: select+pose+report
+  select C38_5: {'tracked': 54, 'excluded': 6}, nối 1
+  pose   C38_5: 54/54 frame, 0.2s
+[36/66] C38_6: select+pose+report
+  select C38_6: {'tracked': 90}, nối 0
+  pose   C38_6: 90/90 frame, 0.4s
+[37/66] C38_7: select+pose+report
+  select C38_7: {'tracked': 71}, nối 0
+  pose   C38_7: 71/71 frame, 0.3s
+[38/66] C38_8: select+pose+report
+  select C38_8: {'tracked': 83, 'excluded': 6, 'interpolated': 1}, nối 1
+  pose   C38_8: 84/84 frame, 0.4s
+[39/66] C38_9: select+pose+report
+  select C38_9: {'tracked': 122}, nối 0
+  pose   C38_9: 122/122 frame, 0.5s
+[40/66] F02: select+pose+report
+  select F02: {'tracked': 484}, nối 0
+  pose   F02: 484/484 frame, 2.5s
+[41/66] F10_1: select+pose+report
+  select F10_1: {'tracked': 116}, nối 0
+  pose   F10_1: 116/116 frame, 0.6s
+[42/66] F10_2: select+pose+report
+  select F10_2: {'excluded': 780, 'tracked': 113}, nối 0
+  pose   F10_2: 113/113 frame, 0.9s
+[43/66] F11: select+pose+report
+  select F11: {'excluded': 274, 'tracked': 258}, nối 0
+  pose   F11: 258/258 frame, 1.2s
+[44/66] F12: select+pose+report
+  select F12: {'tracked': 76, 'excluded': 56}, nối 0
+  pose   F12: 76/76 frame, 0.3s
+[45/66] F17: select+pose+report
+  select F17: {'tracked': 196}, nối 0
+  pose   F17: 196/196 frame, 1.0s
+[46/66] F18: select+pose+report
+  select F18: {'tracked': 98}, nối 0
+  pose   F18: 98/98 frame, 0.6s
+[47/66] F19: select+pose+report
+  select F19: {'tracked': 118}, nối 0
+  pose   F19: 118/118 frame, 0.5s
+[48/66] F20: select+pose+report
+  select F20: {'tracked': 173}, nối 0
+  pose   F20: 173/173 frame, 0.7s
+[49/66] F21: select+pose+report
+  select F21: {'tracked': 117}, nối 0
+  pose   F21: 117/117 frame, 0.5s
+[50/66] F22_1: select+pose+report
+  select F22_1: {'tracked': 62}, nối 0
+  pose   F22_1: 62/62 frame, 0.3s
+[51/66] F22_2: select+pose+report
+  select F22_2: {'tracked': 61}, nối 0
+  pose   F22_2: 61/61 frame, 0.3s
+[52/66] F22_3: select+pose+report
+  select F22_3: {'tracked': 60}, nối 0
+  pose   F22_3: 60/60 frame, 0.3s
+[53/66] F22_4: select+pose+report
+  select F22_4: {'tracked': 60}, nối 0
+  pose   F22_4: 60/60 frame, 0.3s
+[54/66] F23_1: select+pose+report
+  select F23_1: {'tracked': 64}, nối 0
+  pose   F23_1: 64/64 frame, 0.3s
+[55/66] F23_2: select+pose+report
+  select F23_2: {'tracked': 44}, nối 0
+  pose   F23_2: 44/44 frame, 0.2s
+[56/66] F23_3: select+pose+report
+  select F23_3: {'tracked': 59, 'excluded': 1}, nối 0
+  pose   F23_3: 59/59 frame, 0.3s
+[57/66] F24: select+pose+report
+  select F24: {'tracked': 147}, nối 0
+  pose   F24: 147/147 frame, 0.7s
+[58/66] F25: select+pose+report
+  select F25: {'tracked': 100}, nối 0
+  pose   F25: 100/100 frame, 0.5s
+[59/66] F26: select+pose+report
+  select F26: {'tracked': 133}, nối 0
+  pose   F26: 133/133 frame, 0.6s
+[60/66] F27: select+pose+report
+  select F27: {'tracked': 122}, nối 0
+  pose   F27: 122/122 frame, 0.6s
+[61/66] F28_1: select+pose+report
+  select F28_1: {'tracked': 34}, nối 0
+  pose   F28_1: 34/34 frame, 0.2s
+[62/66] F28_2: select+pose+report
+  select F28_2: {'tracked': 32}, nối 0
+  pose   F28_2: 32/32 frame, 0.2s
+[63/66] F28_3: select+pose+report
+  select F28_3: {'tracked': 33}, nối 0
+  pose   F28_3: 33/33 frame, 0.2s
+[64/66] F28_4: select+pose+report
+  select F28_4: {'tracked': 34}, nối 0
+  pose   F28_4: 34/34 frame, 0.2s
+[65/66] F29: select+pose+report
+  select F29: {'tracked': 72}, nối 0
+  pose   F29: 72/72 frame, 0.3s
+[66/66] F30: select+pose+report
+  select F30: {'tracked': 84, 'excluded': 13}, nối 0
+  pose   F30: 84/84 frame, 0.4s
+
+=== TÓM TẮT: 66 video có QC, 6 video có cờ ===
+  near_tie                 1: F10_2
+  box_truncated            6: C01 C04_3 C11 C38_8 F10_2 F28_3
+  low_margin               1: F10_2
+Danh sách xem trước (nặng → nhẹ):
+  F10_2   cov=1.00 jumps=0 margin=0.0156 foot=0.7468 [low_margin;near_tie;box_truncated]
+  C04_3   cov=0.97 jumps=0 margin=0.2602 foot=0.673 [box_truncated]
+  C01     cov=1.00 jumps=0 margin=0.3285 foot=0.6734 [box_truncated]
+  C11     cov=1.00 jumps=0 margin=0.6239 foot=0.7139 [box_truncated]
+  C38_8   cov=1.00 jumps=0 margin=0.6007 foot=0.6278 [box_truncated]
+  F28_3   cov=1.00 jumps=0 margin=0.6415 foot=0.7421 [box_truncated]
+
+Tổng thời gian: 58s

@@ -1,0 +1,19 @@
+{
+ "video_id": "F21",
+ "n_valid_frames": 117,
+ "coverage": 1.0,
+ "n_tracks_total": 5,
+ "n_tracks_runner_joined": 1,
+ "n_id_joins": 0,
+ "max_gap_s": 0.0833,
+ "n_center_jumps": 0,
+ "bbox_h_cv": 0.0251,
+ "kp_score_median": 0.8647,
+ "foot_kp_score_median": 0.8709,
+ "frac_frames_foot_visible": 1.0,
+ "lr_swap_rate": 0.0,
+ "selection_margin": 0.556,
+ "frac_kp_outside_bbox": 0.0,
+ "flags": "",
+ "center_jumps": []
+}

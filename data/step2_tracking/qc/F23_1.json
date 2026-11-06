@@ -1,0 +1,19 @@
+{
+ "video_id": "F23_1",
+ "n_valid_frames": 64,
+ "coverage": 1.0,
+ "n_tracks_total": 1,
+ "n_tracks_runner_joined": 1,
+ "n_id_joins": 0,
+ "max_gap_s": 0.0382,
+ "n_center_jumps": 0,
+ "bbox_h_cv": 0.0284,
+ "kp_score_median": 0.7838,
+ "foot_kp_score_median": 0.7923,
+ "frac_frames_foot_visible": 1.0,
+ "lr_swap_rate": 0.0,
+ "selection_margin": 0.6933,
+ "frac_kp_outside_bbox": 0.0,
+ "flags": "",
+ "center_jumps": []
+}

@@ -1,0 +1,45 @@
+# =====================================================================
+#  .gitignore – Gait cycle segmentation
+#  Nguyên tắc: đẩy lên CODE + VIDEO GỐC + OUTPUT ĐÃ REVIEW của Bước 0–5.
+#  KHÔNG đẩy: môi trường, repo bên ngoài, trọng số model, dữ liệu trung
+#  gian lớn tạo lại được bằng script. Cách lấy lại: README mục 4.
+# =====================================================================
+
+# ---- Môi trường Python (cài lại bằng requirements-*.txt) ----
+.venv-*/
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# ---- Repo bên ngoài (clone lại theo commit ghi trong README) ----
+.third_party/
+Seeing-Fast-and-Slow/
+
+# ---- Trọng số model (tải lại được; nhiều file > 100 MB) ----
+ckpt/
+data/_rtm/
+data/step2_tracking/models/
+data/step4_footmask/models/
+*.pt
+*.pth
+*.onnx
+*.safetensors
+*.ckpt
+
+# ---- Dữ liệu trung gian lớn, tạo lại được bằng script ----
+# clips 201 MB: make_clean_clips.py; flow_store 781 MB: run_step5.py --store-only
+data/step1_wu/clips/
+data/step5_flow/flow_store/
+data/step5_flow/flow_debug/
+data/step5_flow/_trial/
+data/step4_footmask/_tmp/
+data/step4_footmask/_post_trial/
+data/step4_footmask/_post_trial_qc/
+
+# ---- Rác hệ điều hành / editor / Office ----
+.DS_Store
+.vscode/
+.idea/
+~$*
+*.swp

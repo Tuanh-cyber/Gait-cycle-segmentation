@@ -1,0 +1,3 @@
+continuity_id,n_frames,n_tracks,n_chains,margin,winner_score,runner_ids,n_joins
+0,50,2,2,0.3284692116514124,0.5762643588643779,[1],0
+1,46,2,1,0.6074421881914466,0.6074421881914466,[3],1

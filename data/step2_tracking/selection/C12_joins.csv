@@ -1,0 +1,2 @@
+video_id,continuity_id,direction,from_track,to_track,frame_before,frame_after,gap_s,center_err_bh,dh_frac,appearance_dist,accepted,chosen,reject_reason
+C12,0,absorb,2,1,0,0,,,,,True,True,same_person_26_frames

@@ -1,0 +1,19 @@
+{
+ "video_id": "C13_1",
+ "n_valid_frames": 662,
+ "coverage": 1.0,
+ "n_tracks_total": 1,
+ "n_tracks_runner_joined": 1,
+ "n_id_joins": 0,
+ "max_gap_s": 0.05,
+ "n_center_jumps": 0,
+ "bbox_h_cv": 0.0831,
+ "kp_score_median": 0.7646,
+ "foot_kp_score_median": 0.7466,
+ "frac_frames_foot_visible": 1.0,
+ "lr_swap_rate": 0.0,
+ "selection_margin": 0.6158,
+ "frac_kp_outside_bbox": 0.0136,
+ "flags": "",
+ "center_jumps": []
+}

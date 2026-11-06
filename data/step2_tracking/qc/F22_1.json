@@ -1,0 +1,19 @@
+{
+ "video_id": "F22_1",
+ "n_valid_frames": 62,
+ "coverage": 1.0,
+ "n_tracks_total": 1,
+ "n_tracks_runner_joined": 1,
+ "n_id_joins": 0,
+ "max_gap_s": 0.0417,
+ "n_center_jumps": 0,
+ "bbox_h_cv": 0.0435,
+ "kp_score_median": 0.8323,
+ "foot_kp_score_median": 0.8168,
+ "frac_frames_foot_visible": 1.0,
+ "lr_swap_rate": 0.0,
+ "selection_margin": 0.6455,
+ "frac_kp_outside_bbox": 0.0,
+ "flags": "",
+ "center_jumps": []
+}

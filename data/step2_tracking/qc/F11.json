@@ -1,0 +1,19 @@
+{
+ "video_id": "F11",
+ "n_valid_frames": 258,
+ "coverage": 1.0,
+ "n_tracks_total": 3,
+ "n_tracks_runner_joined": 3,
+ "n_id_joins": 0,
+ "max_gap_s": 0.0833,
+ "n_center_jumps": 0,
+ "bbox_h_cv": 0.1773,
+ "kp_score_median": 0.7562,
+ "foot_kp_score_median": 0.7282,
+ "frac_frames_foot_visible": 1.0,
+ "lr_swap_rate": 0.0157,
+ "selection_margin": 0.5071,
+ "frac_kp_outside_bbox": 0.031,
+ "flags": "",
+ "center_jumps": []
+}

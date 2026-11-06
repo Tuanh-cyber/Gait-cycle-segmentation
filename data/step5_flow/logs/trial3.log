@@ -1,0 +1,8 @@
+6 video, 2 đã xong, 4 cần chạy; model=gma-sintel, iters=12, device=mps
+[1/4]  C17: 169 cặp, 73.2s (2.31 cặp/s) gate=PASS  rho=0.95 cad=146/162 fb=0.88 bg=0.26px dt=raw camBad=7 alt=0.08
+[2/4]  C09_1: 55 cặp, 17.1s (3.21 cặp/s) gate=PASS  rho=0.86 cad=187/177 fb=0.82 bg=0.01px dt=smooth camBad=0 alt=0.43
+[3/4]  C13_2: 596 cặp, 204.8s (2.91 cặp/s) gate=WARN spearman<0.7; frac_fb_valid<0.7 rho=0.55 cad=203/203 fb=0.56 bg=0.55px dt=raw camBad=31 alt=-0.23
+[4/4]  C38_8: 83 cặp, 29.2s (2.84 cặp/s) gate=WARN spearman<0.7; frac_fb_valid<0.7 rho=0.44 cad=190/188 fb=0.47 bg=0.48px dt=raw camBad=7 alt=0.10
+Xong 4 video trong 324.4s
+
+Gate: {'WARN': 3, 'PASS': 3}

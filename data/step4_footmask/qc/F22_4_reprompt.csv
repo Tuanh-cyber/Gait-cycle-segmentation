@@ -1,0 +1,13 @@
+video_id,continuity_id,obj,frame,bad_from,bad_to,action,round
+F22_4,0,1,12,8,15,prompt_lai,0
+F22_4,0,1,45,45,52,prompt_lai,0
+F22_4,0,2,12,9,12,prompt_lai,0
+F22_4,0,2,51,49,51,prompt_lai,0
+F22_4,0,1,6,6,6,prompt_lai,2
+F22_4,0,1,8,8,8,prompt_lai,2
+F22_4,0,1,25,25,25,prompt_lai,2
+F22_4,0,1,42,42,42,prompt_lai,2
+F22_4,0,2,16,16,16,prompt_lai,2
+F22_4,0,2,25,25,25,prompt_lai,2
+F22_4,0,2,32,32,32,prompt_lai,2
+F22_4,0,2,45,45,45,prompt_lai,2

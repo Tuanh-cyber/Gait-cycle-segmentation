@@ -1,0 +1,166 @@
+{
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C01__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C01__s1_g01.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C04_1__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C04_2__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C04_3__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C09_1__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C09_2__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C11__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C12__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C13_1__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C13_2__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C17__s0_g00.mp4": [
+    [
+      3.3777777777777778,
+      5.511111111111111
+    ]
+  ],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C18__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C19__s0_g00.mp4": [
+    [
+      1.3511111111111112,
+      3.4844444444444447
+    ]
+  ],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C20__s0_g00.mp4": [
+    [
+      0.6755555555555556,
+      2.8088888888888888
+    ],
+    [
+      1.3511111111111112,
+      3.4844444444444447
+    ],
+    [
+      3.3777777777777778,
+      5.511111111111111
+    ]
+  ],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C21__s0_g00.mp4": [
+    [
+      0.6755555555555556,
+      2.8088888888888888
+    ]
+  ],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C23_1__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C23_2__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C23_3__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C24__s0_g00.mp4": [
+    [
+      0.0,
+      2.1333333333333333
+    ],
+    [
+      2.026666666666667,
+      4.16
+    ]
+  ],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C25__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C26__s0_g00.mp4": [
+    [
+      2.026666666666667,
+      4.16
+    ]
+  ],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C27__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C29__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C30__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C31__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C38_10__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C38_2__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C38_3__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C38_4__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C38_6__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C38_7__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C38_8__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/C38_9__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/F02__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/F10_1__s0_g00.mp4": [
+    [
+      0.0,
+      2.1333333333333333
+    ],
+    [
+      1.3511111111111112,
+      3.4844444444444447
+    ]
+  ],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/F10_2__s0_g00.mp4": [
+    [
+      1.3511111111111112,
+      3.4844444444444447
+    ]
+  ],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/F10_2__s0_g02.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/F11__s0_g00.mp4": [
+    [
+      1.3511111111111112,
+      3.4844444444444447
+    ]
+  ],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/F17__s0_g00.mp4": [
+    [
+      0.0,
+      2.1333333333333333
+    ],
+    [
+      4.053333333333334,
+      6.186666666666667
+    ]
+  ],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/F18__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/F19__s0_g00.mp4": [
+    [
+      0.0,
+      2.1333333333333333
+    ],
+    [
+      2.7022222222222223,
+      4.835555555555556
+    ]
+  ],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/F20__s0_g00.mp4": [
+    [
+      0.6755555555555556,
+      2.8088888888888888
+    ],
+    [
+      3.3777777777777778,
+      5.511111111111111
+    ]
+  ],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/F21__s0_g00.mp4": [
+    [
+      0.0,
+      2.1333333333333333
+    ],
+    [
+      2.026666666666667,
+      4.16
+    ]
+  ],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/F22_1__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/F22_2__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/F22_3__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/F22_4__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/F23_1__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/F23_2__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/F23_3__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/F24__s0_g00.mp4": [
+    [
+      1.3511111111111112,
+      3.4844444444444447
+    ]
+  ],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/F25__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/F26__s0_g00.mp4": [
+    [
+      0.0,
+      2.1333333333333333
+    ]
+  ],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/F27__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/F29__s0_g00.mp4": [],
+  "/Users/ngotuananh/Documents/Running-gait/Running-Gait-Clustering/data/step1_wu/clips/F30__s0_g00.mp4": []
+}

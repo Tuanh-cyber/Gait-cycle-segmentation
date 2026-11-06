@@ -1,0 +1,281 @@
+[1/66] C01: track+select+pose+report
+  track  C01: 96 frame, 2 khối, 4 track, 4.3s (22.4 fps)
+  select C01: {'tracked': 96}, nối 0
+  RTMPose device=mps, providers=['CoreMLExecutionProvider', 'CPUExecutionProvider']
+  pose   C01: 96/96 frame, 0.6s
+[2/66] C04_1: track+select+pose+report
+  track  C04_1: 114 frame, 1 khối, 4 track, 4.2s (27.2 fps)
+  select C04_1: {'tracked': 114}, nối 0
+  pose   C04_1: 114/114 frame, 0.7s
+[3/66] C04_2: track+select+pose+report
+  track  C04_2: 46 frame, 1 khối, 10 track, 2.2s (20.8 fps)
+  select C04_2: {'tracked': 46, 'excluded': 1}, nối 0
+  pose   C04_2: 46/46 frame, 0.2s
+[4/66] C04_3: track+select+pose+report
+  track  C04_3: 163 frame, 1 khối, 57 track, 6.6s (24.6 fps)
+  select C04_3: {'tracked': 155, 'missing': 5, 'interpolated': 3}, nối 0
+  pose   C04_3: 158/163 frame, 0.8s
+[5/66] C09_1: track+select+pose+report
+  track  C09_1: 56 frame, 1 khối, 1 track, 2.1s (26.1 fps)
+  select C09_1: {'tracked': 56, 'excluded': 3}, nối 0
+  pose   C09_1: 56/56 frame, 0.4s
+[6/66] C09_2: track+select+pose+report
+  track  C09_2: 98 frame, 1 khối, 2 track, 4.0s (24.2 fps)
+  select C09_2: {'tracked': 98}, nối 0
+  pose   C09_2: 98/98 frame, 1.8s
+[7/66] C11: track+select+pose+report
+  track  C11: 228 frame, 2 khối, 2 track, 7.5s (30.3 fps)
+  select C11: {'tracked': 228, 'excluded': 157}, nối 0
+  pose   C11: 228/228 frame, 1.0s
+[8/66] C12: track+select+pose+report
+  track  C12: 195 frame, 4 khối, 5 track, 7.6s (25.5 fps)
+  select C12: {'tracked': 195, 'excluded': 162}, nối 1
+  pose   C12: 195/195 frame, 1.2s
+[9/66] C13_1: track+select+pose+report
+  track  C13_1: 662 frame, 1 khối, 1 track, 25.3s (26.2 fps)
+  select C13_1: {'tracked': 662}, nối 0
+  pose   C13_1: 662/662 frame, 3.2s
+[10/66] C13_2: track+select+pose+report
+  track  C13_2: 597 frame, 1 khối, 1 track, 22.9s (26.0 fps)
+  select C13_2: {'tracked': 597}, nối 0
+  pose   C13_2: 597/597 frame, 2.9s
+[11/66] C17: track+select+pose+report
+  track  C17: 170 frame, 1 khối, 1 track, 6.0s (28.2 fps)
+  select C17: {'tracked': 170}, nối 0
+  pose   C17: 170/170 frame, 0.9s
+[12/66] C18: track+select+pose+report
+  track  C18: 108 frame, 1 khối, 1 track, 3.9s (27.9 fps)
+  select C18: {'tracked': 108, 'excluded': 1}, nối 0
+  pose   C18: 108/108 frame, 0.6s
+[13/66] C19: track+select+pose+report
+  track  C19: 173 frame, 1 khối, 1 track, 5.8s (30.1 fps)
+  select C19: {'tracked': 173, 'excluded': 1}, nối 0
+  pose   C19: 173/173 frame, 0.9s
+[14/66] C20: track+select+pose+report
+  track  C20: 183 frame, 1 khối, 1 track, 6.1s (30.2 fps)
+  select C20: {'tracked': 183}, nối 0
+  pose   C20: 183/183 frame, 1.0s
+[15/66] C21: track+select+pose+report
+  track  C21: 143 frame, 1 khối, 7 track, 5.1s (28.0 fps)
+  select C21: {'tracked': 143, 'excluded': 1}, nối 0
+  pose   C21: 143/143 frame, 0.8s
+[16/66] C23_1: track+select+pose+report
+  track  C23_1: 53 frame, 1 khối, 1 track, 1.9s (28.5 fps)
+  select C23_1: {'tracked': 53}, nối 0
+  pose   C23_1: 53/53 frame, 0.3s
+[17/66] C23_2: track+select+pose+report
+  track  C23_2: 45 frame, 1 khối, 1 track, 1.6s (29.0 fps)
+  select C23_2: {'tracked': 45}, nối 0
+  pose   C23_2: 45/45 frame, 0.2s
+[18/66] C23_3: track+select+pose+report
+  track  C23_3: 127 frame, 1 khối, 2 track, 4.3s (29.7 fps)
+  select C23_3: {'tracked': 127}, nối 0
+  pose   C23_3: 127/127 frame, 0.6s
+[19/66] C24: track+select+pose+report
+  track  C24: 136 frame, 1 khối, 1 track, 4.5s (30.1 fps)
+  select C24: {'tracked': 136}, nối 0
+  pose   C24: 136/136 frame, 0.6s
+[20/66] C25: track+select+pose+report
+  track  C25: 79 frame, 1 khối, 1 track, 2.7s (29.3 fps)
+  select C25: {'tracked': 79, 'excluded': 2}, nối 0
+  pose   C25: 79/79 frame, 0.4s
+[21/66] C26: track+select+pose+report
+  track  C26: 125 frame, 1 khối, 1 track, 4.1s (30.4 fps)
+  select C26: {'tracked': 125, 'excluded': 2}, nối 0
+  pose   C26: 125/125 frame, 0.5s
+[22/66] C27: track+select+pose+report
+  track  C27: 114 frame, 1 khối, 1 track, 3.8s (30.2 fps)
+  select C27: {'tracked': 114}, nối 0
+  pose   C27: 114/114 frame, 0.5s
+[23/66] C28_1: track+select+pose+report
+  track  C28_1: 34 frame, 1 khối, 1 track, 1.2s (28.1 fps)
+  select C28_1: {'tracked': 34}, nối 0
+  pose   C28_1: 34/34 frame, 0.2s
+[24/66] C28_2: track+select+pose+report
+  track  C28_2: 33 frame, 1 khối, 1 track, 1.1s (28.7 fps)
+  select C28_2: {'tracked': 33}, nối 0
+  pose   C28_2: 33/33 frame, 0.2s
+[25/66] C28_3: track+select+pose+report
+  track  C28_3: 34 frame, 1 khối, 1 track, 1.2s (28.7 fps)
+  select C28_3: {'tracked': 34}, nối 0
+  pose   C28_3: 34/34 frame, 0.2s
+[26/66] C28_4: track+select+pose+report
+  track  C28_4: 33 frame, 1 khối, 1 track, 1.2s (28.3 fps)
+  select C28_4: {'tracked': 33}, nối 0
+  pose   C28_4: 33/33 frame, 0.2s
+[27/66] C29: track+select+pose+report
+  track  C29: 303 frame, 1 khối, 1 track, 10.1s (30.1 fps)
+  select C29: {'tracked': 303}, nối 0
+  pose   C29: 303/303 frame, 1.3s
+[28/66] C30: track+select+pose+report
+  track  C30: 253 frame, 1 khối, 1 track, 10.6s (23.9 fps)
+  select C30: {'tracked': 253}, nối 0
+  pose   C30: 253/253 frame, 1.4s
+[29/66] C31: track+select+pose+report
+  track  C31: 147 frame, 1 khối, 1 track, 6.4s (23.0 fps)
+  select C31: {'tracked': 147}, nối 0
+  pose   C31: 147/147 frame, 0.7s
+[30/66] C38_1: track+select+pose+report
+  track  C38_1: 58 frame, 1 khối, 1 track, 2.0s (29.1 fps)
+  select C38_1: {'tracked': 58}, nối 0
+  pose   C38_1: 58/58 frame, 0.3s
+[31/66] C38_10: track+select+pose+report
+  track  C38_10: 173 frame, 1 khối, 5 track, 5.6s (30.7 fps)
+  select C38_10: {'tracked': 173}, nối 0
+  pose   C38_10: 173/173 frame, 0.7s
+[32/66] C38_2: track+select+pose+report
+  track  C38_2: 96 frame, 1 khối, 1 track, 3.2s (30.1 fps)
+  select C38_2: {'tracked': 96}, nối 0
+  pose   C38_2: 96/96 frame, 0.4s
+[33/66] C38_3: track+select+pose+report
+  track  C38_3: 90 frame, 1 khối, 2 track, 3.0s (30.1 fps)
+  select C38_3: {'tracked': 90}, nối 0
+  pose   C38_3: 90/90 frame, 0.4s
+[34/66] C38_4: track+select+pose+report
+  track  C38_4: 71 frame, 1 khối, 1 track, 2.4s (29.5 fps)
+  select C38_4: {'tracked': 71}, nối 0
+  pose   C38_4: 71/71 frame, 0.3s
+[35/66] C38_5: track+select+pose+report
+  track  C38_5: 54 frame, 1 khối, 2 track, 1.9s (28.9 fps)
+  select C38_5: {'tracked': 36, 'missing': 17, 'excluded': 6, 'interpolated': 1}, nối 0
+  pose   C38_5: 37/54 frame, 0.2s
+[36/66] C38_6: track+select+pose+report
+  track  C38_6: 90 frame, 1 khối, 1 track, 3.0s (30.0 fps)
+  select C38_6: {'tracked': 90}, nối 0
+  pose   C38_6: 90/90 frame, 0.4s
+[37/66] C38_7: track+select+pose+report
+  track  C38_7: 71 frame, 1 khối, 1 track, 2.4s (29.5 fps)
+  select C38_7: {'tracked': 71}, nối 0
+  pose   C38_7: 71/71 frame, 0.3s
+[38/66] C38_8: track+select+pose+report
+  track  C38_8: 84 frame, 1 khối, 3 track, 2.8s (29.5 fps)
+  select C38_8: {'tracked': 49, 'missing': 34, 'excluded': 6, 'interpolated': 1}, nối 0
+  pose   C38_8: 50/84 frame, 0.2s
+[39/66] C38_9: track+select+pose+report
+  track  C38_9: 122 frame, 1 khối, 1 track, 4.1s (30.1 fps)
+  select C38_9: {'tracked': 122}, nối 0
+  pose   C38_9: 122/122 frame, 0.5s
+[40/66] F02: track+select+pose+report
+  track  F02: 484 frame, 1 khối, 1 track, 15.6s (31.0 fps)
+  select F02: {'tracked': 484}, nối 0
+  pose   F02: 484/484 frame, 2.5s
+[41/66] F10_1: track+select+pose+report
+  track  F10_1: 116 frame, 1 khối, 51 track, 4.5s (25.9 fps)
+  select F10_1: {'tracked': 116}, nối 0
+  pose   F10_1: 116/116 frame, 0.6s
+[42/66] F10_2: track+select+pose+report
+  track  F10_2: 113 frame, 3 khối, 48 track, 4.5s (25.1 fps)
+  select F10_2: {'excluded': 780, 'tracked': 113}, nối 0
+  pose   F10_2: 113/113 frame, 0.8s
+[43/66] F11: track+select+pose+report
+  track  F11: 258 frame, 3 khối, 3 track, 9.1s (28.4 fps)
+  select F11: {'excluded': 274, 'tracked': 258}, nối 0
+  pose   F11: 258/258 frame, 1.1s
+[44/66] F12: track+select+pose+report
+  track  F12: 76 frame, 2 khối, 2 track, 2.8s (27.2 fps)
+  select F12: {'tracked': 76, 'excluded': 56}, nối 0
+  pose   F12: 76/76 frame, 0.3s
+[45/66] F17: track+select+pose+report
+  track  F17: 196 frame, 1 khối, 1 track, 7.1s (27.6 fps)
+  select F17: {'tracked': 196}, nối 0
+  pose   F17: 196/196 frame, 1.0s
+[46/66] F18: track+select+pose+report
+  track  F18: 98 frame, 1 khối, 1 track, 3.5s (27.8 fps)
+  select F18: {'tracked': 98}, nối 0
+  pose   F18: 98/98 frame, 0.6s
+[47/66] F19: track+select+pose+report
+  track  F19: 118 frame, 1 khối, 1 track, 3.9s (30.5 fps)
+  select F19: {'tracked': 118}, nối 0
+  pose   F19: 118/118 frame, 0.5s
+[48/66] F20: track+select+pose+report
+  track  F20: 173 frame, 1 khối, 1 track, 5.6s (30.8 fps)
+  select F20: {'tracked': 173}, nối 0
+  pose   F20: 173/173 frame, 0.7s
+[49/66] F21: track+select+pose+report
+  track  F21: 117 frame, 1 khối, 5 track, 4.1s (28.4 fps)
+  select F21: {'tracked': 117}, nối 0
+  pose   F21: 117/117 frame, 0.5s
+[50/66] F22_1: track+select+pose+report
+  track  F22_1: 62 frame, 1 khối, 1 track, 2.1s (29.3 fps)
+  select F22_1: {'tracked': 62}, nối 0
+  pose   F22_1: 62/62 frame, 0.3s
+[51/66] F22_2: track+select+pose+report
+  track  F22_2: 61 frame, 1 khối, 1 track, 2.1s (29.3 fps)
+  select F22_2: {'tracked': 61}, nối 0
+  pose   F22_2: 61/61 frame, 0.3s
+[52/66] F22_3: track+select+pose+report
+  track  F22_3: 60 frame, 1 khối, 1 track, 2.0s (29.6 fps)
+  select F22_3: {'tracked': 60}, nối 0
+  pose   F22_3: 60/60 frame, 0.3s
+[53/66] F22_4: track+select+pose+report
+  track  F22_4: 60 frame, 1 khối, 1 track, 2.0s (29.5 fps)
+  select F22_4: {'tracked': 60}, nối 0
+  pose   F22_4: 60/60 frame, 0.3s
+[54/66] F23_1: track+select+pose+report
+  track  F23_1: 64 frame, 1 khối, 1 track, 2.2s (29.2 fps)
+  select F23_1: {'tracked': 64}, nối 0
+  pose   F23_1: 64/64 frame, 0.3s
+[55/66] F23_2: track+select+pose+report
+  track  F23_2: 44 frame, 1 khối, 1 track, 1.5s (28.7 fps)
+  select F23_2: {'tracked': 44}, nối 0
+  pose   F23_2: 44/44 frame, 0.2s
+[56/66] F23_3: track+select+pose+report
+  track  F23_3: 59 frame, 1 khối, 1 track, 2.0s (28.8 fps)
+  select F23_3: {'tracked': 59, 'excluded': 1}, nối 0
+  pose   F23_3: 59/59 frame, 0.3s
+[57/66] F24: track+select+pose+report
+  track  F24: 147 frame, 1 khối, 1 track, 4.9s (30.2 fps)
+  select F24: {'tracked': 147}, nối 0
+  pose   F24: 147/147 frame, 0.6s
+[58/66] F25: track+select+pose+report
+  track  F25: 100 frame, 1 khối, 1 track, 3.4s (29.5 fps)
+  select F25: {'tracked': 100}, nối 0
+  pose   F25: 100/100 frame, 0.5s
+[59/66] F26: track+select+pose+report
+  track  F26: 133 frame, 1 khối, 1 track, 4.4s (30.4 fps)
+  select F26: {'tracked': 133}, nối 0
+  pose   F26: 133/133 frame, 0.6s
+[60/66] F27: track+select+pose+report
+  track  F27: 122 frame, 1 khối, 1 track, 4.1s (30.0 fps)
+  select F27: {'tracked': 122}, nối 0
+  pose   F27: 122/122 frame, 0.6s
+[61/66] F28_1: track+select+pose+report
+  track  F28_1: 34 frame, 1 khối, 1 track, 1.2s (28.6 fps)
+  select F28_1: {'tracked': 34}, nối 0
+  pose   F28_1: 34/34 frame, 0.2s
+[62/66] F28_2: track+select+pose+report
+  track  F28_2: 32 frame, 1 khối, 1 track, 1.1s (28.7 fps)
+  select F28_2: {'tracked': 32}, nối 0
+  pose   F28_2: 32/32 frame, 0.2s
+[63/66] F28_3: track+select+pose+report
+  track  F28_3: 33 frame, 1 khối, 1 track, 1.1s (28.8 fps)
+  select F28_3: {'tracked': 33}, nối 0
+  pose   F28_3: 33/33 frame, 0.2s
+[64/66] F28_4: track+select+pose+report
+  track  F28_4: 34 frame, 1 khối, 1 track, 1.2s (28.3 fps)
+  select F28_4: {'tracked': 34}, nối 0
+  pose   F28_4: 34/34 frame, 0.2s
+[65/66] F29: track+select+pose+report
+  track  F29: 72 frame, 1 khối, 1 track, 2.5s (29.2 fps)
+  select F29: {'tracked': 72}, nối 0
+  pose   F29: 72/72 frame, 0.3s
+[66/66] F30: track+select+pose+report
+  track  F30: 84 frame, 1 khối, 1 track, 3.7s (22.7 fps)
+  select F30: {'tracked': 84, 'excluded': 13}, nối 0
+  pose   F30: 84/84 frame, 0.4s
+
+=== TÓM TẮT: 66 video có QC, 7 video có cờ ===
+  near_tie                 1: F10_2
+  box_truncated            6: C01 C04_3 C11 C38_8 F10_2 F28_3
+  low_margin               2: C38_5 F10_2
+  low_coverage             2: C38_5 C38_8
+Danh sách xem trước (nặng → nhẹ):
+  F10_2   cov=1.00 jumps=0 margin=0.0156 foot=0.7468 [low_margin;near_tie;box_truncated]
+  C38_8   cov=0.60 jumps=0 margin=0.2786 foot=0.6129 [low_coverage;box_truncated]
+  C38_5   cov=0.69 jumps=0 margin=0.1144 foot=0.7488 [low_coverage;low_margin]
+  C04_3   cov=0.97 jumps=0 margin=0.2602 foot=0.673 [box_truncated]
+  C01     cov=1.00 jumps=0 margin=0.3285 foot=0.6734 [box_truncated]
+  C11     cov=1.00 jumps=0 margin=0.6239 foot=0.7139 [box_truncated]
+  F28_3   cov=1.00 jumps=0 margin=0.6415 foot=0.7421 [box_truncated]
+
+Tổng thời gian: 360s

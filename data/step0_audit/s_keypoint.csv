@@ -1,0 +1,70 @@
+﻿video_id,shot_id,n_sampled,n_foot,s_foot,foot_agree,s_face,s_prelim,s_final,ghi_chu
+C01,0,25,25,-1,0.96,-1,0,-1.0,s_prelim chưa xác định; keypoint chân và mặt khớp nhau
+C01,1,25,22,-1,0.95,0,0,-1.0,s_prelim chưa xác định; keypoint chân và mặt khớp nhau
+C04_1,0,25,25,1,1.0,1,1,1.0,Keypoint khớp s_prelim
+C04_2,0,25,25,1,1.0,1,-1,1.0,Mâu thuẫn s_prelim; theo keypoint (chân & mặt khớp độc lập; 4/5 mẫu kiểm tra cho thấy s_prelim sai)
+C04_3,0,25,24,-1,0.96,-1,-1,-1.0,Keypoint khớp s_prelim
+C09_1,0,25,24,1,0.96,1,1,1.0,Keypoint khớp s_prelim
+C09_2,0,25,25,-1,1.0,-1,-1,-1.0,Keypoint khớp s_prelim
+C11,0,25,24,-1,1.0,-1,-1,-1.0,Keypoint khớp s_prelim
+C12,0,25,25,1,1.0,1,-1,1.0,Mâu thuẫn s_prelim; đã xem full-res → keypoint đúng
+C13_1,0,25,25,-1,0.96,-1,0,-1.0,s_prelim chưa xác định; keypoint chân và mặt khớp nhau
+C13_2,0,25,25,-1,1.0,-1,-1,-1.0,Keypoint khớp s_prelim
+C17,0,25,25,-1,1.0,-1,1,-1.0,Mâu thuẫn s_prelim; đã xem full-res → keypoint đúng
+C18,0,25,25,-1,1.0,-1,-1,-1.0,Keypoint khớp s_prelim
+C19,0,25,25,1,0.96,1,1,1.0,Keypoint khớp s_prelim
+C20,0,25,25,1,1.0,1,1,1.0,Keypoint khớp s_prelim
+C21,0,25,25,-1,1.0,-1,-1,-1.0,Keypoint khớp s_prelim
+C23_1,0,25,25,1,1.0,1,1,1.0,Keypoint khớp s_prelim
+C23_2,0,25,25,1,1.0,1,1,1.0,Keypoint khớp s_prelim
+C23_3,0,25,25,1,1.0,1,1,1.0,Keypoint khớp s_prelim
+C24,0,25,25,-1,1.0,-1,-1,-1.0,Keypoint khớp s_prelim
+C25,0,25,25,-1,1.0,-1,-1,-1.0,Keypoint khớp s_prelim
+C26,0,25,25,1,0.96,1,-1,1.0,Mâu thuẫn s_prelim; theo keypoint (chân & mặt khớp độc lập; 4/5 mẫu kiểm tra cho thấy s_prelim sai)
+C27,0,25,25,1,1.0,1,0,1.0,s_prelim chưa xác định; keypoint chân và mặt khớp nhau
+C28_1,0,25,25,-1,1.0,-1,1,-1.0,Mâu thuẫn s_prelim; đã xem full-res → keypoint đúng
+C28_2,0,25,25,-1,1.0,-1,1,-1.0,Mâu thuẫn s_prelim; theo keypoint (chân & mặt khớp độc lập; 4/5 mẫu kiểm tra cho thấy s_prelim sai)
+C28_3,0,25,25,-1,0.96,-1,1,-1.0,Mâu thuẫn s_prelim; theo keypoint (chân & mặt khớp độc lập; 4/5 mẫu kiểm tra cho thấy s_prelim sai)
+C28_4,0,25,25,-1,1.0,-1,1,-1.0,Mâu thuẫn s_prelim; theo keypoint (chân & mặt khớp độc lập; 4/5 mẫu kiểm tra cho thấy s_prelim sai)
+C29,0,25,25,-1,1.0,-1,-1,-1.0,Keypoint khớp s_prelim
+C30,0,25,25,-1,1.0,-1,-1,-1.0,Keypoint khớp s_prelim
+C31,0,25,25,1,1.0,1,1,1.0,Keypoint khớp s_prelim
+C38_1,0,25,25,1,1.0,1,1,1.0,Keypoint khớp s_prelim
+C38_10,0,25,25,1,1.0,1,-1,1.0,Mâu thuẫn s_prelim; theo keypoint (chân & mặt khớp độc lập; 4/5 mẫu kiểm tra cho thấy s_prelim sai)
+C38_2,0,25,25,1,1.0,1,0,1.0,s_prelim chưa xác định; keypoint chân và mặt khớp nhau
+C38_3,0,25,25,1,1.0,1,1,1.0,Keypoint khớp s_prelim
+C38_4,0,25,25,1,1.0,1,1,1.0,Keypoint khớp s_prelim
+C38_5,0,25,25,1,0.96,1,1,1.0,Keypoint khớp s_prelim
+C38_5,1,1,0,0,,0,1,,Shot 1 là title card (không có người chạy) → loại khỏi phân tích
+C38_6,0,25,25,1,1.0,1,-1,1.0,Mâu thuẫn s_prelim; đã xem full-res → keypoint đúng
+C38_7,0,25,25,1,1.0,1,1,1.0,Keypoint khớp s_prelim
+C38_8,0,25,22,1,1.0,1,-1,1.0,Mâu thuẫn s_prelim; theo keypoint (chân & mặt khớp độc lập; 4/5 mẫu kiểm tra cho thấy s_prelim sai)
+C38_8,1,6,0,0,,1,-1,,"Shot 1 quá ngắn (6 frame), không thấy bàn chân → loại khỏi phân tích"
+C38_9,0,25,25,1,0.96,1,0,1.0,s_prelim chưa xác định; keypoint chân và mặt khớp nhau
+F02,0,25,25,1,1.0,1,1,1.0,Keypoint khớp s_prelim
+F10_1,0,25,22,1,1.0,1,1,1.0,Keypoint khớp s_prelim
+F10_2,0,25,24,-1,0.88,-1,1,-1.0,Sửa 04/11: −1 (keypoint s_foot=−1 đúng; kiểm tra tay trước đó sai)
+F11,0,25,25,-1,1.0,-1,-1,-1.0,Keypoint khớp s_prelim
+F12,0,25,25,1,1.0,1,1,1.0,Keypoint khớp s_prelim
+F17,0,25,25,-1,1.0,-1,0,-1.0,s_prelim chưa xác định; keypoint chân và mặt khớp nhau
+F18,0,25,25,-1,1.0,-1,1,-1.0,Mâu thuẫn s_prelim; theo keypoint (chân & mặt khớp độc lập; 4/5 mẫu kiểm tra cho thấy s_prelim sai)
+F19,0,25,25,1,1.0,1,-1,1.0,Mâu thuẫn s_prelim; theo keypoint (chân & mặt khớp độc lập; 4/5 mẫu kiểm tra cho thấy s_prelim sai)
+F20,0,25,25,1,1.0,1,1,1.0,Keypoint khớp s_prelim
+F21,0,25,25,-1,1.0,-1,1,-1.0,Mâu thuẫn s_prelim; theo keypoint (chân & mặt khớp độc lập; 4/5 mẫu kiểm tra cho thấy s_prelim sai)
+F22_1,0,25,25,-1,1.0,-1,1,-1.0,Mâu thuẫn s_prelim; theo keypoint (chân & mặt khớp độc lập; 4/5 mẫu kiểm tra cho thấy s_prelim sai)
+F22_2,0,25,25,-1,1.0,-1,1,-1.0,Mâu thuẫn s_prelim; theo keypoint (chân & mặt khớp độc lập; 4/5 mẫu kiểm tra cho thấy s_prelim sai)
+F22_3,0,25,25,-1,1.0,-1,1,-1.0,Mâu thuẫn s_prelim; theo keypoint (chân & mặt khớp độc lập; 4/5 mẫu kiểm tra cho thấy s_prelim sai)
+F22_4,0,25,25,-1,1.0,-1,1,-1.0,Mâu thuẫn s_prelim; theo keypoint (chân & mặt khớp độc lập; 4/5 mẫu kiểm tra cho thấy s_prelim sai)
+F23_1,0,25,25,1,1.0,1,1,1.0,Keypoint khớp s_prelim
+F23_2,0,25,25,1,1.0,1,1,1.0,Keypoint khớp s_prelim
+F23_3,0,25,23,1,1.0,1,1,1.0,Keypoint khớp s_prelim
+F24,0,25,25,-1,0.96,-1,-1,-1.0,Keypoint khớp s_prelim
+F25,0,25,25,-1,1.0,-1,-1,-1.0,Keypoint khớp s_prelim
+F26,0,25,24,1,0.92,1,-1,1.0,Mâu thuẫn s_prelim; theo keypoint (chân & mặt khớp độc lập; 4/5 mẫu kiểm tra cho thấy s_prelim sai)
+F27,0,25,24,1,0.96,1,0,1.0,s_prelim chưa xác định; keypoint chân và mặt khớp nhau
+F28_1,0,25,25,-1,1.0,-1,1,-1.0,Mâu thuẫn s_prelim; theo keypoint (chân & mặt khớp độc lập; 4/5 mẫu kiểm tra cho thấy s_prelim sai)
+F28_2,0,25,25,-1,1.0,-1,0,-1.0,s_prelim chưa xác định; keypoint chân và mặt khớp nhau
+F28_3,0,25,25,-1,1.0,-1,-1,-1.0,Keypoint khớp s_prelim
+F28_4,0,25,25,-1,1.0,-1,-1,-1.0,Keypoint khớp s_prelim
+F29,0,25,25,-1,1.0,-1,-1,-1.0,Keypoint khớp s_prelim
+F30,0,25,25,1,1.0,1,0,1.0,s_prelim chưa xác định; keypoint chân và mặt khớp nhau

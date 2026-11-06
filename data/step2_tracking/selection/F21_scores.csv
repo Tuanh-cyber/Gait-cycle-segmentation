@@ -1,0 +1,6 @@
+video_id,continuity_id,track_id,chain_rank,is_seed,selected,same_person_as_runner,n_frames,prox_dist,s_proximity,s_length,v_world_bh_per_s,dir_frac,motion_reliability,s_motion,h_median,aspect,s_size,score,chain_n_frames,chain_s_proximity,chain_s_length,chain_s_motion,chain_s_size,chain_score
+F21,0,1,0,True,True,False,117,0.3906,0.6766,1.0,0.2767,0.8387,1.0,0.1547,664.59,1.7742,1.0,0.6233,117,0.6766,1.0,0.1547,1.0,0.6233
+F21,0,4,1,True,False,False,7,4.2664,0.014,0.0598,-5.5954,0.0,0.0484,0.0,87.32,2.2649,0.3258,0.0673,7,0.014,0.0598,0.0,0.3258,0.0673
+F21,0,7,1,False,False,False,1,5.2254,0.0054,0.0085,0.0,0.0,0.0,0.0,84.98,3.6661,0.3171,0.051,7,0.014,0.0598,0.0,0.3258,0.0673
+F21,0,6,2,True,False,False,2,4.5855,0.0102,0.0171,0.0,0.0,0.0069,0.0,55.57,3.389,0.2074,0.0379,2,0.0102,0.0171,0.0,0.2074,0.0379
+F21,0,2,3,True,False,False,5,9.9516,0.0,0.0427,-2.9101,0.0203,0.0554,0.0,37.85,2.1508,0.1412,0.0319,5,0.0,0.0427,0.0,0.1412,0.0319

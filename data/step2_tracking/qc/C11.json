@@ -1,0 +1,19 @@
+{
+ "video_id": "C11",
+ "n_valid_frames": 228,
+ "coverage": 1.0,
+ "n_tracks_total": 2,
+ "n_tracks_runner_joined": 2,
+ "n_id_joins": 0,
+ "max_gap_s": 0.0333,
+ "n_center_jumps": 0,
+ "bbox_h_cv": 0.1681,
+ "kp_score_median": 0.7721,
+ "foot_kp_score_median": 0.7139,
+ "frac_frames_foot_visible": 1.0,
+ "lr_swap_rate": 0.0133,
+ "selection_margin": 0.6239,
+ "frac_kp_outside_bbox": 0.1447,
+ "flags": "box_truncated",
+ "center_jumps": []
+}

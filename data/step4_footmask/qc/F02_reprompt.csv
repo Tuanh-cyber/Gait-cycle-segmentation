@@ -1,0 +1,9 @@
+video_id,continuity_id,obj,frame,bad_from,bad_to,action,round
+F02,0,1,515,473,679,prompt_lai,0
+F02,0,1,712,690,712,prompt_lai,0
+F02,0,2,515,458,675,prompt_lai,0
+F02,0,2,686,682,686,prompt_lai,0
+F02,0,1,-1,90,91,bo_qua_dang_chong,2
+F02,0,1,253,253,253,prompt_lai,2
+F02,0,1,357,357,357,prompt_lai,2
+F02,0,2,-1,679,679,bo_qua_dang_chong,2

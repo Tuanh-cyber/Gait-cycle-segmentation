@@ -1,0 +1,6 @@
+# Tối thiểu để đọc output Bước 0–5 và làm Bước 6 (thống kê, HSMM). Python 3.11.
+numpy>=2.0
+pandas>=2.2
+scipy>=1.13
+matplotlib>=3.9
+opencv-python>=4.10   # chỉ cần nếu muốn vẽ ảnh review từ video gốc

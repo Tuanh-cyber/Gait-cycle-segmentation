@@ -1,0 +1,11 @@
+video_id,continuity_id,obj,frame,bad_from,bad_to,action,round
+F23_3,0,1,19,0,23,prompt_lai,0
+F23_3,0,1,38,26,38,prompt_lai,0
+F23_3,0,2,0,0,5,prompt_lai,0
+F23_3,0,2,38,31,47,prompt_lai,0
+F23_3,0,1,33,26,33,prompt_lai,1
+F23_3,0,1,9,9,9,prompt_lai,2
+F23_3,0,1,49,49,49,prompt_lai,2
+F23_3,0,1,87,87,87,prompt_lai,2
+F23_3,0,2,51,51,51,prompt_lai,2
+F23_3,0,2,59,59,59,prompt_lai,2

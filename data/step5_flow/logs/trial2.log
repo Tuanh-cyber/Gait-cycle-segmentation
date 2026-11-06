@@ -1,0 +1,10 @@
+6 video, 0 đã xong, 6 cần chạy; model=gma-sintel, iters=12, device=mps
+[1/6]  C17: 169 cặp, 73.8s (2.29 cặp/s) gate=PASS  rho=0.95 cad=146/162 fb=0.88 bg=0.26px alt=-0.07 | nofb gate=FAIL rho=0.95 cad=108 alt=0.28
+[2/6]  F30: 83 cặp, 26.8s (3.09 cặp/s) gate=PASS  rho=0.79 cad=153/154 fb=0.85 bg=0.33px alt=-0.19 | nofb gate=PASS rho=0.91 cad=154 alt=-0.30
+[3/6]  C09_1: 55 cặp, 18.1s (3.04 cặp/s) gate=WARN spearman<0.7 rho=0.70 cad=181/nan fb=0.82 bg=0.01px alt=-0.00 | nofb gate=PASS rho=0.73 cad=181 alt=-0.13
+[4/6]  C13_2: 596 cặp, 208.0s (2.87 cặp/s) gate=FAIL spearman<0.4; frac_fb_valid<0.7 rho=0.04 cad=203/203 fb=0.57 bg=0.55px alt=-0.05 | nofb gate=WARN rho=0.55 cad=203 alt=-0.42
+[5/6]  C38_8: 83 cặp, 29.3s (2.83 cặp/s) gate=FAIL spearman<0.4; frac_fb_valid<0.7 rho=0.25 cad=192/188 fb=0.48 bg=0.48px alt=-0.08 | nofb gate=WARN rho=0.47 cad=194 alt=-0.10
+[6/6]  C04_2: 45 cặp, 19.5s (2.3 cặp/s) gate=WARN spearman<0.7; frac_fb_valid<0.7 rho=0.40 cad=191/nan fb=0.67 bg=0.20px alt=-0.11 | nofb gate=WARN rho=0.46 cad=190 alt=-0.23
+Xong 6 video trong 375.7s
+
+Gate: {'WARN': 2, 'FAIL': 2, 'PASS': 2}

@@ -1,0 +1,19 @@
+{
+ "video_id": "C01",
+ "n_valid_frames": 96,
+ "coverage": 1.0,
+ "n_tracks_total": 4,
+ "n_tracks_runner_joined": 2,
+ "n_id_joins": 0,
+ "max_gap_s": 0.1333,
+ "n_center_jumps": 0,
+ "bbox_h_cv": 0.1129,
+ "kp_score_median": 0.7019,
+ "foot_kp_score_median": 0.6734,
+ "frac_frames_foot_visible": 1.0,
+ "lr_swap_rate": 0.0106,
+ "selection_margin": 0.3285,
+ "frac_kp_outside_bbox": 0.2604,
+ "flags": "box_truncated",
+ "center_jumps": []
+}

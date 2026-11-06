@@ -1,0 +1,13 @@
+{
+ "percentile": 99.5,
+ "M_ref_L_per_s": 4.724,
+ "thr_L_per_s": 28.65,
+ "thr_neu_chuan_hoa_cuc_bo_L_per_s": 26.99,
+ "literal_k_cao_L_per_s": 16.37,
+ "literal_k_khac_L_per_s": 38.63,
+ "literal_ramp_L_per_s": 45.79,
+ "literal_abs_true_L_per_s": 17.17,
+ "literal_abs_false_khong_ramp_L_per_s": 45.45,
+ "n_values": 66398,
+ "config": "747dbcfa97"
+}

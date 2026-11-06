@@ -1,0 +1,5 @@
+video_id,continuity_id,obj,frame,bad_from,bad_to,action,round
+C19,0,1,0,0,0,prompt_lai,2
+C19,0,1,93,92,93,prompt_lai,2
+C19,0,1,227,227,227,prompt_lai,2
+C19,0,1,245,245,245,prompt_lai,2

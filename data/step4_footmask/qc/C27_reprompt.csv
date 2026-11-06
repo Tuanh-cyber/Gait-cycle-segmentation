@@ -1,0 +1,16 @@
+video_id,continuity_id,obj,frame,bad_from,bad_to,action,round
+C27,0,1,50,0,74,prompt_lai,0
+C27,0,1,95,95,97,prompt_lai,0
+C27,0,2,11,0,41,prompt_lai,0
+C27,0,2,50,43,74,prompt_lai,0
+C27,0,1,9,7,9,prompt_lai,1
+C27,0,1,-1,42,44,bo_qua_dang_chong,1
+C27,0,1,21,21,21,prompt_lai,2
+C27,0,1,58,58,58,prompt_lai,2
+C27,0,1,73,73,74,prompt_lai,2
+C27,0,1,97,96,97,prompt_lai,2
+C27,0,2,-1,41,41,bo_qua_dang_chong,2
+C27,0,2,-1,43,44,bo_qua_dang_chong,2
+C27,0,2,73,73,74,prompt_lai,2
+C27,0,2,84,84,84,prompt_lai,2
+C27,0,2,106,106,106,prompt_lai,2

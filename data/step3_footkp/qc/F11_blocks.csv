@@ -1,0 +1,4 @@
+video_id,continuity_id,n,near_track,near_conf,p_A_near,expected_from_metadata,match,near_leg_anat,swap_rate,foot_size,leg_size,ground_y,occlusion,periods
+F11,0,173,A,1.0,1.0,A,True,left,0.0173,0.0607,0.1099,0.1297,-0.0153,"{""0"": {""T"": 0.767233177081205, ""R"": 0.9733696862244156, ""used"": true}, ""1"": {""T"": 0.7291110023177045, ""R"": 0.9445133760943185, ""used"": true}}"
+F11,5,29,A,1.0,1.0,A,True,left,0.0,0.0181,0.1165,0.2451,0.1054,"{""2"": {""T"": 0.48498004545541384, ""R"": 0.2997871301996223, ""used"": false}}"
+F11,8,56,A,1.0,1.0,A,True,left,0.0,0.0467,0.1862,0.0553,0.1145,"{""3"": {""T"": 0.9123931832203032, ""R"": 0.8432998248763576, ""used"": true}}"

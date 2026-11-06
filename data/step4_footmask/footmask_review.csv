@@ -1,0 +1,67 @@
+video_id,verdict,notes
+C01,minor,"Video mờ, cận cảnh f0/f137 mask phình to; f118/f137 hai mask chồng nhau. Leak 0,17 do mờ, không phải ống chân"
+C04_1,ok,
+C04_2,minor,"f9/f12 mask far chồng lên chân near (iou ~0,6); còn lại tốt"
+C04_3,major,"Mờ nặng; f9/f15/f34/f82 cả hai mask dồn vào một bàn chân, chân kia không có mask. Chỉ dùng frame_valid_mask; near/far yếu từ Bước 3"
+C09_1,ok,Sau ankle clip không còn lan ống chân
+C09_2,ok,
+C11,minor,"Cận cảnh mờ f12/f124/f251 hai mask dính nhau; f55 mask lơ lửng, bàn chân thật không có mask"
+C12,ok,
+C13_1,minor,"Đoạn cận cảnh slow-mo: far bị occluded, mask chồng (đã gắn occ); cảnh rộng tốt"
+C13_2,minor,Như C13_1: cận cảnh far occluded/chồng; cảnh rộng tốt
+C17,ok,f169 far hơi lan ống chân
+C18,ok,
+C19,ok,
+C20,ok,f76–243 exclude_time_features
+C21,ok,
+C23_1,ok,
+C23_2,ok,
+C23_3,ok,
+C24,ok,
+C25,ok,
+C26,minor,f96 mask near nằm trên cột che phía trước (sai vật thể); f91 hai mask chồng
+C27,major,"Chỉ A/B; f74 mask B phủ cả ống chân + cỏ, f95 lan ống chân. near/far không tin cậy"
+C28_1,ok,
+C28_2,minor,Frame mờ f4/f21: mask near lan lên ống chân
+C28_3,minor,f5 far nằm trên gối/ống chân; f23 lệch
+C28_4,minor,f0 far lan ống chân khi mờ
+C29,minor,"Chữ phụ đề đè lên chân; f43 mask dính chữ, f20 chồng"
+C30,minor,f26 far lan ống chân; f204 chân near (giày trắng) không có mask; f201 chồng
+C31,minor,Cận cảnh f13/f34/f59/f84 hai mask chồng khi hai chân bắt chéo
+C38_1,ok,
+C38_10,ok,
+C38_2,ok,"Mask cao ở pha swing là giày dựng đứng, không phải lan"
+C38_3,ok,Như C38_2
+C38_4,ok,Như C38_2
+C38_5,ok,
+C38_6,ok,
+C38_7,ok,
+C38_8,major,Người rất nhỏ; 5/8 frame mẫu hai mask dồn vào một chân. Chỉ dùng frame_valid_mask
+C38_9,ok,
+F02,minor,"Cận cảnh f460–f687 hai mask chồng (iou 0,5–0,9)"
+F10_1,ok,"Visible thấp do chân xa bị che ở pha swing, đã gắn occ"
+F10_2,minor,"f14 far nằm trên ống chân, f84 near trên ống chân, f10 chồng; đoạn f1052–1078 view_lateral=False"
+F11,minor,Cận cảnh mờ f86/f177/f573 hai mask dính nhau
+F12,minor,f33/f149 near lan ống chân; f134 far phình
+F17,ok,f240 far lan sang ống chân near (Claude Code đã ghi nhận)
+F18,minor,Cận cảnh f5/f24/f43/f129 mask near phủ cả hai giày
+F19,ok,
+F20,minor,Cận cảnh f26/f115/f221 mask near phủ ống chân + chân xa
+F21,ok,
+F22_1,ok,
+F22_2,ok,f20 far hơi lan ống chân
+F22_3,minor,f35/f51 hai mask chồng khi mờ
+F22_4,minor,"f8/f25/f59 mask near quá to, lan ống chân khi mờ; xung đột ID 10%"
+F23_1,ok,
+F23_2,ok,
+F23_3,ok,
+F24,ok,
+F25,minor,f0/f15 mask không nằm trên giày (giày đen không có mask); f39/f74 chồng
+F26,minor,"f0 mask near nằm trên nền bên trái, giày trắng không có mask; f8 mask ở mép ảnh"
+F27,minor,Cận cảnh hai giày chồng nhau; f110 chồng (đã gắn occ)
+F28_1,minor,f2 near lan ống chân khi mờ
+F28_2,minor,f8 near lan ống chân khi mờ
+F28_3,minor,f6 far và f32 near lan ống chân
+F28_4,minor,"f3 far, f12/f29 near lan ống chân"
+F29,minor,Chữ phụ đề đè; f8/f34/f47/f59 chồng hoặc lan ống chân
+F30,ok,

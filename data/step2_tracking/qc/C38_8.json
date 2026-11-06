@@ -1,0 +1,19 @@
+{
+ "video_id": "C38_8",
+ "n_valid_frames": 84,
+ "coverage": 1.0,
+ "n_tracks_total": 3,
+ "n_tracks_runner_joined": 2,
+ "n_id_joins": 1,
+ "max_gap_s": 0.0333,
+ "n_center_jumps": 0,
+ "bbox_h_cv": 0.0364,
+ "kp_score_median": 0.6464,
+ "foot_kp_score_median": 0.6278,
+ "frac_frames_foot_visible": 0.9881,
+ "lr_swap_rate": 0.1111,
+ "selection_margin": 0.6007,
+ "frac_kp_outside_bbox": 0.2619,
+ "flags": "box_truncated",
+ "center_jumps": []
+}

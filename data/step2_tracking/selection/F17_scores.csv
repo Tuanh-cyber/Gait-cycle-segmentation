@@ -1,0 +1,2 @@
+video_id,continuity_id,track_id,chain_rank,is_seed,selected,same_person_as_runner,n_frames,prox_dist,s_proximity,s_length,v_world_bh_per_s,dir_frac,motion_reliability,s_motion,h_median,aspect,s_size,score,chain_n_frames,chain_s_proximity,chain_s_length,chain_s_motion,chain_s_size,chain_score
+F17,0,1,0,True,True,False,196,0.334,0.7161,1.0,0.4522,0.9708,1.0,0.2926,747.47,1.5722,1.0,0.6814,196,0.7161,1.0,0.2926,1.0,0.6814

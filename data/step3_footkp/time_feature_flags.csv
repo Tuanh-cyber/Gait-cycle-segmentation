@@ -1,0 +1,2 @@
+video_id,speed_part_id,frame_from,frame_to,n_frames_unique,exclude_time_features,reason
+C20,1,76,243,126,True,"Part 1: tỉ số d_max/d_min = 3,78 nên gần như chắc là ramp, nhưng chỉ có 2 bước nên không dựng được k(t); k = 1/5 độ tin cậy thấp"

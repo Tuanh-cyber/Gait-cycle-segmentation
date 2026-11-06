@@ -1,0 +1,19 @@
+{
+ "video_id": "C18",
+ "n_valid_frames": 108,
+ "coverage": 1.0,
+ "n_tracks_total": 1,
+ "n_tracks_runner_joined": 1,
+ "n_id_joins": 0,
+ "max_gap_s": 0.1,
+ "n_center_jumps": 0,
+ "bbox_h_cv": 0.0275,
+ "kp_score_median": 0.8219,
+ "foot_kp_score_median": 0.8034,
+ "frac_frames_foot_visible": 1.0,
+ "lr_swap_rate": 0.0,
+ "selection_margin": 0.6283,
+ "frac_kp_outside_bbox": 0.0093,
+ "flags": "",
+ "center_jumps": []
+}

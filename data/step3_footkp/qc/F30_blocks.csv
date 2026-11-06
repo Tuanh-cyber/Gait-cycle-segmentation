@@ -1,0 +1,2 @@
+video_id,continuity_id,n,near_track,near_conf,p_A_near,expected_from_metadata,match,near_leg_anat,swap_rate,foot_size,leg_size,ground_y,occlusion,periods
+F30,0,84,B,0.998,0.001,,,,0.0,-0.0014,-0.0232,-0.0008,-0.0604,"{""0"": {""T"": 0.7750935432301436, ""R"": 0.9412641876870356, ""used"": true}}"

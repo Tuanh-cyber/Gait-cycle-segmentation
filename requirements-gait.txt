@@ -1,0 +1,17 @@
+# Sinh tự động từ .venv-gait (Python 3.11, macOS arm64)
+et_xmlfile==2.0.0
+flatbuffers==25.12.19
+numpy==2.4.6
+onnxruntime==1.31.1
+opencv-contrib-python==5.0.0.93
+opencv-python==5.0.0.93
+openpyxl==3.1.5
+packaging==26.3
+pandas==3.1.0
+pip==26.2.2
+protobuf==7.36.2
+python-dateutil==4.0.0
+rtmlib==0.0.16
+setuptools==84.2.1
+tqdm==4.70.1
+tzdata==2026.6

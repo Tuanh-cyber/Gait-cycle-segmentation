@@ -1,0 +1,67 @@
+﻿video_id,verdict,notes
+C01,minor,v2 bỏ luật (d): far 0.78→0.88; shot 1 cận cảnh chỉ dùng đặc trưng bàn chân
+C04_1,ok,PASS; ảnh review nhất quán
+C04_2,ok,PASS; ảnh review nhất quán
+C04_3,minor,"near_track_reliable=False (conf 0.58); foot_valid 0.82/0.79 — dùng được cho mask, không gán near/far"
+C09_1,ok,PASS; ảnh review nhất quán
+C09_2,ok,PASS; ảnh review nhất quán
+C11,ok,PASS; ảnh review nhất quán
+C12,ok,PASS; ảnh review nhất quán
+C13_1,ok,PASS; ảnh review nhất quán
+C13_2,ok,"WARN: chu_kỳ_không_ổn_định — xem ảnh: màu near/far nhất quán, không thấy swap"
+C17,ok,"v2: ramp đã sửa (CV bước <0.10, tương quan k–đổi ảnh ≥0.79), gate PASS; abs_time_ok vẫn False (không có mốc real-time)"
+C18,ok,PASS; ảnh review nhất quán
+C19,ok,PASS; ảnh review nhất quán
+C20,ok,"WARN: chu_kỳ_không_ổn_định — xem ảnh: màu near/far nhất quán, không thấy swap"
+C21,ok,PASS; ảnh review nhất quán
+C23_1,ok,PASS; ảnh review nhất quán
+C23_2,ok,PASS; ảnh review nhất quán
+C23_3,ok,PASS; ảnh review nhất quán
+C24,ok,"v2: ramp đã sửa (CV bước <0.10, tương quan k–đổi ảnh ≥0.79), gate PASS; abs_time_ok vẫn False (không có mốc real-time)"
+C25,ok,PASS; ảnh review nhất quán
+C26,ok,"v2: ramp đã sửa (CV bước <0.10, tương quan k–đổi ảnh ≥0.79), gate PASS; abs_time_ok vẫn False (không có mốc real-time)"
+C27,minor,near_track_reliable=False (review tay: đổi màu từ f83; swap f76–f117 có thể do Viterbi sửa nhầm). Ramp chưa xác nhận (tương quan 0.05). Chỉ dùng đặc trưng không phân biệt chân
+C28_1,ok,PASS; ảnh review nhất quán
+C28_2,ok,PASS; ảnh review nhất quán
+C28_3,ok,PASS; ảnh review nhất quán
+C28_4,ok,PASS; ảnh review nhất quán
+C29,ok,"WARN: chu_kỳ_không_ổn_định — xem ảnh: màu near/far nhất quán, không thấy swap"
+C30,ok,Góc chéo sau; không phát hiện swap tồn dư
+C31,ok,PASS; ảnh review nhất quán
+C38_1,ok,PASS; ảnh review nhất quán
+C38_10,ok,PASS; ảnh review nhất quán
+C38_2,ok,PASS; ảnh review nhất quán
+C38_3,ok,PASS; ảnh review nhất quán
+C38_4,ok,PASS; ảnh review nhất quán
+C38_5,ok,PASS; ảnh review nhất quán
+C38_6,ok,PASS; ảnh review nhất quán
+C38_7,ok,PASS; ảnh review nhất quán
+C38_8,minor,"v2 bỏ luật (d): foot_valid near 0.83→0.93, far 0.76→0.86; người nhỏ, bị cây che vài frame"
+C38_9,ok,PASS; ảnh review nhất quán
+F02,ok,PASS; ảnh review nhất quán
+F10_1,ok,PASS; ảnh review nhất quán
+F10_2,minor,"s_final đã sửa −1; khối 0 (101 frame) khớp near/far. Khối 2 (12 frame cuối): VĐV quay lưng chạy xa camera — near/far KHÔNG xác định được bằng hình học, coi near_track_reliable=False cho khối này"
+F11,ok,PASS; ảnh review nhất quán
+F12,ok,PASS; ảnh review nhất quán
+F17,ok,"v2: ramp đã sửa (CV bước <0.10, tương quan k–đổi ảnh ≥0.79), gate PASS; abs_time_ok vẫn False (không có mốc real-time)"
+F18,ok,PASS; ảnh review nhất quán
+F19,ok,"v2: ramp đã sửa (CV bước <0.10, tương quan k–đổi ảnh ≥0.79), gate PASS; abs_time_ok vẫn False (không có mốc real-time)"
+F20,ok,"v2: ramp đã sửa (CV bước <0.10, tương quan k–đổi ảnh ≥0.79), gate PASS; abs_time_ok vẫn False (không có mốc real-time)"
+F21,ok,"v2: ramp đã sửa (CV bước <0.10, tương quan k–đổi ảnh ≥0.79), gate PASS; abs_time_ok vẫn False (không có mốc real-time)"
+F22_1,ok,PASS; ảnh review nhất quán
+F22_2,ok,PASS; ảnh review nhất quán
+F22_3,ok,PASS; ảnh review nhất quán
+F22_4,ok,PASS; ảnh review nhất quán
+F23_1,ok,PASS; ảnh review nhất quán
+F23_2,ok,PASS; ảnh review nhất quán
+F23_3,ok,PASS; ảnh review nhất quán
+F24,ok,PASS; ảnh review nhất quán
+F25,ok,"WARN: chu_kỳ_không_ổn_định — xem ảnh: màu near/far nhất quán, không thấy swap"
+F26,ok,"v2: xem lại 5 ảnh _swap_ (f9–f10, f85, f141): sửa swap đúng (2 chân chéo nhau, màu bám đúng chân sau sửa); ramp đã sửa, gate PASS"
+F27,minor,"v2: ramp mới phát hiện (k 0.5–1), abs_time_ok=False; ảnh _swap_ f27/f109/f113 hợp lý; vẫn WARN do nghi tốc độ đổi trong part"
+F28_1,ok,PASS; ảnh review nhất quán
+F28_2,ok,PASS; ảnh review nhất quán
+F28_3,ok,PASS; ảnh review nhất quán
+F28_4,ok,PASS; ảnh review nhất quán
+F29,ok,PASS; ảnh review nhất quán
+F30,ok,Góc chéo sau; không phát hiện swap tồn dư

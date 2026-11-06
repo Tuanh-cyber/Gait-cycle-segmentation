@@ -1,0 +1,70 @@
+66 video, 0 đã xong, 66 cần chạy; model=gma-sintel, iters=12, device=mps
+[1/66]  C01: 94 cặp, feature 3.0s gate=WARN bg_residual_cao; frac_fb_valid<0.7 direct+slow P10 -5.14->0.25 rho=0.78 cad=213/211 duty=0.07/0.03 slowBad=0
+[2/66]  C04_1: 113 cặp, feature 2.7s gate=PASS  direct P10 0.11->0.12 rho=0.91 cad=178/176 duty=0.26/0.35 slowBad=0
+[3/66]  C04_2: 45 cặp, feature 1.1s gate=FAIL spearman<0.4; frac_fb_valid<0.7 direct P10 0.06->0.06 rho=0.37 cad=170/192 duty=0.52/0.66 slowBad=0
+[4/66]  C04_3: 158 cặp, feature 4.1s gate=FAIL spearman<0.4; frac_fb_valid<0.7 direct P10 -0.71->-0.71 rho=0.34 cad=199/199 duty=0.55/0.55 slowBad=0
+[5/66]  C09_1: 55 cặp, feature 1.6s gate=PASS  direct P10 0.02->0.02 rho=0.86 cad=187/177 duty=0.36/0.28 slowBad=0
+[6/66]  C09_2: 97 cặp, feature 3.3s gate=FAIL spearman<0.4 direct P10 0.00->0.00 rho=0.37 cad=186/171 duty=0.52/0.41 slowBad=0
+[7/66]  C11: 226 cặp, feature 5.6s gate=PASS  direct P10 0.16->0.16 rho=0.91 cad=173/166 duty=0.43/0.23 slowBad=0
+[8/66]  C12: 191 cặp, feature 4.1s gate=WARN frac_fb_valid<0.7 direct P10 0.13->0.14 rho=0.82 cad=171/171 duty=0.40/0.42 slowBad=0
+[9/66]  C13_1: 661 cặp, feature 22.6s gate=WARN frac_fb_valid<0.7 direct P10 -0.70->-0.70 rho=0.75 cad=206/205 duty=0.45/0.59 slowBad=0
+[10/66]  C13_2: 596 cặp, feature 20.0s gate=WARN frac_fb_valid<0.7 direct P10 -0.57->-0.57 rho=0.72 cad=203/203 duty=0.49/0.56 slowBad=0
+[11/66]  C17: 169 cặp, feature 7.1s gate=PASS  direct+slow P10 -1.38->0.02 rho=0.98 cad=154/162 duty=0.21/0.16 slowBad=0
+[12/66]  C18: 107 cặp, feature 3.4s gate=PASS  direct+slow P10 -4.27->-0.29 rho=0.93 cad=163/162 duty=0.23/0.25 slowBad=0
+[13/66]  C19: 172 cặp, feature 4.9s gate=PASS  direct P10 -0.53->-0.56 rho=0.93 cad=151/141 duty=0.38/0.33 slowBad=0
+[14/66]  C20: 182 cặp, feature 5.9s gate=PASS  direct P10 -0.98->-0.95 rho=0.97 cad=153/153 duty=0.23/0.41 slowBad=0
+[15/66]  C21: 142 cặp, feature 4.3s gate=PASS  direct P10 -0.32->-0.32 rho=0.94 cad=151/147 duty=0.35/0.43 slowBad=0
+[16/66]  C23_1: 52 cặp, feature 1.6s gate=PASS  direct P10 0.17->0.22 rho=0.95 cad=153/156 duty=0.20/0.24 slowBad=0
+[17/66]  C23_2: 44 cặp, feature 1.3s gate=PASS  direct P10 -0.72->-0.43 rho=0.83 cad=202/208 duty=0.22/0.32 slowBad=0
+[18/66]  C23_3: 126 cặp, feature 3.6s gate=PASS  direct+slow P10 -1.41->-0.07 rho=0.93 cad=173/171 duty=0.15/0.16 slowBad=0
+[19/66]  C24: 135 cặp, feature 5.2s gate=PASS  direct+slow P10 -2.82->-0.02 rho=0.95 cad=112/137 duty=0.30/0.28 slowBad=0
+[20/66]  C25: 78 cặp, feature 2.2s gate=PASS  direct P10 0.18->0.17 rho=0.95 cad=163/161 duty=0.24/0.26 slowBad=0
+[21/66]  C26: 124 cặp, feature 5.0s gate=PASS  direct+slow P10 -1.14->-0.10 rho=0.91 cad=178/181 duty=0.24/0.20 slowBad=0
+[22/66]  C27: 113 cặp, feature 4.4s gate=PASS  direct P10 0.22->0.22 rho=0.79 cad=167/163 duty=0.34/0.34 slowBad=0
+[23/66]  C28_1: 33 cặp, feature 1.3s gate=WARN frac_fb_valid<0.7 direct+slow P10 -1.44->-0.05 rho=0.95 cad=161/168 duty=0.28/0.23 slowBad=0
+[24/66]  C28_2: 32 cặp, feature 1.2s gate=WARN frac_fb_valid<0.7 direct+slow P10 -4.38->-0.35 rho=0.78 cad=172/170 duty=0.25/0.23 slowBad=0
+[25/66]  C28_3: 33 cặp, feature 1.5s gate=WARN frac_fb_valid<0.7 direct+slow P10 -1.90->-0.33 rho=0.90 cad=164/167 duty=0.30/0.25 slowBad=0
+[26/66]  C28_4: 32 cặp, feature 1.2s gate=WARN bg_residual_cao; frac_fb_valid<0.7 direct+slow P10 -3.46->-0.05 rho=0.92 cad=169/165 duty=0.31/0.29 slowBad=0
+[27/66]  C29: 302 cặp, feature 10.3s gate=WARN bg_residual_cao; frac_fb_valid<0.7 direct+slow P10 -1.58->-0.07 rho=0.86 cad=167/168 duty=0.27/0.18 slowBad=0
+[28/66]  C30: 252 cặp, feature 8.0s gate=PASS  direct P10 -0.76->-0.23 rho=0.91 cad=172/173 duty=0.32/0.32 slowBad=0
+[29/66]  C31: 146 cặp, feature 5.5s gate=PASS  direct P10 0.05->0.05 rho=0.79 cad=173/173 duty=0.51/0.59 slowBad=0
+[30/66]  C38_1: 57 cặp, feature 1.4s gate=PASS  direct P10 0.77->0.76 rho=0.95 cad=193/192 duty=0.28/0.24 slowBad=0
+[31/66]  C38_10: 172 cặp, feature 3.9s gate=PASS  direct+slow P10 -2.21->-0.01 rho=0.95 cad=197/198 duty=0.27/0.30 slowBad=0
+[32/66]  C38_2: 95 cặp, feature 2.0s gate=PASS  direct P10 -0.23->-0.24 rho=0.93 cad=187/188 duty=0.37/0.38 slowBad=0
+[33/66]  C38_3: 89 cặp, feature 1.9s gate=PASS  direct+slow P10 -3.28->0.02 rho=0.95 cad=194/196 duty=0.28/0.30 slowBad=14
+[34/66]  C38_4: 70 cặp, feature 1.6s gate=PASS  direct P10 0.05->0.05 rho=0.98 cad=191/192 duty=0.30/0.28 slowBad=0
+[35/66]  C38_5: 53 cặp, feature 1.2s gate=PASS  direct P10 -0.50->-0.16 rho=0.98 cad=188/186 duty=0.26/0.41 slowBad=0
+[36/66]  C38_6: 89 cặp, feature 2.0s gate=PASS  direct+slow P10 -1.77->0.01 rho=0.95 cad=189/189 duty=0.27/0.24 slowBad=0
+[37/66]  C38_7: 70 cặp, feature 1.8s gate=PASS  direct P10 0.27->0.27 rho=0.92 cad=190/191 duty=0.25/0.27 slowBad=0
+[38/66]  C38_8: 83 cặp, feature 1.6s gate=WARN spearman<0.7; frac_fb_valid<0.7 direct P10 -0.31->-0.32 rho=0.51 cad=190/188 duty=0.71/0.58 slowBad=0
+[39/66]  C38_9: 121 cặp, feature 3.3s gate=PASS  direct+slow P10 -1.95->-0.06 rho=0.98 cad=190/191 duty=0.24/0.25 slowBad=0
+[40/66]  F02: 483 cặp, feature 18.2s gate=PASS  direct P10 0.44->0.44 rho=0.94 cad=180/181 duty=0.41/0.48 slowBad=0
+[41/66]  F10_1: 115 cặp, feature 2.6s gate=PASS  direct P10 0.11->0.11 rho=0.77 cad=184/184 duty=0.35/0.47 slowBad=0
+[42/66]  F10_2: 110 cặp, feature 2.8s gate=PASS  direct P10 0.21->0.22 rho=0.92 cad=188/179 duty=0.28/0.31 slowBad=0
+[43/66]  F11: 255 cặp, feature 6.8s gate=PASS  direct P10 0.14->0.14 rho=0.83 cad=157/165 duty=0.49/0.47 slowBad=0
+[44/66]  F12: 74 cặp, feature 1.8s gate=PASS  direct P10 0.47->0.47 rho=0.94 cad=163/163 duty=0.27/0.37 slowBad=0
+[45/66]  F17: 195 cặp, feature 6.5s gate=PASS  direct P10 -0.91->-0.87 rho=0.91 cad=142/152 duty=0.26/0.45 slowBad=0
+[46/66]  F18: 97 cặp, feature 3.4s gate=PASS  direct P10 0.10->0.10 rho=0.87 cad=187/189 duty=0.44/0.37 slowBad=0
+[47/66]  F19: 117 cặp, feature 3.4s gate=PASS  direct+slow P10 -2.51->-0.01 rho=0.93 cad=143/150 duty=0.18/0.14 slowBad=0
+[48/66]  F20: 172 cặp, feature 4.6s gate=PASS  direct P10 -0.96->-0.95 rho=0.95 cad=117/127 duty=0.26/0.32 slowBad=0
+[49/66]  F21: 116 cặp, feature 3.4s gate=PASS  direct P10 -0.14->-0.14 rho=0.93 cad=118/145 duty=0.33/0.48 slowBad=0
+[50/66]  F22_1: 61 cặp, feature 2.1s gate=WARN bg_residual_cao; frac_fb_valid<0.7 direct+slow P10 -2.40->-0.07 rho=0.92 cad=171/168 duty=0.23/0.40 slowBad=0
+[51/66]  F22_2: 60 cặp, feature 2.3s gate=WARN bg_residual_cao; frac_fb_valid<0.7 direct+slow P10 -2.61->0.02 rho=0.93 cad=161/163 duty=0.39/0.25 slowBad=0
+[52/66]  F22_3: 59 cặp, feature 1.9s gate=WARN bg_residual_cao; frac_fb_valid<0.7 direct+slow P10 -3.88->-0.11 rho=0.92 cad=176/171 duty=0.17/0.13 slowBad=0
+[53/66]  F22_4: 59 cặp, feature 2.0s gate=WARN bg_residual_cao; frac_fb_valid<0.7 direct+slow P10 -3.15->0.03 rho=0.84 cad=176/170 duty=0.09/0.27 slowBad=0
+[54/66]  F23_1: 63 cặp, feature 1.9s gate=PASS  direct P10 -0.82->-0.88 rho=0.95 cad=168/170 duty=0.30/0.38 slowBad=0
+[55/66]  F23_2: 43 cặp, feature 1.2s gate=PASS  direct P10 -0.43->-0.45 rho=0.86 cad=196/202 duty=0.24/0.38 slowBad=0
+[56/66]  F23_3: 58 cặp, feature 1.8s gate=PASS  direct P10 -0.24->-0.25 rho=0.86 cad=161/160 duty=0.40/0.31 slowBad=0
+[57/66]  F24: 146 cặp, feature 5.8s gate=PASS  direct+slow P10 -3.66->-0.14 rho=0.98 cad=142/119 duty=0.27/0.31 slowBad=0
+[58/66]  F25: 99 cặp, feature 3.1s gate=PASS  direct P10 0.12->0.14 rho=0.94 cad=157/nan duty=0.26/0.31 slowBad=0
+[59/66]  F26: 132 cặp, feature 5.5s gate=PASS  direct P10 -0.15->-0.15 rho=0.89 cad=178/186 duty=0.47/0.31 slowBad=0
+[60/66]  F27: 121 cặp, feature 4.1s gate=PASS  direct P10 -0.20->-0.20 rho=0.95 cad=136/138 duty=0.37/0.23 slowBad=0
+[61/66]  F28_1: 33 cặp, feature 1.3s gate=WARN bg_residual_cao; frac_fb_valid<0.7 direct+slow P10 -2.04->-0.33 rho=0.94 cad=167/170 duty=0.32/0.41 slowBad=0
+[62/66]  F28_2: 31 cặp, feature 1.2s gate=WARN frac_fb_valid<0.7 direct+slow P10 -4.26->0.00 rho=0.90 cad=173/172 duty=0.27/0.37 slowBad=0
+[63/66]  F28_3: 32 cặp, feature 1.3s gate=WARN frac_fb_valid<0.7 direct+slow P10 -1.73->-0.06 rho=0.83 cad=165/166 duty=0.32/0.29 slowBad=0
+[64/66]  F28_4: 33 cặp, feature 1.2s gate=WARN frac_fb_valid<0.7 direct+slow P10 -3.31->-0.00 rho=0.89 cad=171/163 duty=0.23/0.35 slowBad=0
+[65/66]  F29: 71 cặp, feature 2.4s gate=PASS  direct P10 -0.32->-0.32 rho=0.91 cad=145/142 duty=0.47/0.48 slowBad=0
+[66/66]  F30: 83 cặp, feature 2.4s gate=PASS  direct P10 0.07->0.05 rho=0.91 cad=153/154 duty=0.40/0.40 slowBad=0
+Xong 66 video trong 261.8s
+
+Gate: {'PASS': 45, 'WARN': 18, 'FAIL': 3}

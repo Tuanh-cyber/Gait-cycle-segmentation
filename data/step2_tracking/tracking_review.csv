@@ -1,0 +1,67 @@
+﻿video_id,verdict,wrong_person_frames,notes
+C01,minor,none,"Shot 1 là cận cảnh chân (chỉ thấy hông→bàn chân): bbox đúng người nhưng bị cắt khung, keypoint thân trên không có — chỉ dùng shot 1 cho đặc trưng bàn chân"
+C04_1,ok,none,Đúng người ở cả 8 frame kiểm tra
+C04_2,ok,none,"Có tình nguyện viên/khán giả hai bên, không bị chọn nhầm"
+C04_3,ok,none,"Khán giả đông phía sau, track người chạy đúng; box_truncated do người chạm mép khung ở vài frame"
+C09_1,ok,none,Đúng người ở cả 8 frame kiểm tra
+C09_2,ok,none,Đúng người ở cả 8 frame kiểm tra
+C11,ok,none,"Camera bám rất sát, người lớn dần; track liên tục"
+C12,ok,none,"1 lần nối tracklet (đã xem ảnh flagged, đúng người)"
+C13_1,ok,none,Đúng người ở cả 8 frame kiểm tra
+C13_2,ok,none,Đúng người ở cả 8 frame kiểm tra
+C17,ok,none,Đúng người ở cả 8 frame kiểm tra
+C18,ok,none,Đúng người ở cả 8 frame kiểm tra
+C19,ok,none,Đúng người ở cả 8 frame kiểm tra
+C20,ok,none,Đúng người ở cả 8 frame kiểm tra
+C21,ok,none,Đúng người ở cả 8 frame kiểm tra
+C23_1,ok,none,Đúng người ở cả 8 frame kiểm tra
+C23_2,ok,none,Đúng người ở cả 8 frame kiểm tra
+C23_3,ok,none,Đúng người ở cả 8 frame kiểm tra
+C24,ok,none,Đúng người ở cả 8 frame kiểm tra
+C25,ok,none,Đúng người ở cả 8 frame kiểm tra
+C26,ok,none,Đúng người ở cả 8 frame kiểm tra
+C27,ok,none,Đúng người ở cả 8 frame kiểm tra
+C28_1,ok,none,Đúng người ở cả 8 frame kiểm tra
+C28_2,ok,none,Đúng người ở cả 8 frame kiểm tra
+C28_3,ok,none,Đúng người ở cả 8 frame kiểm tra
+C28_4,ok,none,Đúng người ở cả 8 frame kiểm tra
+C29,ok,none,Đúng người ở cả 8 frame kiểm tra
+C30,minor,none,"Góc chéo phía sau (thấy lưng) — tracking đúng, nhưng nguy cơ hoán đổi L/R của RTMPose cao ở Bước 3"
+C31,ok,none,"Góc chéo phía sau nhẹ, keypoint ổn"
+C38_1,ok,none,Đúng người ở cả 8 frame kiểm tra
+C38_10,ok,none,Đúng người ở cả 8 frame kiểm tra
+C38_2,ok,none,Đúng người ở cả 8 frame kiểm tra
+C38_3,ok,none,Đúng người ở cả 8 frame kiểm tra
+C38_4,ok,none,Đúng người ở cả 8 frame kiểm tra
+C38_5,ok,none,"1 lần nối tracklet, đúng người"
+C38_6,ok,none,Đúng người ở cả 8 frame kiểm tra
+C38_7,ok,none,Đúng người ở cả 8 frame kiểm tra
+C38_8,minor,none,Người chạy rất nhỏ (~15% chiều cao khung) và bị thân cây che ở vài frame; nối 3→11 đúng người (đã xem flagged); foot kp score thấp nhất dataset (0.63)
+C38_9,ok,none,Đúng người ở cả 8 frame kiểm tra
+F02,ok,none,Đúng người ở cả 8 frame kiểm tra
+F10_1,ok,none,Đông người: track đúng VĐV áo ba lỗ trắng/xanh giữa đường; khán giả lớn ở frame cuối (f117) không bị chọn
+F10_2,minor,none,"Đông người, selection_margin thấp (0.016) nhưng xem cả 8 frame đều đúng VĐV; cuối clip VĐV chạy xa dần, người nhỏ → foot kp kém tin cậy ở đoạn cuối"
+F11,ok,none,"Camera di chuyển mạnh, frame cuối cận cảnh; track đúng"
+F12,ok,none,Đúng người ở cả 8 frame kiểm tra
+F17,ok,none,Đúng người ở cả 8 frame kiểm tra
+F18,ok,none,Đúng người ở cả 8 frame kiểm tra
+F19,ok,none,Đúng người ở cả 8 frame kiểm tra
+F20,ok,none,Đúng người ở cả 8 frame kiểm tra
+F21,ok,none,Đúng người ở cả 8 frame kiểm tra
+F22_1,ok,none,Đúng người ở cả 8 frame kiểm tra
+F22_2,ok,none,Đúng người ở cả 8 frame kiểm tra
+F22_3,ok,none,Đúng người ở cả 8 frame kiểm tra
+F22_4,ok,none,Đúng người ở cả 8 frame kiểm tra
+F23_1,ok,none,Đúng người ở cả 8 frame kiểm tra
+F23_2,ok,none,Đúng người ở cả 8 frame kiểm tra
+F23_3,ok,none,Đúng người ở cả 8 frame kiểm tra
+F24,ok,none,Đúng người ở cả 8 frame kiểm tra
+F25,ok,none,Đúng người ở cả 8 frame kiểm tra
+F26,minor,none,"Tracking đúng; f81 RTMPose vẽ sai chân sau (kéo đầu gối/cổ chân sang chân trước) — lỗi pose, không phải tracking"
+F27,ok,none,Đúng người ở cả 8 frame kiểm tra
+F28_1,ok,none,Đúng người ở cả 8 frame kiểm tra
+F28_2,ok,none,Đúng người ở cả 8 frame kiểm tra
+F28_3,ok,none,box_truncated do người sát mép phải khung dọc
+F28_4,ok,none,Đúng người ở cả 8 frame kiểm tra
+F29,ok,none,"Bài tập vung tay biên độ lớn, keypoint cánh tay vẫn đúng"
+F30,minor,none,Góc chéo phía sau — nguy cơ L/R swap của RTMPose

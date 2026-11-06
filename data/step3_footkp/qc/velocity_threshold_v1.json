@@ -1,0 +1,10 @@
+{
+ "percentile": 99.5,
+ "M_ref_L_per_s": 4.724,
+ "thr_norm_L_per_s": 27.6,
+ "literal_all_L_per_s": 41.76,
+ "literal_k_cao_L_per_s": 16.37,
+ "literal_k_khac_L_per_s": 55.44,
+ "n_values": 66398,
+ "config": "ff43930e2e"
+}
