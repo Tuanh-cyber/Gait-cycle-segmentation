@@ -1,0 +1,4 @@
+video_id,foot_slot,slot_name,selection,initial_label,tracker_bypassed
+C13_1,0,A,initial_near_slot_fixed,near,True
+C38_8,1,B,initial_near_slot_fixed,near,True
+F10_2,0,A,initial_near_slot_fixed,near,True

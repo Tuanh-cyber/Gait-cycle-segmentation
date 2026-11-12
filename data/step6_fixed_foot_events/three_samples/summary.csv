@@ -1,0 +1,4 @@
+video_id,foot_slot,n_observations,n_input_valid,foot_selection,abs_time_ok,frechet_IC,frechet_TO,frechet_UNKNOWN,frechet_phase_coverage,hsmm_IC,hsmm_TO,hsmm_UNKNOWN,hsmm_phase_coverage
+C13_1,0,662,516,initial_near_slot_fixed,True,7,12,7,0.7673716012084593,18,16,4,0.7719033232628398
+C38_8,1,84,43,initial_near_slot_fixed,True,0,0,1,0.38095238095238093,0,0,2,0.4642857142857143
+F10_2,0,113,67,initial_near_slot_fixed,False,3,1,2,0.5929203539823009,3,2,0,0.5663716814159292

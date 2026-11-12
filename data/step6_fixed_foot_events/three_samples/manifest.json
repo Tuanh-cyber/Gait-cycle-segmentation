@@ -1,0 +1,138 @@
+{
+  "provenance": {
+    "config": {
+      "seed": 20261112,
+      "classes": 2,
+      "rff": 12,
+      "sweeps": 3,
+      "bootstrap": 99,
+      "cpd_alpha": 0.05,
+      "cpd_window_s": 0.6,
+      "min_duration_s": 0.08,
+      "max_duration_s": 0.75,
+      "phase_switch_penalty": 0.0,
+      "cpd_bootstrap_block_length": 1
+    },
+    "code_hashes": {
+      "event_data.py": "1240461659fd8ef7eab4d62c9d3bac200216a5480b0cdceeb90db124a9cee5eb",
+      "export_videos.py": "37654204d900c54f76faaaf7962033f7d1f943215fcbca7dc9fdbf535db91a75",
+      "frechet_cpd.py": "acd3cec2e9906bf25980d4814437007727b567934543c28f5935e25fa4551b5c",
+      "mask_overlay.py": "53b8330530c39da8b088807ca87468119506a7432ad9871b91276f72f8cd114f",
+      "render_events.py": "55f08e179fa48599920d8247fc89323901915383941123a04cd4bcebe3035a8b",
+      "rff_hsmm.py": "10f441abe11c1d3ff8e9d4efbed23ee1a0dad204931adc2306443afd1b959dbd",
+      "run_events.py": "e27ef0c81e353b404b85a6086bccb4e0309ed992179a2453cdf5a5339e432b8a"
+    },
+    "inputs": {
+      "C13_1": {
+        "flow": {
+          "path": "data\\step5_flow\\features\\C13_1.npz",
+          "sha256": "b824695f43f08fce353cb7f6a3aa5d563f81f8918af63e8c8c838e5979569859"
+        },
+        "source": {
+          "path": "data\\Correct\\C13_1.mp4",
+          "sha256": "11a0b5efbce08af3b91303c100f1948a10e04c5221ead5b83a232a6881d02b7f"
+        },
+        "audit": {
+          "path": "data\\step0_audit\\frames\\C13_1_frames.csv",
+          "sha256": "337b34a5793afec8a57dc86fbe28897f96770cd42e7ee5c06dd944d4b68c37d8"
+        },
+        "display_pose": {
+          "path": "data\\step3_footkp\\footkp\\C13_1_footkp.npz",
+          "sha256": "09d352702dfc61d36725098802db26183aa18edab822a3f6d464cfff8fb3b1d2"
+        },
+        "display_mask": {
+          "path": "data\\step4_footmask\\masks_post\\C13_1.npz",
+          "sha256": "eff5bafb15d4a030de0b0cab818c35a6bc4a055a46625db537eb3ec042cac3e6"
+        }
+      },
+      "C38_8": {
+        "flow": {
+          "path": "data\\step5_flow\\features\\C38_8.npz",
+          "sha256": "c49eeda9eb09e58c3934c687b5eca8895ff25cb1dfce2c381083079c65d45873"
+        },
+        "source": {
+          "path": "data\\Correct\\C38_8.mp4",
+          "sha256": "828de599c7a9ac19104ada8696443a77e9dc9e9ad2f050048f33aec63ba0bf8b"
+        },
+        "audit": {
+          "path": "data\\step0_audit\\frames\\C38_8_frames.csv",
+          "sha256": "612a474ef73c778b500d099f5c83479f316a6334a646b5767374cffd7ccbda51"
+        },
+        "display_pose": {
+          "path": "data\\step3_footkp\\footkp\\C38_8_footkp.npz",
+          "sha256": "e8b1a778d616ae21302e858e24f31c1e04098a20cda3b5159771fc5f03e8a254"
+        },
+        "display_mask": {
+          "path": "data\\step4_footmask\\masks_post\\C38_8.npz",
+          "sha256": "6fee6ba52ace4e4e9f1d3767504bff87f9acf1cc096b0158802d61fb22cbfb0c"
+        }
+      },
+      "F10_2": {
+        "flow": {
+          "path": "data\\step5_flow\\features\\F10_2.npz",
+          "sha256": "65cb92b92ec1900fb611686569a530c62c1c6a644e37c42b1db298a06a3c7dda"
+        },
+        "source": {
+          "path": "data\\False\\F10_2.mp4",
+          "sha256": "c6c1d03a72aa3ad37a2dd50e0fe1bfdddf01f39a18ccf6168a378ae7969658b5"
+        },
+        "audit": {
+          "path": "data\\step0_audit\\frames\\F10_2_frames.csv",
+          "sha256": "130be5f8f2c4357fce61b0c36b5ddd99cf6e73a659b6135d944ec02769c1cf46"
+        },
+        "display_pose": {
+          "path": "data\\step3_footkp\\footkp\\F10_2_footkp.npz",
+          "sha256": "f41c12b58cc90e55ac7d4899d72f0cfe4a277f246d026877f7d04a762d242bfe"
+        },
+        "display_mask": {
+          "path": "data\\step4_footmask\\masks_post\\F10_2.npz",
+          "sha256": "a9c8935b7b29efbc4c9d051f3765f485ba654c4db3938d26c4a12566cd984a90"
+        }
+      }
+    },
+    "foot_slots": {
+      "C13_1": 0,
+      "C38_8": 1,
+      "F10_2": 0
+    },
+    "frozen_model": {
+      "path": "C:\\Users\\Dell\\Desktop\\Gait-cycle-segmentation\\data\\step6_fixed_foot_events\\_trial_two",
+      "model_sha256": "8feaffcce3f70f3edd0a5f0b11a1a257b2bd7aa71b8d74cd8b60b1d70139d460",
+      "manifest_sha256": "f25977dd1b5d945f24e88b536069e2f8a70b5bfe024d576cd7668217638ec3e5",
+      "training_videos": [
+        "C30",
+        "F29",
+        "F02",
+        "C38_9"
+      ],
+      "refit": false
+    }
+  },
+  "tracker_bypassed": true,
+  "input_source": "original Step5 V1, fixed slot per video",
+  "n_videos": 3,
+  "videos_rendered": true,
+  "training_trace": [],
+  "hsmm_class_phase": [
+    1,
+    0
+  ],
+  "hsmm_class_slow_means": [
+    0.8235766388893384,
+    0.19392203684943188
+  ],
+  "ground_truth_available": false,
+  "frozen_model": {
+    "path": "C:\\Users\\Dell\\Desktop\\Gait-cycle-segmentation\\data\\step6_fixed_foot_events\\_trial_two",
+    "model_sha256": "8feaffcce3f70f3edd0a5f0b11a1a257b2bd7aa71b8d74cd8b60b1d70139d460",
+    "manifest_sha256": "f25977dd1b5d945f24e88b536069e2f8a70b5bfe024d576cd7668217638ec3e5",
+    "training_videos": [
+      "C30",
+      "F29",
+      "F02",
+      "C38_9"
+    ],
+    "refit": false
+  },
+  "phase_mapping": "max regional slow ratio -> unsupervised low/high contact regimes; heuristic biological semantics"
+}

@@ -1,0 +1,4 @@
+video_id,method,foot_slot,source_index,frame,t_real_s,source_pts_s,type,phase_before,phase_after,reason,slow_before,slow_after,strong_contact_evidence,boundary_evidence,abs_time_ok,candidate,posterior_IC,posterior_TO
+C38_8,frechet,1,26,26,0.86667,0.866667,UNKNOWN,SWING,UNKNOWN,ambiguous_phase,0.16952304542064667,0.5103668263182044,False,0.02,True,True,,
+C38_8,hsmm,1,2,2,0.06667,0.066667,UNKNOWN,SWING,SWING,within_phase,1.0,0.4685734063386917,False,0.3998762642123799,True,True,1.1060692005960983e-07,0.0026301691639310136
+C38_8,hsmm,1,73,73,2.43333,2.433333,UNKNOWN,SWING,SWING,within_phase,0.7205714285373688,1.0,False,0.38137257944596364,True,True,0.025306997554377562,9.575144210536626e-07
