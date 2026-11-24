@@ -1,0 +1,7 @@
+trial,slot,side,expected_near_side,selection,near_confidence,fit_observations
+1,0,left,left,initial_near_slot_fixed,1.0,138
+2,1,right,right,initial_near_slot_fixed,0.9940000176429749,127
+3,0,left,left,initial_near_slot_fixed,1.0,135
+4,1,right,right,initial_near_slot_fixed,0.9940000176429749,115
+5,0,left,left,initial_near_slot_fixed,0.9760000109672546,114
+6,1,right,right,initial_near_slot_fixed,1.0,144

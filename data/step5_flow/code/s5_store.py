@@ -17,7 +17,7 @@ ROUND = 16              # làm tròn flow về 1/16 px trước khi nén
 
 
 def flow_hash():
-    keys = ("MODEL", "ITERS", "BOX_PAD", "BOX_PAD_BOTTOM", "MIN_L_FOOT", "MAX_EDGE", "MAX_EDGE_HARD", "FB_ABS", "FB_REL")
+    keys = ("MODEL", "ITERS", "MIN_GMA_INPUT", "BOX_PAD", "BOX_PAD_BOTTOM", "MIN_L_FOOT", "MAX_EDGE", "MAX_EDGE_HARD", "FB_ABS", "FB_REL")
     d = [(k, repr(getattr(C, k))) for k in keys] + [("store", repr((STORE_PAD_X, STORE_ABOVE, STORE_BELOW, ROUND)))]
     return hashlib.sha1(repr(d).encode()).hexdigest()[:10]
 

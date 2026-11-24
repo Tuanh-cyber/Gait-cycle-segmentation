@@ -1,128 +1,41 @@
-# Running gait – Gait cycle segmentation từ video RGB một camera
+# Gait cycle segmentation — IC/TO từ optical flow một chân cố định
 
-Phân loại kỹ thuật chạy **CORRECT / INCORRECT** từ video mạng xã hội (TikTok, YouTube, Instagram). Repo này chứa pipeline tách chu kỳ dáng chạy dựa trên optical flow theo vùng bàn chân, theo phương pháp FOOF của Ceriola et al. (2026).
+Step 6 dùng RFF-GP-HSMM bốn pha tuần hoàn **IC → Flat → TO → Swing**. Hai nhánh Embedding **96 và 192 chiều** dùng chung foot mask và pixel flow của một chân được chọn đầu mỗi lượt. Kết quả gồm khoảng pha, khoảng frame chứa mốc IC/TO theo posterior và video đối chứng nếu có nhãn CSV.
 
-> **Trạng thái (06/11/2026):** Bước 0–5 đã hoàn tất và đã review. **Bước 6 (mô hình thống kê phát hiện IC/TO và cắt chu kỳ) chưa làm.** Đặc tả ở [`docs/STEP6_SPEC.md`](docs/STEP6_SPEC.md).
+## Pipeline
 
-**Đọc trước:** [`reports/Bao_cao_day_du_Buoc0-5.md`](reports/Bao_cao_day_du_Buoc0-5.md). Báo cáo ghi toàn bộ phương pháp, quyết định, kết quả và hạn chế của Bước 0–5. Mỗi thư mục `data/stepN_*/` cũng có `README.md` riêng với định nghĩa từng cột và khoá.
+| Bước | Vai trò | Mã nguồn |
+|---|---|---|
+| 0–1 | Audit, shot/continuity, thời gian slow-motion | `data/step0_audit`, `data/step1_wu` |
+| 2–3 | Tracking người, keypoint và chọn slot chân | `data/step2_tracking`, `data/step3_footkp` |
+| 4 | Foot mask theo vùng heel/mid/toe | `data/step4_footmask` |
+| 5 | Dense optical flow GMA và bù chuyển động camera | `data/step5_flow` |
+| 6 | Embedding, HSMM bốn pha và khoảng IC/TO | `data/step6_fixed_foot_events/code` |
 
----
+## Chạy trên video Overground
 
-## 1. Pipeline
+Từ thư mục gốc, với Python 3.11 và FFmpeg/ffprobe trên PATH. Chuẩn bị model cho Bước 2–5 theo hướng dẫn bên dưới. Runner Overground đọc checkpoint ở `.third_party/yolo11m.pt`, `.third_party/sam2.1_hiera_base_plus.pt` và `.third_party/GMA`.
 
-| Module | Bước | Làm gì | Output chính | Trạng thái |
-|---|---|---|---|---|
-| Video speed processing | 0 | Audit: VFR, frame trùng, freeze, cắt cảnh, camera, hướng chạy, mirror | `data/step0_audit/` | ✅ |
-| | 1, 1b | Trục thời gian thật: slow-mo (Wu et al. + cadence), speed ramp | `t_real_s_v2` trong `data/step0_audit/frames/` | ✅ |
-| Subject tracking | 2 | YOLO11m + BoT-SORT + RTMPose Halpe26 theo người chạy | `data/step2_tracking/` | ✅ |
-| Persistent foot region tracking | 3 | Sửa hoán nhãn L/R (Viterbi), chân gần/xa, làm sạch keypoint bàn chân | `data/step3_footkp/` | ✅ |
-| | 4 | SAM2.1 mask từng bàn chân, trạng thái che khuất, vùng gót/giữa/mũi, cờ hợp lệ | `data/step4_footmask/masks_post/` | ✅ |
-| Optical flow | 5 | GMA + bù camera trên dải đất + feature tốc độ theo vùng | `data/step5_flow/features/` | ✅ |
-| **Statistical gait event model** | **6** | **IC/TO bằng FOOF-rule, Zeni, HSMM hai chân; cắt chu kỳ** | `data/step6_events/` | ⏳ **Chưa làm** |
-| Validation | 7 | Ground truth (đề xuất: video 240 fps tự quay) | | ⏳ |
-
-Dataset: **66 video**, gồm 39 CORRECT (`data/Correct/`) và 27 INCORRECT (`data/False/`), tổng 8.407 frame unique dùng được.
-
----
-
-## 2. Cấu trúc repo
-
-```
-README.md                    ← file này
-docs/STEP6_SPEC.md           ← đặc tả Bước 6 cho người làm tiếp
-reports/                     ← báo cáo kỹ thuật (đọc Bao_cao_day_du_Buoc0-5.md)
-requirements-step6.txt       ← tối thiểu để làm Bước 6
-requirements-{gait,speed,track}.txt  ← môi trường đầy đủ để chạy lại Bước 0–5
-scripts/                     ← script xác định hướng chạy (Bước 0, phần A)
-data/
-  Correct/, False/           ← video gốc
-  step0_audit/               ← metadata, trục thời gian từng frame
-  step1_wu/                  ← Wu et al., cadence, speed parts, ramp
-  keypoints/                 ← RTMPose toàn frame (Bước 1)
-  step2_tracking/            ← bbox người chạy, keypoint theo bbox
-  step3_footkp/              ← keypoint bàn chân đã sửa và làm sạch
-  step4_footmask/            ← mask bàn chân (masks_post/ là bản dùng)
-  step5_flow/                ← feature optical flow (features/ là bản dùng)
-biomech_signals.py           ← hàm tín hiệu sinh cơ học (từ dự án trước)
+```powershell
+py -3.11 -m pip install -r requirements-step6.txt
+$dataset = 'D:/Datasets/Gait/Overground'
+$avi = "$dataset/Overground_Walk/BD004/Session1/Walk_Slow/Video/Walk_Slow.avi"
+$gt = "$dataset/overground_ic_to_timestamps.csv"
+$work = 'outputs/reproduction/BD004/Walk_Slow_work'
+$out = 'outputs/reproduction/BD004/Walk_Slow'
+py -3.11 scripts/evaluate_overground.py --source $avi --out $work --subject BD004 --stages prepare track keypoints trim masks mask_qc flow
+py -3.11 scripts/evaluate_cyclic_overground.py --source $avi --input $work --out $out --ground-truth $gt
+py -3.11 scripts/render_overground_review.py --source $avi --evaluation $out --masks "$work/data/step4_footmask/masks_post" --ground-truth $gt --intervals --out "$out/BD004_Walk_Slow_four_phase_review.mp4"
 ```
 
-Mỗi `data/stepN_*/` có `README.md`, thư mục `code/`, file `qc_*.csv` và thư mục `review/` hoặc `plots/`.
+Dùng `--device cpu` ở lệnh tiền xử lý nếu cần. Khi chỉ review các lượt Walk Fast có nhãn BD004, dùng `--max-passages 8` ở bước chuẩn bị. Step 6 dùng cache flow đã tạo ở Bước 5. Ground truth được đọc ở bước đánh giá và dựng video.
+
+Xem [module Step 6](data/step6_fixed_foot_events/code/README.md) và [đặc tả đầu ra](docs/STEP6_SPEC.md).
 
 ---
-
-## 3. Bắt đầu nhanh cho người làm Bước 6
-
-```bash
-git clone https://github.com/Tuanh-cyber/Gait-cycle-segmentation.git
-cd Gait-cycle-segmentation
-python3.11 -m venv .venv-step6 && source .venv-step6/bin/activate
-pip install -r requirements-step6.txt
-```
-
-Bước 6 **không cần GPU, không cần trọng số model, không cần chạy lại Bước 0–5.** Mọi input đã có sẵn trong repo.
-
-### 3.1 Input cho Bước 6
-
-| File | Dùng để |
-|---|---|
-| `data/step5_flow/features/<vid>.npz` | **Tín hiệu chính:** tốc độ và `slow_ratio` theo frame × chân × vùng (biến thể V1) |
-| `data/step5_flow/qc_flow.csv` | Gate và chất lượng flow theo video |
-| `data/step4_footmask/masks_post/<vid>.npz` | Mask, vùng, trạng thái che khuất, `frame_valid_mask` (đã được chép sang features) |
-| `data/step3_footkp/footkp/<vid>_footkp.npz` | `kp_clean` (cho phương pháp Zeni), `L_leg`, `near_track` |
-| `data/step0_audit/frames/<vid>_frames.csv` | `t_real_s_v2`, `continuity_id`, `speed_part_id` |
-| `data/step0_audit/step0_metadata.csv` | `label`, `s_final`, `abs_time_ok`, `cadence_real_spm_v2` |
-| `data/step3_footkp/time_feature_flags.csv` | Đoạn loại khỏi feature thời gian (C20 part 1) |
-
-### 3.2 Đọc feature
-
-```python
-import numpy as np, pandas as pd
-
-vid = "C30"
-F = np.load(f"data/step5_flow/features/{vid}.npz", allow_pickle=True)
-
-t      = F["t_real_s_v2"]          # (N,)  thời gian thật, giây  ← trục thời gian chuẩn
-block  = F["continuity_id"]        # (N,)  không cho chu kỳ vắt qua 2 khối
-part   = F["speed_part_id"]        # (N,)  không cho chu kỳ vắt qua 2 phần tốc độ
-label  = F["label"]                # (N, 2) "near"/"far" hoặc "A"/"B" cho slot 0/1
-slow   = F["slow_ratio"]           # (N, 2, 4) tỉ lệ pixel v < 2,0 L_leg/s; vùng 0 gót, 1 giữa, 2 mũi, 3 cả bàn chân
-v_med  = F["v_med"]                # (N, 2, 4) tốc độ trung vị, L_leg/s
-valid  = F["frame_valid_mask"] & F["flow_valid"][:, None]   # (N, 2) chỉ dùng khi True; NaN ở chỗ không hợp lệ
-kp_v   = F["kp_speed"]             # (N, 2) tốc độ keypoint bàn chân sau bù camera (đối chiếu)
-
-meta = pd.read_csv("data/step0_audit/step0_metadata.csv")   # label: CORRECT / INCORRECT
-```
-
-Danh sách đầy đủ các khoá nằm ở [`data/step5_flow/README.md`](data/step5_flow/README.md). Hàm giải mã mask (RLE) nằm ở [`data/step4_footmask/README.md`](data/step4_footmask/README.md).
-
-### 3.3 Quy tắc dùng dữ liệu (bắt buộc)
-
-| Quy tắc | Lý do |
-|---|---|
-| Thời gian luôn lấy theo `t_real_s_v2`, không dùng frame index hay `pts_s` | Video có slow-mo, speed ramp, VFR, freeze |
-| Chỉ dùng chỗ có `frame_valid_mask` và `flow_valid` = True; frame không hợp lệ là **không có quan sát**, không phải swing | Chân bị che, mask sai, lỗi bù camera |
-| Chu kỳ phải nằm trọn trong **một `continuity_id` và một `speed_part_id`** | Không có liên tục thời gian qua cắt cảnh hoặc đổi tốc độ |
-| **Slot 0/1 là chân A/B, không phải trái/phải giải phẫu.** Ngữ nghĩa nằm ở `label` (near/far) | 12 video không xác định được mirror |
-| Feature thời gian tuyệt đối (GCT, cadence, flight) chỉ dùng khi `abs_time_ok` = True và `exclude_time_features` = False | 27/66 video không có mốc real-time chắc chắn |
-| Bỏ frame có `view_lateral` = False | F10_2 f1052–1078 quay lưng |
-| **Không dùng nhãn CORRECT/INCORRECT khi fit hay chọn tham số** | Tránh rò rỉ nhãn vào feature |
-| Không sửa output của `data/step0`–`step5`; ghi kết quả mới vào `data/step6_events/` | Các output này đã được review |
-
-### 3.4 Video cần chú ý
-
-- **Bước 5 FAIL** (tương quan flow–keypoint < 0,4): C04_3, C04_2, C09_2.
-- **Bước 4 major:** C04_3, C38_8, C27. Mask kém; C04_3 và C27 không có nhãn near/far.
-- **Không đo được mặt đất** (toàn bộ bù camera dựa vào spline chậm): C28_2, F28_2, F28_4.
-- **Video rất ngắn**, khoảng 2 sải: bộ C28, F28, C38_1, C38_5.
-- **C09_1, C09_2:** hệ số slow-mo 1/8 với độ tin cậy thấp, nên thời lượng tuyệt đối không tin được.
-
-Trạng thái từng video qua các bước: Phụ lục A của báo cáo.
-
----
-
 ## 4. Chạy lại Bước 0–5: cài model và repo bên ngoài
 
-Repo **không chứa** môi trường Python, trọng số model, repo bên ngoài và hai thư mục trung gian lớn (xem `.gitignore`). **Làm Bước 6 thì không cần phần này.** Chỉ làm khi muốn chạy lại hoặc sửa Bước 0–5. Mọi lệnh dưới đây chạy từ **thư mục gốc repo**.
+Repo **không chứa** môi trường Python, trọng số model, repo bên ngoài và các thư mục trung gian lớn (xem `.gitignore`). Step6 dùng các cache Bước 0–5 và cần GMA khi tái tạo flow_store. Mọi lệnh dưới đây chạy từ **thư mục gốc repo**.
 
 ### 4.1 Môi trường (Python 3.11)
 

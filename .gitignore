@@ -33,6 +33,12 @@ data/step1_wu/clips/
 data/step5_flow/flow_store/
 data/step5_flow/flow_debug/
 data/step5_flow/_trial/
+data/step5_single_foot/_trial*/
+data/step5_single_foot/**/*.tmp.npz
+data/step6_fixed_foot_events/_trial*/
+data/step6_fixed_foot_events/_samples_work/
+data/step6_fixed_foot_events/hsmm_input_comparison/
+data/step6_fixed_foot_events/**/pixel_clouds.npz
 data/step4_footmask/_tmp/
 data/step4_footmask/_post_trial/
 data/step4_footmask/_post_trial_qc/

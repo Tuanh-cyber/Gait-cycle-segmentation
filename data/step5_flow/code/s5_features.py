@@ -54,13 +54,16 @@ def stats(Px, n, dt, ok, use_fb):
                 continue
             vx, vy = p["dx"] / dt[a], p["dy"] / dt[a]
             sp = np.hypot(vx, vy)
+            finite = np.isfinite(sp)
             for r in range(4):
                 base = np.ones(len(sp), bool) if r == 3 else p["reg"] == r
                 if not base.any():
                     continue
                 if not use_fb:
                     F["frac_fb_valid"][a, o, r] = p["fb"][base].mean()
-                sel = base & p["fb"] if use_fb else base
+                sel = base & finite
+                if use_fb:
+                    sel &= p["fb"]
                 k = int(sel.sum())
                 F["n_pixels"][a, o, r] = k
                 if k < C.MIN_PIXELS:

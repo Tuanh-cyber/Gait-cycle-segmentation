@@ -21,6 +21,7 @@ import s4_report as S4R     # noqa: E402  chỉ đọc
 
 MODEL = "gma-sintel"
 ITERS = 12
+MIN_GMA_INPUT = 128  # 1/8 encoder, four correlation levels, at least 2 cells at the coarsest level
 
 # crop
 BOX_PAD = 0.25              # × chiều cao bbox, 2 bên

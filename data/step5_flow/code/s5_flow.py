@@ -34,7 +34,8 @@ def to_tensor(img, device):
 def flow_pair(model, a, b, device):
     """a, b: BGR cùng kích thước. Trả về flow forward, backward (H×W×2, float32)."""
     h, w = a.shape[:2]
-    pad_h, pad_w = (8 - h % 8) % 8, (8 - w % 8) % 8
+    pad_h = max((-h) % 8, C.MIN_GMA_INPUT - h)
+    pad_w = max((-w) % 8, C.MIN_GMA_INPUT - w)
     x = F.pad(to_tensor(a, device)[None], (0, pad_w, 0, pad_h), mode="replicate")
     y = F.pad(to_tensor(b, device)[None], (0, pad_w, 0, pad_h), mode="replicate")
     _, f = model(torch.cat([x, y]), torch.cat([y, x]), iters=C.ITERS, test_mode=True)

@@ -1,0 +1,38 @@
+{
+  "durations_s": {
+    "IC": [
+      0.06,
+      0.13,
+      0.27
+    ],
+    "Flat": [
+      0.28,
+      0.7,
+      1.12
+    ],
+    "TO": [
+      0.06,
+      0.16,
+      0.3
+    ],
+    "Swing": [
+      0.36,
+      0.57,
+      0.92
+    ]
+  },
+  "duration_order": [
+    "min",
+    "median",
+    "max"
+  ],
+  "interval_level": 0.9,
+  "boundary_definition": {
+    "IC": "Swing -> IC",
+    "TO": "TO -> Swing"
+  },
+  "training": "flow only; ground truth used for scoring",
+  "interval_calibrated": false,
+  "seconds_per_effective_observation": 0.1,
+  "max_iterations": 4
+}

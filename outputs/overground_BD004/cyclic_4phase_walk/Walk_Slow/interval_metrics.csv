@@ -1,0 +1,5 @@
+branch,event,contained,predicted,references,precision,recall,median_width_frames
+embedding96,IC,0,21,30,0.0,0.0,7.0
+embedding96,TO,0,26,30,0.0,0.0,6.0
+embedding192,IC,0,19,30,0.0,0.0,7.0
+embedding192,TO,1,26,30,0.038461538461538464,0.03333333333333333,6.5

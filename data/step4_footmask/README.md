@@ -17,7 +17,6 @@ Chạy từ `ROOT/data`, dùng `.venv-track`:
 ../.venv-track/bin/python step4_footmask/code/s4_validate.py                   # kiểm tra masks/, sai thì thoát mã 1
 ../.venv-track/bin/python step4_footmask/code/s4_postprocess.py                # hậu kỳ cả 66 video, vẽ lại ảnh, kiểm tra; không chạy SAM2
 ../.venv-track/bin/python step4_footmask/code/s4_postprocess.py --check        # chỉ kiểm tra masks_post/ và qc_footmask.csv
-../.venv-track/bin/python step4_footmask/code/regen_review.py                  # vẽ lại ảnh WARN/FAIL từ masks_post/
 ```
 
 Một video được coi là xong SAM2 khi đủ output và có config hash trùng với hằng số trong `code/s4_common.py`. Đổi bất kỳ hằng số nào trong file đó thì mọi video sẽ chạy lại SAM2; vì vậy hằng số hậu kỳ nằm trong `s4_postprocess.py`. **`run_step4.py` ghi đè `qc_footmask.csv` bằng bảng gốc của SAM2 và vẽ lại ảnh từ `masks/`,** nên sau khi chạy nó phải chạy lại `s4_postprocess.py`.
@@ -285,6 +284,5 @@ Hai video nằm sát ngưỡng: F22_4 có `reprompt_per100` đúng 20,00 (WARN) 
 | `code/s4_report.py` | Gate, ảnh review |
 | `code/s4_postprocess.py` | Ankle clip, gate mới, `frame_valid_mask`, sửa nhãn F10_2, cờ thời gian, kiểm tra |
 | `code/s4_validate.py` | Kiểm tra `masks/` |
-| `code/regen_review.py` | Vẽ lại ảnh review từ `masks_post/` |
 
 `footkp.npz` của Bước 3 lưu `time_model` dạng object nên phải đọc với `allow_pickle=True`; `load_clip` đã xử lý việc này.

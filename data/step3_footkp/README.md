@@ -14,7 +14,6 @@ Chạy từ `ROOT/data`, dùng `.venv-track` (đã có rtmlib, numpy, matplotlib
 ../.venv-track/bin/python step3_footkp/code/run_step3.py --force            # làm lại
 ../.venv-track/bin/python step3_footkp/code/run_step3.py --pose-device cpu
 ../.venv-track/bin/python step3_footkp/code/s3_validate.py                  # kiểm tra toàn bộ output, mã thoát 1 nếu lỗi
-../.venv-track/bin/python step3_footkp/code/s3_inject.py                    # đo độ nhạy Viterbi bằng swap tiêm vào
 ```
 
 Đổi hằng số trong `code/s3_common.py` thì mã cấu hình đổi theo: output cũ tự chạy lại, validator báo lỗi nếu còn sót. Ngưỡng vận tốc luôn tính trên cả 66 video, kể cả khi dùng `--videos`. Cả 66 video mất khoảng 45 s.

@@ -3,7 +3,18 @@ import cv2
 import numpy as np
 
 REGION_COLORS = [(190, 55, 215), (20, 185, 245), (225, 210, 35)]  # BGR
-REGION_NAMES = ["heel", "mid", "toe"]
+
+
+def fit_image(image, width, height):
+    """Resize to fit the panel without changing the source aspect ratio."""
+    canvas = np.full((height, width, 3), 22, np.uint8)
+    ratio = min(width / image.shape[1], height / image.shape[0])
+    resized = cv2.resize(image, (max(1, round(image.shape[1] * ratio)),
+                                 max(1, round(image.shape[0] * ratio))))
+    x = (width - resized.shape[1]) // 2
+    y = (height - resized.shape[0]) // 2
+    canvas[y:y + resized.shape[0], x:x + resized.shape[1]] = resized
+    return canvas
 
 
 def foreground_bounds(runs, width, height):
