@@ -70,11 +70,13 @@ def pose_video(v, pose):
             K[j], S[j] = pose(img, box)    # không bao giờ gọi với bbox rỗng: rtmlib sẽ tự lấy cả ảnh
         i += 1
     cap.release()
+    track_status = rr.track_status.to_numpy(dtype="U12")
     atomic_npz(DIRS["keypoints_v2"] / f"{v.vid}_kp.npz",
-               frame=use.frame.values, pts_s=use.pts_s.values, shot_id=use.shot_id.values, kp=K, score=S, bbox=B,
-               det=(rr.track_status.values == "tracked"), W=W, H=H, n_read=i, n_meta=v.n_frames,
-               track_status=rr.track_status.values.astype("U12"),
-               continuity_id=use.continuity_id.values.astype(np.int64), t_real_s=use.t_real_s.values)
+               frame=use.frame.to_numpy(dtype=np.int64), pts_s=use.pts_s.to_numpy(dtype=float),
+               shot_id=use.shot_id.to_numpy(dtype=np.int64), kp=K, score=S, bbox=B,
+               det=(track_status == "tracked"), W=W, H=H, n_read=i, n_meta=v.n_frames,
+               track_status=track_status,
+               continuity_id=use.continuity_id.to_numpy(dtype=np.int64), t_real_s=use.t_real_s.to_numpy(dtype=float))
     dt = time.time() - t0
     update_timing(v.vid, pose_s=round(dt, 2), pose_device=pose.device, n_pose=len(want))
     print(f"  pose   {v.vid}: {len(want)}/{N} frame, {dt:.1f}s", flush=True)

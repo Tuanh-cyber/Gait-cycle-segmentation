@@ -1,0 +1,42 @@
+branch,trial,side,phase,map_start_frame,map_end_frame,start_p05_frame,end_p95_frame,anchor_probability,left_censored,right_censored,inferred_gaps
+pixel_set,1,left,IC,198,201,198,201,0.9999999999772979,True,False,[]
+pixel_set,1,left,TO,221,221,218,221,0.8131826999341162,False,False,"[[218, 218]]"
+pixel_set,1,left,IC,240,242,240,243,0.9999999990937739,False,False,[]
+pixel_set,1,left,TO,261,263,261,263,0.9329122081474281,False,False,[]
+pixel_set,1,left,IC,277,277,277,279,0.6131161459940513,False,False,"[[277, 279]]"
+pixel_set,1,left,TO,280,284,280,284,0.9999999959133569,False,False,"[[280, 280]]"
+pixel_set,2,right,TO,579,580,579,580,0.9999613508847717,True,False,[]
+pixel_set,2,right,IC,582,586,582,586,0.9999999999999549,False,False,[]
+pixel_set,2,right,TO,601,601,598,603,0.9998975758860978,False,False,[]
+pixel_set,2,right,IC,623,627,623,627,0.9999999999999385,False,False,[]
+pixel_set,2,right,TO,646,647,646,648,0.7523307862749941,False,False,[]
+pixel_set,3,left,TO,971,971,969,971,0.9984601330854562,False,False,"[[969, 969]]"
+pixel_set,3,left,IC,990,994,990,994,1.0,False,False,[]
+pixel_set,3,left,TO,1002,1006,1002,1006,0.9999977274264332,False,False,[]
+pixel_set,4,right,TO,1346,1348,1346,1348,0.999997623690344,True,False,[]
+pixel_set,4,right,IC,1350,1354,1350,1354,1.0,False,False,[]
+pixel_set,4,right,TO,1362,1374,1361,1374,0.9999999754204159,False,False,[]
+pixel_set,4,right,IC,1395,1397,1394,1397,0.9999999612236646,False,False,[]
+pixel_set,4,right,TO,1411,1415,1411,1417,0.9991045392151241,False,False,[]
+pixel_set,5,left,IC,1729,1733,1727,1734,0.25651701650439174,False,False,"[[1727, 1734]]"
+pixel_set,5,left,TO,1736,1736,1725,1737,0.6430842418502336,False,False,"[[1725, 1737]]"
+pixel_set,5,left,IC,1757,1760,1757,1760,0.9999999996228272,False,False,[]
+pixel_set,5,left,TO,1779,1779,1779,1780,0.999968207711607,False,False,[]
+pixel_set,6,right,IC,2600,2604,2600,2604,1.0,False,False,[]
+pixel_set,6,right,TO,2607,2607,2607,2607,0.995800894611611,False,False,[]
+pixel_set,6,right,IC,2609,2609,2609,2609,0.9958008532748044,False,False,[]
+pixel_set,6,right,TO,2612,2620,2612,2620,0.987033820371816,False,False,"[[2616, 2616]]"
+pixel_set,6,right,IC,2641,2645,2641,2645,1.0,False,False,[]
+pixel_set,6,right,TO,2664,2664,2660,2665,0.9983338427313169,False,False,[]
+pixel_set,6,right,IC,2679,2679,2676,2680,0.6002090807438719,False,False,"[[2676, 2680]]"
+pixel_set,6,right,TO,2682,2682,2678,2682,0.7005223807570847,False,False,"[[2678, 2682]]"
+pixel_set,7,left,TO,2991,2995,2990,2995,0.9999999999980365,False,False,[]
+pixel_set,7,left,IC,3015,3019,3015,3019,1.0,False,False,"[[3015, 3015]]"
+pixel_set,7,left,TO,3038,3039,3037,3040,0.9959640478628266,False,False,[]
+pixel_set,7,left,IC,3057,3061,3057,3061,1.0,False,False,[]
+pixel_set,8,right,IC,3582,3585,3582,3586,0.9999999999999246,False,False,[]
+pixel_set,8,right,TO,3588,3588,3588,3588,0.9999998799863501,False,False,[]
+pixel_set,8,right,IC,3590,3590,3590,3590,0.9999998802616,False,False,[]
+pixel_set,8,right,TO,3605,3605,3605,3605,0.9995834639596107,False,False,[]
+pixel_set,8,right,IC,3625,3629,3625,3629,1.0,False,False,[]
+pixel_set,8,right,TO,3644,3644,3644,3644,0.9999994567641621,False,False,[]

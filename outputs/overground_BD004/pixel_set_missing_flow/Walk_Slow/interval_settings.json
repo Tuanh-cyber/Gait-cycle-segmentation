@@ -1,0 +1,24 @@
+{
+  "emission": "pixel_set_conditional_gaussian",
+  "pixel_scores": "mean within each region",
+  "duration_model": "learned_discrete_by_phase",
+  "duration_fit": "continuous runs pooled per video",
+  "boundary_window": "midpoints between same-type Viterbi anchors within each run",
+  "interval_event": "first same-type transition in window",
+  "interval_level": 0.9,
+  "boundary_definition": {
+    "IC": "Swing -> IC",
+    "TO": "TO -> Swing"
+  },
+  "training": "flow only; ground truth used for scoring",
+  "phase_edge_quantiles": [
+    0.05,
+    0.95
+  ],
+  "phase_anchor": "Viterbi segment midpoint",
+  "missing_flow": "neutral log emission and cues; visualized inside structurally continuous runs",
+  "training_runs": "contiguous observed spans",
+  "missing_flow_reference": "Yu and Kobayashi (2003), equations 6, 10 and 14",
+  "interval_calibrated": false,
+  "max_iterations": 4
+}

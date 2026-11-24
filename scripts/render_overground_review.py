@@ -11,6 +11,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "data/step6_fixed_foot_events/code"))
+from cyclic_hsmm import BRANCH
 from mask_overlay import REGION_COLORS, apply_regions, fit_image, prepare_regions
 
 WIDTH, HEIGHT = 1440, 800
@@ -18,8 +19,7 @@ ZOOM_W, ZOOM_H = 172, 145
 PANEL_Y = 101
 PANEL_H = 307
 TIMELINE_X0, TIMELINE_X1 = 201, 1404
-TRACK_Y = (482, 539, 603, 660)
-BRANCHES = ("embedding96", "embedding192")
+TRACK_Y = (482, 539, 622)
 EVENTS = {"IC": ("strike", (226, 145, 249)), "TO": ("off", (85, 184, 250))}
 PHASE_COLORS = {"IC": EVENTS["IC"][1], "Flat": (137, 196, 87),
                 "TO": EVENTS["TO"][1], "Swing": (223, 164, 89)}
@@ -53,13 +53,10 @@ def review_tracks(trial, side, truth, source_labels, matches):
     ):
         raise ValueError(f"CSV labels differ from scoring labels in passage {trial}")
     valid = matches.loc[matches.trial.eq(trial) & matches.predicted_s.notna()]
-    prediction = [
-        [(e.predicted_s, e.event, e.status) for e in valid.loc[valid.branch.eq(branch)].itertuples()]
-        for branch in BRANCHES
-    ]
+    prediction = [(e.predicted_s, e.event, e.status) for e in valid.loc[valid.branch.eq(BRANCH)].itertuples()]
     return [(f"GT {side.upper()} (tracked)", reference[side]),
             (f"GT {other.upper()} (other)", reference[other]),
-            ("Embedding 96", prediction[0]), ("Embedding 192", prediction[1])]
+            ("Pixel-set HSMM", prediction)]
 
 
 def draw_timeline(canvas, passage, tracks, supported, phase_windows=None):
@@ -73,14 +70,23 @@ def draw_timeline(canvas, passage, tracks, supported, phase_windows=None):
         label(canvas, name, 23, y + 5, .52)
         cv2.line(canvas, (TIMELINE_X0, y), (TIMELINE_X1, y), (103, 94, 86), 1, cv2.LINE_AA)
         if row >= 2 and phase_windows is not None:
-            phases, windows = phase_windows[row-2]
+            phases, windows, use_phase_bounds = phase_windows
             for s in phases:
                 cv2.rectangle(canvas, (pixel(s.start_frame), y-15), (pixel(s.end_frame), y-4),
                               PHASE_COLORS[s.phase], -1)
             for item in windows:
-                color = EVENTS[item.event][1]
-                x0, x1 = pixel(item.event_start_frame), pixel(item.event_end_frame)
-                cv2.rectangle(canvas, (x0, y+2), (max(x0+2,x1), y+12), color, -1 if item.matched else 1)
+                color = EVENTS[item.phase][1]
+                if not use_phase_bounds:
+                    x0, x1 = pixel(item.start_p05_frame), pixel(item.end_p95_frame)
+                    cv2.rectangle(canvas, (x0, y+2), (max(x0+2,x1), y+12), color, -1 if item.matched else 1)
+                    continue
+                top = y+2 if item.phase == "IC" else y+12
+                x0 = max(TIMELINE_X0, pixel(item.start_p05_frame-.5))
+                x1 = min(TIMELINE_X1, pixel(item.end_p95_frame+.5))
+                cv2.rectangle(canvas, (x0, top), (x1, top+8), color, -1)
+                for lo, hi in item.inferred_gaps:
+                    left, right = pixel(lo-.5), pixel(hi+.5)
+                    cv2.rectangle(canvas, (left, top+1), (right, top+7), (93, 86, 82), -1)
             continue
         if y in TRACK_Y[2:]:
             for time, event, _ in tracks[0][1]:
@@ -118,8 +124,9 @@ def draw_timeline(canvas, passage, tracks, supported, phase_windows=None):
     else:
         label(canvas, "Flat = green", 286, 774, .52, PHASE_COLORS["Flat"])
         label(canvas, "Swing = blue", 421, 774, .52, PHASE_COLORS["Swing"])
-        label(canvas, "Upper band = phase   Lower box = event interval   Filled box = contains GT frame",
-              567, 774, .49, MUTED)
+        legend = ("Lower = phase (start p05 to end p95)   Grey = no usable flow"
+                  if phase_windows[2] else "Lower = event interval   Filled box = contains GT frame")
+        label(canvas, legend, 567, 774, .49, MUTED)
     return pixel
 
 
@@ -179,12 +186,13 @@ def render_frame(background, raw, frame, passage, slot, pair, centers, pixel, tr
     cv2.line(canvas, (cursor, 444), (cursor, 716), INK, 1, cv2.LINE_AA)
     for row, (y, (_, events)) in enumerate(zip(TRACK_Y, tracks)):
         if row >= 2 and phase_windows is not None:
-            phases, windows = phase_windows[row-2]
+            phases, windows, _ = phase_windows
             phase = next((s.phase for s in phases if s.start_frame <= frame <= s.end_frame), None)
-            active = next((e for e in windows if e.event_start_frame <= frame <= e.event_end_frame), None)
+            active = next((e for e in windows if e.start_p05_frame <= frame <= e.end_p95_frame), None)
             if active is not None:
-                label(canvas, f"{active.event} [{active.event_start_frame}-{active.event_end_frame}]",
-                      24, y+24, .46, EVENTS[active.event][1], True)
+                gap = " gap" if any(lo <= frame <= hi for lo, hi in active.inferred_gaps) else ""
+                label(canvas, f"{active.phase} [{active.start_p05_frame}-{active.end_p95_frame}]{gap}",
+                      24, y+24, .46, EVENTS[active.phase][1], True)
             elif phase is not None:
                 label(canvas, phase, 24, y+24, .46, PHASE_COLORS[phase])
             continue
@@ -208,7 +216,7 @@ def main():
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument("--subject", default="BD004")
     parser.add_argument("--session", default="Session1")
-    parser.add_argument("--intervals", action="store_true", help="Overlay four-phase spans and event intervals")
+    parser.add_argument("--intervals", action="store_true", help="Overlay four-phase spans and available IC/TO interval bands")
     args = parser.parse_args()
     result = args.evaluation
     passages = pd.read_csv(result/"passages.csv").sort_values("trial")
@@ -217,7 +225,17 @@ def main():
     truth = pd.read_csv(result/"ground_truth_selected_foot.csv")
     if args.intervals:
         phase_table = pd.read_csv(result/"phase_intervals.csv")
-        window_table = pd.read_csv(result/"event_intervals.csv")
+        phase_bounds = result/"phase_uncertainty_intervals.csv"
+        use_phase_bounds = phase_bounds.exists()
+        if use_phase_bounds:
+            window_table = pd.read_csv(phase_bounds)
+            gap_column = "inferred_gaps" if "inferred_gaps" in window_table else "bridged_gaps"
+            window_table["inferred_gaps"] = window_table[gap_column].map(json.loads)
+        else:
+            window_table = pd.read_csv(result/"event_intervals.csv").rename(columns={
+                "event": "phase", "event_start_frame": "start_p05_frame", "event_end_frame": "end_p95_frame",
+            })
+            window_table["inferred_gaps"] = [()] * len(window_table)
     condition = args.source.stem
     title = f"{args.subject}  /  {condition.replace('_', ' ').upper()}"
     raw = pd.read_csv(args.ground_truth)
@@ -226,7 +244,8 @@ def main():
                         for p in passages.itertuples()}).T
     scores = pd.read_csv(result/"event_confidence_frames.csv")
     np.testing.assert_array_equal(scores.frame, np.arange(len(scores)))
-    supported = scores[[f"{b}_flow_supported" for b in BRANCHES]].any(axis=1).to_numpy()
+    observed_column = f"{BRANCH}_flow_observed"
+    supported = scores.get(observed_column, scores[f"{BRANCH}_flow_supported"]).to_numpy()
     cv2.setNumThreads(2)
     capture = cv2.VideoCapture(str(args.source))
     fps = float(passages.fps.iloc[0])
@@ -249,11 +268,11 @@ def main():
                 tracks = review_tracks(passage.trial, selection.side, truth, raw, matches)
                 phase_windows = None
                 if args.intervals:
-                    phase_windows = [
-                        tuple(list(table.loc[table.trial.eq(passage.trial) & table.branch.eq(branch)].itertuples())
-                              for table in (phase_table, window_table))
-                        for branch in BRANCHES
-                    ]
+                    phases, windows = (
+                        list(table.loc[table.trial.eq(passage.trial) & table.branch.eq(BRANCH)].itertuples())
+                        for table in (phase_table, window_table)
+                    )
+                    phase_windows = (phases, windows, use_phase_bounds)
                 masks, centers = masks_for_passage(args.masks/f"{passage.video_id}.npz", passage, slot, width, height)
                 bg = np.full((HEIGHT, WIDTH, 3), BG, np.uint8)
                 pixel = draw_timeline(bg, passage, tracks, supported, phase_windows)

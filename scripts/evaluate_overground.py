@@ -214,13 +214,15 @@ def run_stages(output, names, device):
 
 
 def load_inference_data(source, output, subject, reuse_clouds=False):
-    from event_data import load_video, runs
+    from event_data import load_video
     from hsmm_inputs import build_clouds, common_view
 
     passages = pd.read_csv(output/"passages.csv")
     data = output.resolve()/"data"
     metadata = pd.read_csv(data/"step0_audit/step0_metadata.csv", keep_default_na=False).set_index("video_id", drop=False)
     raw, points, pointers, eligible, group, source_frame, slots = [], [], [], [], [], [], []
+    continuity_fields = ("continuity_id", "shot_id", "speed_part_id")
+    continuity = {name: [] for name in continuity_fields}
     offset = 0
     clouds_dir = output/"clouds"
     clouds_dir.mkdir(exist_ok=True)
@@ -241,6 +243,8 @@ def load_inference_data(source, output, subject, reuse_clouds=False):
         eligible.append(payload["valid"])
         group.append(np.full(n, passage.trial))
         source_frame.append(v["f"]["frame"] + passage.first_frame)
+        for name in continuity_fields:
+            continuity[name].append(v["f"][name])
         with np.load(output/"data/step3_footkp/footkp"/f"{passage.video_id}_footkp.npz") as pose:
             near_conf = float(np.median(pose["near_conf"]))
         side = passage.near_side if v["selection"] == "initial_near_slot_fixed" else ("left", "right")[v["slot"]]
@@ -256,7 +260,9 @@ def load_inference_data(source, output, subject, reuse_clouds=False):
     payload = dict(raw42=np.concatenate(raw), points=np.concatenate(points), ptr=np.concatenate(pointers), valid=valid)
     # The pooled model has no single slot number. The predictions attach a side
     # from the per-passage slot audit instead of this diagnostic placeholder.
-    base = dict(video_id=subject, slot=-1, valid=valid, groups=[trial_id], runs=runs(valid, [trial_id]),
+    source_blocks = np.cumsum(np.r_[False, np.diff(frames) != 1])
+    groups = [trial_id, source_blocks, *(np.concatenate(continuity[name]) for name in continuity_fields)]
+    base = dict(video_id=subject, slot=-1, valid=valid, groups=groups,
                 f=dict(frame=frames, t_real_s_v2=frames/fps), abs_time_ok=True,
                 audit=pd.DataFrame(dict(frame=full_frames, pts_s=full_frames/fps)))
     # Fit/tune from video only. The ground-truth CSV enters the separate score stage.

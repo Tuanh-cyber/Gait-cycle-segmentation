@@ -1,0 +1,7 @@
+"condition","event","inferred_frames","predicted","reference","matched_100ms","baseline_matched_100ms","mae_100ms","baseline_mae_100ms","boundary_without_adjacent_flow","phase_bands_with_missing_flow","boundary_interval_matches"
+"Walk_Slow","IC","90","36","30","0","0","","","6","5","0"
+"Walk_Slow","TO","90","36","30","24","24","75.00000000000036","75.83333333333293","2","3","0"
+"Walk_Comfortable","IC","26","15","17","2","2","35.000000000003695","35.000000000003695","1","2","0"
+"Walk_Comfortable","TO","26","18","18","0","0","","","2","5","0"
+"Walk_Fast","IC","64","18","24","3","2","66.66666666666525","54.999999999999716","4","4","1"
+"Walk_Fast","TO","64","22","19","0","0","","","2","6","0"

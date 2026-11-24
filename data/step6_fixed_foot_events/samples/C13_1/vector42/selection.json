@@ -1,0 +1,121 @@
+{
+  "video_id": "C13_1",
+  "input_kind": "vector42",
+  "dimensions": 42,
+  "penalty": 0.0,
+  "noise_variance": 0.25,
+  "cv_native_nll": 0.37833449003248176,
+  "identifiable_folds": 3,
+  "selection_status": "validated_cv",
+  "cv_mode": "whole_continuous_runs",
+  "phase_assignment_allowed": true,
+  "phase_labels": [
+    1,
+    0
+  ],
+  "slow_means": [
+    0.7893489845522955,
+    0.4056993829622723
+  ],
+  "training_videos": [
+    "C13_1"
+  ],
+  "frozen_model_used": false,
+  "selected_seed": 20261119,
+  "cv_sweeps": 3,
+  "final_sweeps": 6,
+  "final_seeds": 3,
+  "final_attempts": [
+    {
+      "candidate_rank": 1,
+      "penalty": 0.0,
+      "noise_variance": 0.25,
+      "cv_native_nll": 0.37833449003248176,
+      "identifiable_folds": 3,
+      "seed": 20261117,
+      "phase_labels": [
+        0,
+        1
+      ],
+      "slow_means": [
+        0.2854404979562162,
+        0.8293250719039947
+      ],
+      "eligible": true
+    },
+    {
+      "candidate_rank": 1,
+      "penalty": 0.0,
+      "noise_variance": 0.25,
+      "cv_native_nll": 0.37833449003248176,
+      "identifiable_folds": 3,
+      "seed": 20261118,
+      "phase_labels": [
+        1,
+        0
+      ],
+      "slow_means": [
+        0.7493919785181866,
+        0.42813407002943843
+      ],
+      "eligible": true
+    },
+    {
+      "candidate_rank": 1,
+      "penalty": 0.0,
+      "noise_variance": 0.25,
+      "cv_native_nll": 0.37833449003248176,
+      "identifiable_folds": 3,
+      "seed": 20261119,
+      "phase_labels": [
+        1,
+        0
+      ],
+      "slow_means": [
+        0.7893489845522955,
+        0.4056993829622723
+      ],
+      "eligible": true
+    }
+  ],
+  "phase_disagreement_between_seeds": [
+    [
+      0.0,
+      0.37474541751527496,
+      0.34623217922606925
+    ],
+    [
+      0.37474541751527496,
+      0.0,
+      0.04480651731160896
+    ],
+    [
+      0.34623217922606925,
+      0.04480651731160896,
+      0.0
+    ]
+  ],
+  "boundary_stability_f1": [
+    0.5620915032679739,
+    0.6143790849673203,
+    0.9295774647887324
+  ],
+  "seed_stability_assessed": true,
+  "common_valid_observations": 500,
+  "known_phase_fraction_valid": 0.982,
+  "IC": 18,
+  "TO": 13,
+  "UNKNOWN_boundaries": 40,
+  "latent_segments": 124,
+  "segments_shorter_0167s": 106,
+  "median_latent_segment_duration_s": 0.06667000000000023,
+  "semantic_boundaries": 31,
+  "fit_final_seconds": 11.890999999999622,
+  "covariance": "train-only total feature covariance, tied across states, shrunk toward diagonal; invertible full-rank whitening",
+  "shrinkage": 0.5,
+  "covariance_is_latent_residual_estimate": false,
+  "mean_absolute_correlation_before": 0.38937242819950973,
+  "mean_absolute_correlation_after": 0.1214685000664511,
+  "ground_truth_available": false,
+  "density_warning": "Native NLL is for within-input tuning only; do not compare vector and embedding NLL as accuracy"
+}

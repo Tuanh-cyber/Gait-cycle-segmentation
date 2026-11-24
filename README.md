@@ -1,6 +1,6 @@
 # Gait cycle segmentation — IC/TO từ optical flow một chân cố định
 
-Step 6 dùng RFF-GP-HSMM bốn pha tuần hoàn **IC → Flat → TO → Swing**. Hai nhánh Embedding **96 và 192 chiều** dùng chung foot mask và pixel flow của một chân được chọn đầu mỗi lượt. Kết quả gồm khoảng pha, khoảng frame chứa mốc IC/TO theo posterior và video đối chứng nếu có nhãn CSV.
+Step 6 dùng HSMM bốn pha tuần hoàn **IC → Flat → TO → Swing** với emission nhận tập pixel. Mô hình chấm vận tốc đã bù của từng pixel theo vị trí trong ba vùng bàn chân. Kết quả gồm khoảng pha, khoảng mốc IC/TO, điểm theo frame và video đối chứng với CSV.
 
 ## Pipeline
 
@@ -10,7 +10,7 @@ Step 6 dùng RFF-GP-HSMM bốn pha tuần hoàn **IC → Flat → TO → Swing**
 | 2–3 | Tracking người, keypoint và chọn slot chân | `data/step2_tracking`, `data/step3_footkp` |
 | 4 | Foot mask theo vùng heel/mid/toe | `data/step4_footmask` |
 | 5 | Dense optical flow GMA và bù chuyển động camera | `data/step5_flow` |
-| 6 | Embedding, HSMM bốn pha và khoảng IC/TO | `data/step6_fixed_foot_events/code` |
+| 6 | HSMM bốn pha với emission tập pixel và khoảng IC/TO | `data/step6_fixed_foot_events/code` |
 
 ## Chạy trên video Overground
 

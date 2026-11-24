@@ -1,0 +1,4 @@
+video_id,method,source_index,frame,t_real_s,source_pts_s,type,phase_before,phase_after,reason,boundary_evidence,posterior_IC,posterior_TO,foot_slot,slow_before,slow_after,strong_contact_evidence,abs_time_ok,candidate
+C01,vector42,84,149,2.42583,4.885,IC,SWING,STANCE,phase_transition,0.9999999999998597,0.9999999999997442,5.026533952432813e-32,0,0.0,0.9954809554551324,True,False,True
+C01,vector42,88,156,2.53417,5.101667,UNKNOWN,SWING,SWING,within_phase,0.9919326921499003,1.944969512733982e-20,2.2603429423781985e-13,0,0.0,0.12470680218921032,False,False,True
+C01,vector42,90,160,2.6175,5.268333,UNKNOWN,SWING,SWING,within_phase,0.9941490332239196,6.10930005438097e-13,1.9449695125228148e-20,0,0.12470680218921032,0.0,False,False,True

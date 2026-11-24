@@ -1,0 +1,7 @@
+video_id,method,source_index,frame,t_real_s,source_pts_s,type,phase_before,phase_after,reason,boundary_evidence,posterior_IC,posterior_TO,foot_slot,slow_before,slow_after,strong_contact_evidence,abs_time_ok,candidate
+C01,embedding,8,12,0.16833,0.336667,UNKNOWN,UNKNOWN,UNKNOWN,ambiguous_phase,0.998524425546861,0.0,0.0,0,0.0,0.0,False,False,True
+C01,embedding,19,31,0.50167,1.003333,UNKNOWN,UNKNOWN,UNKNOWN,ambiguous_phase,0.9998899713190755,0.0,0.0,0,0.0,0.0,False,False,True
+C01,embedding,38,61,1.00167,2.003333,UNKNOWN,UNKNOWN,UNKNOWN,ambiguous_phase,0.9999636916851576,0.0,0.0,0,0.0,0.0,False,False,True
+C01,embedding,70,121,1.9675,3.968333,UNKNOWN,UNKNOWN,UNKNOWN,ambiguous_phase,0.9999962538128515,0.0,0.0,0,0.0,0.0,False,False,True
+C01,embedding,88,156,2.53417,5.101667,UNKNOWN,UNKNOWN,UNKNOWN,ambiguous_phase,0.8741362440936392,0.0,0.0,0,0.0,0.12470680218921032,False,False,True
+C01,embedding,90,160,2.6175,5.268333,UNKNOWN,UNKNOWN,UNKNOWN,ambiguous_phase,0.9989707459637754,0.0,0.0,0,0.12470680218921032,0.0,False,False,True

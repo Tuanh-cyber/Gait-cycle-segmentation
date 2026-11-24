@@ -1,0 +1,105 @@
+{
+  "video_id": "C30",
+  "input_kind": "embedding",
+  "dimensions": 42,
+  "penalty": 0.0,
+  "noise_variance": 0.5,
+  "cv_native_nll": -1.1205682249476387,
+  "identifiable_folds": 0,
+  "selection_status": "exploratory_cv",
+  "cv_mode": "whole_continuous_runs",
+  "phase_assignment_allowed": true,
+  "phase_labels": [
+    0,
+    1
+  ],
+  "slow_means": [
+    0.03980664312481609,
+    0.6334658970287226
+  ],
+  "training_videos": [
+    "C30"
+  ],
+  "frozen_model_used": false,
+  "selected_seed": 20261117,
+  "cv_sweeps": 3,
+  "final_sweeps": 6,
+  "final_seeds": 3,
+  "final_attempts": [
+    {
+      "candidate_rank": 1,
+      "penalty": 0.0,
+      "noise_variance": 0.5,
+      "cv_native_nll": -1.1205682249476387,
+      "identifiable_folds": 0,
+      "seed": 20261117,
+      "phase_labels": [
+        0,
+        1
+      ],
+      "slow_means": [
+        0.03980664312481609,
+        0.6334658970287226
+      ],
+      "eligible": true
+    },
+    {
+      "candidate_rank": 1,
+      "penalty": 0.0,
+      "noise_variance": 0.5,
+      "cv_native_nll": -1.1205682249476387,
+      "identifiable_folds": 0,
+      "seed": 20261118,
+      "phase_labels": [
+        0,
+        -1
+      ],
+      "slow_means": [
+        0.27484371300680455,
+        0.5264504779446431
+      ],
+      "eligible": false
+    },
+    {
+      "candidate_rank": 1,
+      "penalty": 0.0,
+      "noise_variance": 0.5,
+      "cv_native_nll": -1.1205682249476387,
+      "identifiable_folds": 0,
+      "seed": 20261119,
+      "phase_labels": [
+        0,
+        0
+      ],
+      "slow_means": [
+        0.40733901449186405,
+        0.032632246115613876
+      ],
+      "eligible": false
+    }
+  ],
+  "phase_disagreement_between_seeds": [
+    [
+      0.0
+    ]
+  ],
+  "boundary_stability_f1": [],
+  "seed_stability_assessed": false,
+  "common_valid_observations": 228,
+  "known_phase_fraction_valid": 0.9868421052631579,
+  "IC": 12,
+  "TO": 15,
+  "UNKNOWN_boundaries": 16,
+  "latent_segments": 59,
+  "segments_shorter_0167s": 39,
+  "median_latent_segment_duration_s": 0.11665999999999954,
+  "semantic_boundaries": 27,
+  "fit_final_seconds": 5.703000000000429,
+  "covariance": "train-only total feature covariance, tied across states, shrunk toward diagonal; invertible full-rank whitening",
+  "shrinkage": 0.5,
+  "covariance_is_latent_residual_estimate": false,
+  "mean_absolute_correlation_before": 0.3387716087241071,
+  "mean_absolute_correlation_after": 0.15933214799592477,
+  "ground_truth_available": false,
+  "density_warning": "Native NLL is for within-input tuning only; do not compare vector and embedding NLL as accuracy"
+}

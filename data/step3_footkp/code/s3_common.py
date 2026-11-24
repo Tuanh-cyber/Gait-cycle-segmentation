@@ -94,7 +94,7 @@ def load_clip(vid, meta):
     if not np.isfinite(sub.t_real_s_v2.values).all():
         raise ValueError(f"{vid}: frame hợp lệ thiếu t_real_s_v2")
     return Clip(vid=vid, frame=f, t=sub.t_real_s_v2.values.astype(float), t_old=z["t_real_s"].astype(float),
-                pts=z["pts_s"].astype(float), time_model=sub.time_model.values.astype(str), cont=z["continuity_id"].astype(int),
+                pts=z["pts_s"].astype(float), time_model=sub.time_model.to_numpy(dtype=str), cont=z["continuity_id"].astype(int),
                 part=sub.speed_part_id.values.astype(int), k_conf=sub.k_confidence.values.astype(str),
                 unique_id=sub.unique_id.values.astype(int), kp=z["kp"].astype(float),
                 score=np.nan_to_num(z["score"].astype(float)), bbox=z["bbox"].astype(float),

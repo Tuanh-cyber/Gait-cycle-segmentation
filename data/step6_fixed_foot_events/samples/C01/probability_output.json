@@ -1,0 +1,48 @@
+{
+  "mode": "offline_soft_posterior",
+  "frame_csv": "probabilities_frames.csv",
+  "plot": "probability_scores.png",
+  "branch_summaries": {
+    "vector42": {
+      "source_frames": 170,
+      "phase_score_frames": 51,
+      "event_score_frames": 18,
+      "latent_posterior_frames": 51,
+      "phase_mapping_available": true
+    },
+    "embedding": {
+      "source_frames": 170,
+      "phase_score_frames": 0,
+      "event_score_frames": 0,
+      "latent_posterior_frames": 51,
+      "phase_mapping_available": false
+    }
+  },
+  "threshold_applied": false,
+  "viterbi_cuts_displayed": false,
+  "probability_conditioning": "all observations in each continuous run, fitted parameters and fixed class/phase mapping",
+  "observation_intervals": "phase posteriors held within their flow observation interval; not new independent measurements",
+  "event_timing": "IC/TO scores only at exact observation boundary frames; run starts/gaps/other display frames are NaN",
+  "missing_semantics": "state and latent-boundary posteriors remain available; stance/swing and IC/TO are NaN",
+  "calibration": "model-conditional posterior; no empirical calibration without ground truth",
+  "video": "C01_hsmm_probabilities.mp4",
+  "poster": "C01_hsmm_probabilities.jpg",
+  "verification": {
+    "source_frames": 170,
+    "output_frames": 170,
+    "max_pts_error_s": 3.33333333379926e-07,
+    "first_pts_s": 0.0,
+    "last_pts_s": 5.551666666666667,
+    "source_speed_preserved": true,
+    "audio_included": false,
+    "source_display_rotation_applied": 90.0,
+    "phase_bars": [
+      "HSMM vector42",
+      "HSMM embedding"
+    ],
+    "regional_mask_overlay": true,
+    "mask_display_frames": 169,
+    "probabilistic_output": true,
+    "selected_cut_markers": false
+  }
+}

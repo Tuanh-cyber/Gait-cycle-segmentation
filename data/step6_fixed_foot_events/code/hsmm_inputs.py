@@ -1,4 +1,4 @@
-"""Regional flow statistics, pixel clouds and the embedding for one fixed foot.
+"""Regional flow statistics and pixel clouds for one fixed foot.
 
 No feature is reconstructed from saved medians. Missing masks stay missing.
 Empty moving/slow subsets have explicitly defined neutral summaries (see README).
@@ -97,54 +97,3 @@ def build_clouds(v, destination, data=DATA):
 def common_view(v, payload):
     valid = payload["valid"].astype(bool)
     return dict(v, valid=valid, runs=runs(valid, v["groups"]))
-
-
-class InputTransform:
-    """Train-only feature map and invertible shrunk-covariance whitening.
-
-Whitening is a full-rank internal parameterization, not dimensionality reduction.
-It induces correlated Gaussian emissions in original feature coordinates. This
-uses total training-feature covariance, NOT fitted latent residual covariance.
-"""
-    def __init__(self, embedding_per_region=32, seed=20261117, shrinkage=.5):
-        self.kind = "embedding"
-        self.size, self.seed, self.shrinkage = embedding_per_region, seed, shrinkage
-
-    def features(self, payload):
-        n = len(payload["ptr"])
-        result = np.full((n, self.size * 3), np.nan)
-        for row in np.flatnonzero(payload["valid"]):
-            for r, (a, b) in enumerate(payload["ptr"][row]):
-                cloud = payload["points"][a:b].astype(float).copy()
-                cloud[:, 2:] = np.sign(cloud[:, 2:]) * np.log1p(abs(cloud[:, 2:]))
-                cloud = (cloud - self.pixel_center) / self.pixel_scale
-                result[row, r*self.size:(r+1)*self.size] = (np.sqrt(2/self.size) * np.cos(cloud @ self.omega + self.offset)).mean(0)
-        return result
-
-    def fit(self, payload, training_rows):
-        rows = np.asarray(training_rows, int)
-        pieces = [payload["points"][a:b] for row in rows for a, b in payload["ptr"][row]]
-        pixels = np.concatenate(pieces).astype(float)
-        pixels[:, 2:] = np.sign(pixels[:, 2:]) * np.log1p(abs(pixels[:, 2:]))
-        self.pixel_center = np.r_[0., 0., np.median(pixels[:, 2:], axis=0)]
-        self.pixel_scale = np.r_[.33, .3, np.maximum(np.ptp(np.quantile(pixels[:, 2:], [.25, .75], axis=0), axis=0), .25)]
-        rng = np.random.default_rng(self.seed)
-        self.omega, self.offset = rng.normal(size=(4, self.size)), rng.uniform(0, 2*np.pi, self.size)
-        features = self.features(payload)
-        self.center = np.median(features[rows], axis=0)
-        self.scale = np.maximum(np.ptp(np.quantile(features[rows], [.25, .75], axis=0), axis=0), .05)
-        standardized = (features[rows] - self.center) / (2 * self.scale)
-        covariance = np.atleast_2d(np.cov(standardized, rowvar=False, ddof=0))
-        target = np.diag(np.maximum(np.diag(covariance), .05))
-        covariance = (1-self.shrinkage) * covariance + self.shrinkage * target
-        eigenvalues, eigenvectors = np.linalg.eigh(covariance)
-        self.covariance = covariance
-        self.whitener = (eigenvectors * (1 / np.sqrt(np.maximum(eigenvalues, 1e-4)))) @ eigenvectors.T
-        return self
-
-    def transform(self, payload):
-        return ((self.features(payload) - self.center) / (2*self.scale)) @ self.whitener
-
-    def save(self, path):
-        values = {name: value for name, value in self.__dict__.items() if isinstance(value, (np.ndarray, str, int, float))}
-        save_npz(path, **values)

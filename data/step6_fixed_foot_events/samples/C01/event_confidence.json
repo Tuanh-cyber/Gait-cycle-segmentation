@@ -1,0 +1,33 @@
+{
+  "csv": "event_confidence_frames.csv",
+  "plot": "event_confidence.png",
+  "frame_count": 170,
+  "orientation": {
+    "vector42": {
+      "class1_stance_support": 0.243,
+      "class0_stance_support": 0.0,
+      "contact_means": [
+        0.0030791803009708714,
+        0.7627502382061129
+      ],
+      "blocks": 10
+    },
+    "embedding": {
+      "class1_stance_support": 0.115,
+      "class0_stance_support": 0.0,
+      "contact_means": [
+        3.712488313293263e-05,
+        0.04970268511364974
+      ],
+      "blocks": 10
+    }
+  },
+  "contact": "mean of the three regional slow ratios at 2 L_leg/s",
+  "contact_margin": 0.1,
+  "block_seconds": 0.2,
+  "bootstrap_draws": 1000,
+  "bootstrap_seed": 20261118,
+  "calibrated": false,
+  "unsupported_frames": "zero support, flagged by flow_supported=false",
+  "frame_alignment": "uniform over eligible source frames in (previous observation, current observation]"
+}

@@ -1,0 +1,673 @@
+{
+  "video_id": "C01",
+  "input_foot_slot": 0,
+  "inputs": {
+    "flow": {
+      "path": "data\\step5_flow\\features\\C01.npz",
+      "sha256": "8b6babc282005d9e80588d3253218dd615b3dc69c8118eff207e913ce5c036ba"
+    },
+    "source": {
+      "path": "data\\Correct\\C01.mp4",
+      "sha256": "f362a5eafd46468cabbabd4d00031545d86f74255063f4dafa4bd009517e2d26"
+    },
+    "audit": {
+      "path": "data\\step0_audit\\frames\\C01_frames.csv",
+      "sha256": "3e536f0875c604883672c313df63ddebe9d284420d6d88e1847bf9af7009de18"
+    },
+    "display_pose": {
+      "path": "data\\step3_footkp\\footkp\\C01_footkp.npz",
+      "sha256": "b352991f00d616f11e4a75f88082a241efab0347680966c6bf452ed96f121b48"
+    },
+    "display_mask": {
+      "path": "data\\step4_footmask\\masks_post\\C01.npz",
+      "sha256": "86e61ff473b93994c627ddde927d307b2df5c06508e06d8415eb95e82f6746a6"
+    },
+    "pixel_flow": {
+      "path": "data\\step5_flow\\flow_store\\C01.npz",
+      "sha256": "4c254c9f0448f7195c463c4c0bacec5f9da3a135b3130c3fb30d3cd49d9bbde7",
+      "selection": "same FB-valid pixels in each region for both inputs",
+      "base_valid": 66,
+      "common_valid": 38
+    }
+  },
+  "branches": {
+    "vector42": {
+      "video_id": "C01",
+      "input_kind": "vector42",
+      "dimensions": 42,
+      "penalty": 0.0,
+      "noise_variance": 0.5,
+      "cv_native_nll": 1.042103324142707,
+      "identifiable_folds": 0,
+      "selection_status": "exploratory_cv",
+      "cv_mode": "whole_continuous_runs",
+      "phase_assignment_allowed": true,
+      "phase_labels": [
+        0,
+        1
+      ],
+      "slow_means": [
+        0.009237540902904469,
+        0.9954809554551324
+      ],
+      "training_videos": [
+        "C01"
+      ],
+      "frozen_model_used": false,
+      "selected_seed": 20261117,
+      "cv_sweeps": 3,
+      "final_sweeps": 6,
+      "final_seeds": 3,
+      "final_attempts": [
+        {
+          "candidate_rank": 1,
+          "penalty": 0.0,
+          "noise_variance": 0.5,
+          "cv_native_nll": 1.042103324142707,
+          "identifiable_folds": 0,
+          "seed": 20261117,
+          "phase_labels": [
+            0,
+            1
+          ],
+          "slow_means": [
+            0.009237540902904469,
+            0.9954809554551324
+          ],
+          "eligible": true
+        },
+        {
+          "candidate_rank": 1,
+          "penalty": 0.0,
+          "noise_variance": 0.5,
+          "cv_native_nll": 1.042103324142707,
+          "identifiable_folds": 0,
+          "seed": 20261118,
+          "phase_labels": [
+            0,
+            1
+          ],
+          "slow_means": [
+            0.009237540902904469,
+            0.9954809554551324
+          ],
+          "eligible": true
+        },
+        {
+          "candidate_rank": 1,
+          "penalty": 0.0,
+          "noise_variance": 0.5,
+          "cv_native_nll": 1.042103324142707,
+          "identifiable_folds": 0,
+          "seed": 20261119,
+          "phase_labels": [
+            0,
+            1
+          ],
+          "slow_means": [
+            0.009237540902904469,
+            0.9954809554551324
+          ],
+          "eligible": true
+        }
+      ],
+      "phase_disagreement_between_seeds": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "boundary_stability_f1": [
+        0.8,
+        1.0,
+        0.8
+      ],
+      "seed_stability_assessed": true,
+      "common_valid_observations": 38,
+      "known_phase_fraction_valid": 0.7368421052631579,
+      "IC": 1,
+      "TO": 0,
+      "UNKNOWN_boundaries": 2,
+      "latent_segments": 13,
+      "segments_shorter_0167s": 13,
+      "median_latent_segment_duration_s": 0.06665999999999994,
+      "semantic_boundaries": 1,
+      "fit_final_seconds": 1.3429999999998472,
+      "covariance": "train-only total feature covariance, tied across states, shrunk toward diagonal; invertible full-rank whitening",
+      "shrinkage": 0.5,
+      "covariance_is_latent_residual_estimate": false,
+      "mean_absolute_correlation_before": 0.30102559871350915,
+      "mean_absolute_correlation_after": 0.1780137692636092,
+      "ground_truth_available": false,
+      "density_warning": "Native NLL is for within-input tuning only; do not compare vector and embedding NLL as accuracy"
+    },
+    "embedding": {
+      "video_id": "C01",
+      "input_kind": "embedding",
+      "dimensions": 42,
+      "penalty": 0.0,
+      "noise_variance": 0.5,
+      "cv_native_nll": -0.3688077162711952,
+      "identifiable_folds": 0,
+      "selection_status": "phase_unidentified",
+      "cv_mode": "whole_continuous_runs",
+      "phase_assignment_allowed": false,
+      "phase_labels": [
+        0,
+        0
+      ],
+      "slow_means": [
+        0.0,
+        0.07322909175491488
+      ],
+      "training_videos": [
+        "C01"
+      ],
+      "frozen_model_used": false,
+      "selected_seed": 20261117,
+      "cv_sweeps": 3,
+      "final_sweeps": 6,
+      "final_seeds": 3,
+      "final_attempts": [
+        {
+          "candidate_rank": 1,
+          "penalty": 0.0,
+          "noise_variance": 0.5,
+          "cv_native_nll": -0.3688077162711952,
+          "identifiable_folds": 0,
+          "seed": 20261117,
+          "phase_labels": [
+            0,
+            0
+          ],
+          "slow_means": [
+            0.0,
+            0.07322909175491488
+          ],
+          "eligible": false
+        },
+        {
+          "candidate_rank": 1,
+          "penalty": 0.0,
+          "noise_variance": 0.5,
+          "cv_native_nll": -0.3688077162711952,
+          "identifiable_folds": 0,
+          "seed": 20261118,
+          "phase_labels": [
+            -1,
+            0
+          ],
+          "slow_means": [
+            null,
+            0.04446051999405547
+          ],
+          "eligible": false
+        },
+        {
+          "candidate_rank": 1,
+          "penalty": 0.0,
+          "noise_variance": 0.5,
+          "cv_native_nll": -0.3688077162711952,
+          "identifiable_folds": 0,
+          "seed": 20261119,
+          "phase_labels": [
+            0,
+            0
+          ],
+          "slow_means": [
+            0.01312703180939056,
+            0.11060899505057026
+          ],
+          "eligible": false
+        },
+        {
+          "candidate_rank": 2,
+          "penalty": 0.5,
+          "noise_variance": 0.5,
+          "cv_native_nll": -0.3688077162711952,
+          "identifiable_folds": 0,
+          "seed": 20261117,
+          "phase_labels": [
+            0,
+            0
+          ],
+          "slow_means": [
+            0.0,
+            0.07322909175491488
+          ],
+          "eligible": false
+        },
+        {
+          "candidate_rank": 2,
+          "penalty": 0.5,
+          "noise_variance": 0.5,
+          "cv_native_nll": -0.3688077162711952,
+          "identifiable_folds": 0,
+          "seed": 20261118,
+          "phase_labels": [
+            -1,
+            0
+          ],
+          "slow_means": [
+            null,
+            0.04446051999405547
+          ],
+          "eligible": false
+        },
+        {
+          "candidate_rank": 2,
+          "penalty": 0.5,
+          "noise_variance": 0.5,
+          "cv_native_nll": -0.3688077162711952,
+          "identifiable_folds": 0,
+          "seed": 20261119,
+          "phase_labels": [
+            0,
+            0
+          ],
+          "slow_means": [
+            0.01312703180939056,
+            0.11060899505057026
+          ],
+          "eligible": false
+        },
+        {
+          "candidate_rank": 3,
+          "penalty": 1.0,
+          "noise_variance": 0.5,
+          "cv_native_nll": -0.3688077162711952,
+          "identifiable_folds": 0,
+          "seed": 20261117,
+          "phase_labels": [
+            0,
+            0
+          ],
+          "slow_means": [
+            0.0,
+            0.07322909175491488
+          ],
+          "eligible": false
+        },
+        {
+          "candidate_rank": 3,
+          "penalty": 1.0,
+          "noise_variance": 0.5,
+          "cv_native_nll": -0.3688077162711952,
+          "identifiable_folds": 0,
+          "seed": 20261118,
+          "phase_labels": [
+            -1,
+            0
+          ],
+          "slow_means": [
+            null,
+            0.04446051999405547
+          ],
+          "eligible": false
+        },
+        {
+          "candidate_rank": 3,
+          "penalty": 1.0,
+          "noise_variance": 0.5,
+          "cv_native_nll": -0.3688077162711952,
+          "identifiable_folds": 0,
+          "seed": 20261119,
+          "phase_labels": [
+            0,
+            0
+          ],
+          "slow_means": [
+            0.01312703180939056,
+            0.11060899505057026
+          ],
+          "eligible": false
+        },
+        {
+          "candidate_rank": 4,
+          "penalty": 0.0,
+          "noise_variance": 0.25,
+          "cv_native_nll": -0.05664679449458146,
+          "identifiable_folds": 0,
+          "seed": 20261117,
+          "phase_labels": [
+            0,
+            0
+          ],
+          "slow_means": [
+            0.0,
+            0.1244894559833553
+          ],
+          "eligible": false
+        },
+        {
+          "candidate_rank": 4,
+          "penalty": 0.0,
+          "noise_variance": 0.25,
+          "cv_native_nll": -0.05664679449458146,
+          "identifiable_folds": 0,
+          "seed": 20261118,
+          "phase_labels": [
+            0,
+            0
+          ],
+          "slow_means": [
+            0.04988272087568413,
+            0.043281780671962276
+          ],
+          "eligible": false
+        },
+        {
+          "candidate_rank": 4,
+          "penalty": 0.0,
+          "noise_variance": 0.25,
+          "cv_native_nll": -0.05664679449458146,
+          "identifiable_folds": 0,
+          "seed": 20261119,
+          "phase_labels": [
+            0,
+            0
+          ],
+          "slow_means": [
+            0.0,
+            0.11317223271214118
+          ],
+          "eligible": false
+        },
+        {
+          "candidate_rank": 5,
+          "penalty": 0.5,
+          "noise_variance": 0.25,
+          "cv_native_nll": -0.05664679449458146,
+          "identifiable_folds": 0,
+          "seed": 20261117,
+          "phase_labels": [
+            0,
+            0
+          ],
+          "slow_means": [
+            0.0,
+            0.1244894559833553
+          ],
+          "eligible": false
+        },
+        {
+          "candidate_rank": 5,
+          "penalty": 0.5,
+          "noise_variance": 0.25,
+          "cv_native_nll": -0.05664679449458146,
+          "identifiable_folds": 0,
+          "seed": 20261118,
+          "phase_labels": [
+            0,
+            0
+          ],
+          "slow_means": [
+            0.04988272087568413,
+            0.043281780671962276
+          ],
+          "eligible": false
+        },
+        {
+          "candidate_rank": 5,
+          "penalty": 0.5,
+          "noise_variance": 0.25,
+          "cv_native_nll": -0.05664679449458146,
+          "identifiable_folds": 0,
+          "seed": 20261119,
+          "phase_labels": [
+            0,
+            0
+          ],
+          "slow_means": [
+            0.0,
+            0.11317223271214118
+          ],
+          "eligible": false
+        },
+        {
+          "candidate_rank": 6,
+          "penalty": 1.0,
+          "noise_variance": 0.25,
+          "cv_native_nll": -0.05664679449458146,
+          "identifiable_folds": 0,
+          "seed": 20261117,
+          "phase_labels": [
+            0,
+            0
+          ],
+          "slow_means": [
+            0.0,
+            0.1244894559833553
+          ],
+          "eligible": false
+        },
+        {
+          "candidate_rank": 6,
+          "penalty": 1.0,
+          "noise_variance": 0.25,
+          "cv_native_nll": -0.05664679449458146,
+          "identifiable_folds": 0,
+          "seed": 20261118,
+          "phase_labels": [
+            0,
+            0
+          ],
+          "slow_means": [
+            0.04988272087568413,
+            0.043281780671962276
+          ],
+          "eligible": false
+        },
+        {
+          "candidate_rank": 6,
+          "penalty": 1.0,
+          "noise_variance": 0.25,
+          "cv_native_nll": -0.05664679449458146,
+          "identifiable_folds": 0,
+          "seed": 20261119,
+          "phase_labels": [
+            0,
+            0
+          ],
+          "slow_means": [
+            0.0,
+            0.11317223271214118
+          ],
+          "eligible": false
+        }
+      ],
+      "phase_disagreement_between_seeds": [
+        [
+          0.0
+        ]
+      ],
+      "boundary_stability_f1": [],
+      "seed_stability_assessed": false,
+      "common_valid_observations": 38,
+      "known_phase_fraction_valid": 0.0,
+      "IC": 0,
+      "TO": 0,
+      "UNKNOWN_boundaries": 6,
+      "latent_segments": 16,
+      "segments_shorter_0167s": 16,
+      "median_latent_segment_duration_s": 0.04583499999999996,
+      "semantic_boundaries": 0,
+      "fit_final_seconds": 5.921999999999571,
+      "covariance": "train-only total feature covariance, tied across states, shrunk toward diagonal; invertible full-rank whitening",
+      "shrinkage": 0.5,
+      "covariance_is_latent_residual_estimate": false,
+      "mean_absolute_correlation_before": 0.26963583496562615,
+      "mean_absolute_correlation_after": 0.14257679655206226,
+      "ground_truth_available": false,
+      "density_warning": "Native NLL is for within-input tuning only; do not compare vector and embedding NLL as accuracy"
+    }
+  },
+  "comparison": {
+    "phase_disagreement": null,
+    "both_known_observations": 0,
+    "boundary_agreement_f1": 0.4444444444444444
+  },
+  "verification": {
+    "source_frames": 170,
+    "output_frames": 170,
+    "max_pts_error_s": 3.33333333379926e-07,
+    "first_pts_s": 0.0,
+    "last_pts_s": 5.551666666666667,
+    "source_speed_preserved": true,
+    "audio_included": false,
+    "source_display_rotation_applied": 90.0,
+    "phase_bars": [
+      "HSMM vector-42",
+      "HSMM embedding-42"
+    ],
+    "regional_mask_overlay": true,
+    "mask_display_frames": 169
+  },
+  "full_decode": true,
+  "duration_s": 36.53099999999995,
+  "ground_truth_available": false,
+  "tracker_bypassed": true,
+  "shared_pixel_selection": true,
+  "experiment_config": {
+    "seed": 20261117,
+    "embedding_per_region": 14,
+    "shrinkage": 0.5,
+    "cv_sweeps": 3,
+    "final_sweeps": 6,
+    "final_seeds": 3
+  },
+  "code_sha256": {
+    "build_samples.py": "141a5cc5e6d14917b2db0daeb0d14d3f79b6f1fdddc0207b3c7c26a684a99cad",
+    "compare_hsmm_inputs.py": "c76c0d0a4c7ce1ea59a2ac6cf4937c4c1c4c910d13d34b2c4fd2ec1333253ad4",
+    "event_data.py": "1240461659fd8ef7eab4d62c9d3bac200216a5480b0cdceeb90db124a9cee5eb",
+    "export_videos.py": "37654204d900c54f76faaaf7962033f7d1f943215fcbca7dc9fdbf535db91a75",
+    "frechet_cpd.py": "acd3cec2e9906bf25980d4814437007727b567934543c28f5935e25fa4551b5c",
+    "hsmm_inputs.py": "de8ef050cce76a75265e64c3625c2983f0f602ac7c1d78c16f407efc1ca25350",
+    "mask_overlay.py": "53b8330530c39da8b088807ca87468119506a7432ad9871b91276f72f8cd114f",
+    "rebuild_flow.py": "47539aa3990ebb4b67a74141e5fee4ba24d18c692748d7d73af48d1721bb7a48",
+    "render_events.py": "4496e32e61bdb2319a9140e7675f9cf2c6c21ecdf62e7f1205e625972d8c90b8",
+    "rff_hsmm.py": "00d87967274cff9ba35fee1a7ea28a1c7f7409668ade2cba0f4d106ce0e91e23",
+    "run_events.py": "0aa2c394893c2a89da477119881873707e32b13a8d983fe34f43abe0ec261f92",
+    "tune_video.py": "a5bcef31ce8ce9906a0819a9179b5b90b35025193690a77e2a4608dd0c6c29a0"
+  },
+  "packaging_code_sha256": {
+    "build_samples.py": "fade4c762190db2d521c043eac6f16033bb871b71fc2d74ef2e116c477f7a474",
+    "event_data.py": "ec84cc7346117820d5ea928386a82ed5ef2a42a06d70fc807b355f8b0dea6333",
+    "export_probabilities.py": "ed4306bd4cc887daf2235e858c44417bfba67f397a315bc200d6baf03b4c3b4d",
+    "hsmm_inputs.py": "de8ef050cce76a75265e64c3625c2983f0f602ac7c1d78c16f407efc1ca25350",
+    "hsmm_validation.py": "466277e280fb964ad2b0483267c71cc9badc9d07e88d34752d31d6add6925d65",
+    "mask_overlay.py": "53b8330530c39da8b088807ca87468119506a7432ad9871b91276f72f8cd114f",
+    "probability_outputs.py": "cb53ba826c56097ab042328f70c95415f218faf463d5914a3232df4191cb2cec",
+    "rebuild_flow.py": "b976011c075161cefd376fc5d735f4480ceb85456c09bd6ccff5bc15435f6e50",
+    "render_events.py": "1edc5608cee3676abc7fa14e06fecfe407e979f1f1e8589a889314dad32d7182",
+    "rff_hsmm.py": "00d87967274cff9ba35fee1a7ea28a1c7f7409668ade2cba0f4d106ce0e91e23",
+    "run_events.py": "5b1554380178ebc51dad35e52c803b60e8f565cab2dddd37f5adb44b6323abe0"
+  },
+  "pipeline": "regional_flow_two_input_hsmm",
+  "probabilistic_output": {
+    "mode": "offline_soft_posterior",
+    "frame_csv": "probabilities_frames.csv",
+    "plot": "probability_scores.png",
+    "branch_summaries": {
+      "vector42": {
+        "source_frames": 170,
+        "phase_score_frames": 51,
+        "event_score_frames": 18,
+        "latent_posterior_frames": 51,
+        "phase_mapping_available": true
+      },
+      "embedding": {
+        "source_frames": 170,
+        "phase_score_frames": 0,
+        "event_score_frames": 0,
+        "latent_posterior_frames": 51,
+        "phase_mapping_available": false
+      }
+    },
+    "threshold_applied": false,
+    "viterbi_cuts_displayed": false,
+    "probability_conditioning": "all observations in each continuous run, fitted parameters and fixed class/phase mapping",
+    "observation_intervals": "phase posteriors held within their flow observation interval; not new independent measurements",
+    "event_timing": "IC/TO scores only at exact observation boundary frames; run starts/gaps/other display frames are NaN",
+    "missing_semantics": "state and latent-boundary posteriors remain available; stance/swing and IC/TO are NaN",
+    "calibration": "model-conditional posterior; no empirical calibration without ground truth",
+    "video": "C01_hsmm_probabilities.mp4",
+    "poster": "C01_hsmm_probabilities.jpg",
+    "verification": {
+      "source_frames": 170,
+      "output_frames": 170,
+      "max_pts_error_s": 3.33333333379926e-07,
+      "first_pts_s": 0.0,
+      "last_pts_s": 5.551666666666667,
+      "source_speed_preserved": true,
+      "audio_included": false,
+      "source_display_rotation_applied": 90.0,
+      "phase_bars": [
+        "HSMM vector42",
+        "HSMM embedding"
+      ],
+      "regional_mask_overlay": true,
+      "mask_display_frames": 169,
+      "probabilistic_output": true,
+      "selected_cut_markers": false
+    }
+  },
+  "probability_export_code_sha256": {
+    "build_samples.py": "fade4c762190db2d521c043eac6f16033bb871b71fc2d74ef2e116c477f7a474",
+    "event_confidence.py": "f681258db39257886d8be9dcea8111680ab90c2cedad5889fbf0231af079101f",
+    "event_data.py": "ec84cc7346117820d5ea928386a82ed5ef2a42a06d70fc807b355f8b0dea6333",
+    "export_probabilities.py": "70eb5da822f3a5eee22407cc3283d65784265fb69f85cbaeb841e0defd5df819",
+    "hsmm_inputs.py": "de8ef050cce76a75265e64c3625c2983f0f602ac7c1d78c16f407efc1ca25350",
+    "hsmm_validation.py": "466277e280fb964ad2b0483267c71cc9badc9d07e88d34752d31d6add6925d65",
+    "mask_overlay.py": "53b8330530c39da8b088807ca87468119506a7432ad9871b91276f72f8cd114f",
+    "probability_outputs.py": "cb53ba826c56097ab042328f70c95415f218faf463d5914a3232df4191cb2cec",
+    "rebuild_flow.py": "b976011c075161cefd376fc5d735f4480ceb85456c09bd6ccff5bc15435f6e50",
+    "render_events.py": "1edc5608cee3676abc7fa14e06fecfe407e979f1f1e8589a889314dad32d7182",
+    "rff_hsmm.py": "2910d8101158d70fb9b93926147a869e2233d9c52af96fe5a07ac7543e97e962",
+    "run_events.py": "c5c95d6ee09538511b52f8b57f41df59e38b420c3fc8d4f9c13768d250c3a225"
+  },
+  "event_confidence": {
+    "csv": "event_confidence_frames.csv",
+    "plot": "event_confidence.png",
+    "frame_count": 170,
+    "orientation": {
+      "vector42": {
+        "class1_stance_support": 0.243,
+        "class0_stance_support": 0.0,
+        "contact_means": [
+          0.0030791803009708714,
+          0.7627502382061129
+        ],
+        "blocks": 10
+      },
+      "embedding": {
+        "class1_stance_support": 0.115,
+        "class0_stance_support": 0.0,
+        "contact_means": [
+          3.712488313293263e-05,
+          0.04970268511364974
+        ],
+        "blocks": 10
+      }
+    },
+    "contact": "mean of the three regional slow ratios at 2 L_leg/s",
+    "contact_margin": 0.1,
+    "block_seconds": 0.2,
+    "bootstrap_draws": 1000,
+    "bootstrap_seed": 20261118,
+    "calibrated": false,
+    "unsupported_frames": "zero support, flagged by flow_supported=false",
+    "frame_alignment": "uniform over eligible source frames in (previous observation, current observation]"
+  }
+}

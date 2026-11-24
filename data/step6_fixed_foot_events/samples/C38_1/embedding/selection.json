@@ -1,0 +1,360 @@
+{
+  "video_id": "C38_1",
+  "input_kind": "embedding",
+  "dimensions": 42,
+  "penalty": 0.0,
+  "noise_variance": 0.5,
+  "cv_native_nll": -1.1404700450798027,
+  "identifiable_folds": 0,
+  "selection_status": "phase_unidentified",
+  "cv_mode": "whole_continuous_runs",
+  "phase_assignment_allowed": false,
+  "phase_labels": [
+    -1,
+    0
+  ],
+  "slow_means": [
+    0.4379329141668346,
+    0.007524481079799541
+  ],
+  "training_videos": [
+    "C38_1"
+  ],
+  "frozen_model_used": false,
+  "selected_seed": 20261117,
+  "cv_sweeps": 3,
+  "final_sweeps": 6,
+  "final_seeds": 3,
+  "final_attempts": [
+    {
+      "candidate_rank": 1,
+      "penalty": 0.0,
+      "noise_variance": 0.5,
+      "cv_native_nll": -1.1404700450798027,
+      "identifiable_folds": 0,
+      "seed": 20261117,
+      "phase_labels": [
+        -1,
+        0
+      ],
+      "slow_means": [
+        0.4379329141668346,
+        0.007524481079799541
+      ],
+      "eligible": false
+    },
+    {
+      "candidate_rank": 1,
+      "penalty": 0.0,
+      "noise_variance": 0.5,
+      "cv_native_nll": -1.1404700450798027,
+      "identifiable_folds": 0,
+      "seed": 20261118,
+      "phase_labels": [
+        0,
+        0
+      ],
+      "slow_means": [
+        0.03223640801710214,
+        0.3868184288166174
+      ],
+      "eligible": false
+    },
+    {
+      "candidate_rank": 1,
+      "penalty": 0.0,
+      "noise_variance": 0.5,
+      "cv_native_nll": -1.1404700450798027,
+      "identifiable_folds": 0,
+      "seed": 20261119,
+      "phase_labels": [
+        -1,
+        0
+      ],
+      "slow_means": [
+        0.4172153193018283,
+        0.00027326137450471376
+      ],
+      "eligible": false
+    },
+    {
+      "candidate_rank": 2,
+      "penalty": 0.5,
+      "noise_variance": 0.5,
+      "cv_native_nll": -1.1404700450798027,
+      "identifiable_folds": 0,
+      "seed": 20261117,
+      "phase_labels": [
+        -1,
+        0
+      ],
+      "slow_means": [
+        0.4379329141668346,
+        0.007524481079799541
+      ],
+      "eligible": false
+    },
+    {
+      "candidate_rank": 2,
+      "penalty": 0.5,
+      "noise_variance": 0.5,
+      "cv_native_nll": -1.1404700450798027,
+      "identifiable_folds": 0,
+      "seed": 20261118,
+      "phase_labels": [
+        0,
+        0
+      ],
+      "slow_means": [
+        0.03223640801710214,
+        0.3868184288166174
+      ],
+      "eligible": false
+    },
+    {
+      "candidate_rank": 2,
+      "penalty": 0.5,
+      "noise_variance": 0.5,
+      "cv_native_nll": -1.1404700450798027,
+      "identifiable_folds": 0,
+      "seed": 20261119,
+      "phase_labels": [
+        -1,
+        0
+      ],
+      "slow_means": [
+        0.4172153193018283,
+        0.00027326137450471376
+      ],
+      "eligible": false
+    },
+    {
+      "candidate_rank": 3,
+      "penalty": 1.0,
+      "noise_variance": 0.5,
+      "cv_native_nll": -1.1404700450798027,
+      "identifiable_folds": 0,
+      "seed": 20261117,
+      "phase_labels": [
+        -1,
+        0
+      ],
+      "slow_means": [
+        0.4379329141668346,
+        0.007524481079799541
+      ],
+      "eligible": false
+    },
+    {
+      "candidate_rank": 3,
+      "penalty": 1.0,
+      "noise_variance": 0.5,
+      "cv_native_nll": -1.1404700450798027,
+      "identifiable_folds": 0,
+      "seed": 20261118,
+      "phase_labels": [
+        0,
+        0
+      ],
+      "slow_means": [
+        0.03223640801710214,
+        0.3868184288166174
+      ],
+      "eligible": false
+    },
+    {
+      "candidate_rank": 3,
+      "penalty": 1.0,
+      "noise_variance": 0.5,
+      "cv_native_nll": -1.1404700450798027,
+      "identifiable_folds": 0,
+      "seed": 20261119,
+      "phase_labels": [
+        -1,
+        0
+      ],
+      "slow_means": [
+        0.4172153193018283,
+        0.00027326137450471376
+      ],
+      "eligible": false
+    },
+    {
+      "candidate_rank": 4,
+      "penalty": 0.0,
+      "noise_variance": 0.25,
+      "cv_native_nll": -1.0609581439169602,
+      "identifiable_folds": 0,
+      "seed": 20261117,
+      "phase_labels": [
+        -1,
+        0
+      ],
+      "slow_means": [
+        0.4379329141668346,
+        0.0075244810797995415
+      ],
+      "eligible": false
+    },
+    {
+      "candidate_rank": 4,
+      "penalty": 0.0,
+      "noise_variance": 0.25,
+      "cv_native_nll": -1.0609581439169602,
+      "identifiable_folds": 0,
+      "seed": 20261118,
+      "phase_labels": [
+        0,
+        0
+      ],
+      "slow_means": [
+        0.03546004881881235,
+        0.3771479680962019
+      ],
+      "eligible": false
+    },
+    {
+      "candidate_rank": 4,
+      "penalty": 0.0,
+      "noise_variance": 0.25,
+      "cv_native_nll": -1.0609581439169602,
+      "identifiable_folds": 0,
+      "seed": 20261119,
+      "phase_labels": [
+        -1,
+        0
+      ],
+      "slow_means": [
+        0.4379329141668346,
+        0.0075244810797995415
+      ],
+      "eligible": false
+    },
+    {
+      "candidate_rank": 5,
+      "penalty": 0.5,
+      "noise_variance": 0.25,
+      "cv_native_nll": -1.0609581439169602,
+      "identifiable_folds": 0,
+      "seed": 20261117,
+      "phase_labels": [
+        -1,
+        0
+      ],
+      "slow_means": [
+        0.4379329141668346,
+        0.0075244810797995415
+      ],
+      "eligible": false
+    },
+    {
+      "candidate_rank": 5,
+      "penalty": 0.5,
+      "noise_variance": 0.25,
+      "cv_native_nll": -1.0609581439169602,
+      "identifiable_folds": 0,
+      "seed": 20261118,
+      "phase_labels": [
+        0,
+        0
+      ],
+      "slow_means": [
+        0.03546004881881235,
+        0.3771479680962019
+      ],
+      "eligible": false
+    },
+    {
+      "candidate_rank": 5,
+      "penalty": 0.5,
+      "noise_variance": 0.25,
+      "cv_native_nll": -1.0609581439169602,
+      "identifiable_folds": 0,
+      "seed": 20261119,
+      "phase_labels": [
+        -1,
+        0
+      ],
+      "slow_means": [
+        0.4379329141668346,
+        0.0075244810797995415
+      ],
+      "eligible": false
+    },
+    {
+      "candidate_rank": 6,
+      "penalty": 1.0,
+      "noise_variance": 0.25,
+      "cv_native_nll": -1.0609581439169602,
+      "identifiable_folds": 0,
+      "seed": 20261117,
+      "phase_labels": [
+        -1,
+        0
+      ],
+      "slow_means": [
+        0.4379329141668346,
+        0.0075244810797995415
+      ],
+      "eligible": false
+    },
+    {
+      "candidate_rank": 6,
+      "penalty": 1.0,
+      "noise_variance": 0.25,
+      "cv_native_nll": -1.0609581439169602,
+      "identifiable_folds": 0,
+      "seed": 20261118,
+      "phase_labels": [
+        0,
+        0
+      ],
+      "slow_means": [
+        0.03546004881881235,
+        0.3771479680962019
+      ],
+      "eligible": false
+    },
+    {
+      "candidate_rank": 6,
+      "penalty": 1.0,
+      "noise_variance": 0.25,
+      "cv_native_nll": -1.0609581439169602,
+      "identifiable_folds": 0,
+      "seed": 20261119,
+      "phase_labels": [
+        -1,
+        0
+      ],
+      "slow_means": [
+        0.4379329141668346,
+        0.0075244810797995415
+      ],
+      "eligible": false
+    }
+  ],
+  "phase_disagreement_between_seeds": [
+    [
+      0.0
+    ]
+  ],
+  "boundary_stability_f1": [],
+  "seed_stability_assessed": false,
+  "common_valid_observations": 51,
+  "known_phase_fraction_valid": 0.0,
+  "IC": 0,
+  "TO": 0,
+  "UNKNOWN_boundaries": 5,
+  "latent_segments": 9,
+  "segments_shorter_0167s": 6,
+  "median_latent_segment_duration_s": 0.13334000000000001,
+  "semantic_boundaries": 0,
+  "fit_final_seconds": 6.967999999999847,
+  "covariance": "train-only total feature covariance, tied across states, shrunk toward diagonal; invertible full-rank whitening",
+  "shrinkage": 0.5,
+  "covariance_is_latent_residual_estimate": false,
+  "mean_absolute_correlation_before": 0.43816722557749704,
+  "mean_absolute_correlation_after": 0.21442451089058534,
+  "ground_truth_available": false,
+  "density_warning": "Native NLL is for within-input tuning only; do not compare vector and embedding NLL as accuracy"
+}

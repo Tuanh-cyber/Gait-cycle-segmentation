@@ -1,0 +1,3 @@
+branch,event,contained,predicted,references,precision,recall,median_width_frames
+pixel_set,IC,0,14,17,0.0,0.0,1.0
+pixel_set,TO,0,15,18,0.0,0.0,2.0

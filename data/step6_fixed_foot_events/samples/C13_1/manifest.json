@@ -1,0 +1,425 @@
+{
+  "video_id": "C13_1",
+  "input_foot_slot": 0,
+  "inputs": {
+    "flow": {
+      "path": "data\\step5_flow\\features\\C13_1.npz",
+      "sha256": "b824695f43f08fce353cb7f6a3aa5d563f81f8918af63e8c8c838e5979569859"
+    },
+    "source": {
+      "path": "data\\Correct\\C13_1.mp4",
+      "sha256": "11a0b5efbce08af3b91303c100f1948a10e04c5221ead5b83a232a6881d02b7f"
+    },
+    "audit": {
+      "path": "data\\step0_audit\\frames\\C13_1_frames.csv",
+      "sha256": "337b34a5793afec8a57dc86fbe28897f96770cd42e7ee5c06dd944d4b68c37d8"
+    },
+    "display_pose": {
+      "path": "data\\step3_footkp\\footkp\\C13_1_footkp.npz",
+      "sha256": "09d352702dfc61d36725098802db26183aa18edab822a3f6d464cfff8fb3b1d2"
+    },
+    "display_mask": {
+      "path": "data\\step4_footmask\\masks_post\\C13_1.npz",
+      "sha256": "eff5bafb15d4a030de0b0cab818c35a6bc4a055a46625db537eb3ec042cac3e6"
+    },
+    "pixel_flow": {
+      "path": "data\\step5_flow\\flow_store\\C13_1.npz",
+      "sha256": "56e540597c8f58da752fa806cd6cd07650109bef1b2c167c576659e2d3735844",
+      "selection": "same FB-valid pixels in each region for both inputs",
+      "base_valid": 516,
+      "common_valid": 500
+    }
+  },
+  "branches": {
+    "vector42": {
+      "video_id": "C13_1",
+      "input_kind": "vector42",
+      "dimensions": 42,
+      "penalty": 0.0,
+      "noise_variance": 0.25,
+      "cv_native_nll": 0.37833449003248176,
+      "identifiable_folds": 3,
+      "selection_status": "validated_cv",
+      "cv_mode": "whole_continuous_runs",
+      "phase_assignment_allowed": true,
+      "phase_labels": [
+        1,
+        0
+      ],
+      "slow_means": [
+        0.7893489845522955,
+        0.4056993829622723
+      ],
+      "training_videos": [
+        "C13_1"
+      ],
+      "frozen_model_used": false,
+      "selected_seed": 20261119,
+      "cv_sweeps": 3,
+      "final_sweeps": 6,
+      "final_seeds": 3,
+      "final_attempts": [
+        {
+          "candidate_rank": 1,
+          "penalty": 0.0,
+          "noise_variance": 0.25,
+          "cv_native_nll": 0.37833449003248176,
+          "identifiable_folds": 3,
+          "seed": 20261117,
+          "phase_labels": [
+            0,
+            1
+          ],
+          "slow_means": [
+            0.2854404979562162,
+            0.8293250719039947
+          ],
+          "eligible": true
+        },
+        {
+          "candidate_rank": 1,
+          "penalty": 0.0,
+          "noise_variance": 0.25,
+          "cv_native_nll": 0.37833449003248176,
+          "identifiable_folds": 3,
+          "seed": 20261118,
+          "phase_labels": [
+            1,
+            0
+          ],
+          "slow_means": [
+            0.7493919785181866,
+            0.42813407002943843
+          ],
+          "eligible": true
+        },
+        {
+          "candidate_rank": 1,
+          "penalty": 0.0,
+          "noise_variance": 0.25,
+          "cv_native_nll": 0.37833449003248176,
+          "identifiable_folds": 3,
+          "seed": 20261119,
+          "phase_labels": [
+            1,
+            0
+          ],
+          "slow_means": [
+            0.7893489845522955,
+            0.4056993829622723
+          ],
+          "eligible": true
+        }
+      ],
+      "phase_disagreement_between_seeds": [
+        [
+          0.0,
+          0.37474541751527496,
+          0.34623217922606925
+        ],
+        [
+          0.37474541751527496,
+          0.0,
+          0.04480651731160896
+        ],
+        [
+          0.34623217922606925,
+          0.04480651731160896,
+          0.0
+        ]
+      ],
+      "boundary_stability_f1": [
+        0.5620915032679739,
+        0.6143790849673203,
+        0.9295774647887324
+      ],
+      "seed_stability_assessed": true,
+      "common_valid_observations": 500,
+      "known_phase_fraction_valid": 0.982,
+      "IC": 18,
+      "TO": 13,
+      "UNKNOWN_boundaries": 40,
+      "latent_segments": 124,
+      "segments_shorter_0167s": 106,
+      "median_latent_segment_duration_s": 0.06667000000000023,
+      "semantic_boundaries": 31,
+      "fit_final_seconds": 11.890999999999622,
+      "covariance": "train-only total feature covariance, tied across states, shrunk toward diagonal; invertible full-rank whitening",
+      "shrinkage": 0.5,
+      "covariance_is_latent_residual_estimate": false,
+      "mean_absolute_correlation_before": 0.38937242819950973,
+      "mean_absolute_correlation_after": 0.1214685000664511,
+      "ground_truth_available": false,
+      "density_warning": "Native NLL is for within-input tuning only; do not compare vector and embedding NLL as accuracy"
+    },
+    "embedding": {
+      "video_id": "C13_1",
+      "input_kind": "embedding",
+      "dimensions": 42,
+      "penalty": 1.0,
+      "noise_variance": 0.5,
+      "cv_native_nll": -0.9732648102856237,
+      "identifiable_folds": 2,
+      "selection_status": "exploratory_cv",
+      "cv_mode": "whole_continuous_runs",
+      "phase_assignment_allowed": true,
+      "phase_labels": [
+        0,
+        1
+      ],
+      "slow_means": [
+        0.35012666280208393,
+        0.6747148592777658
+      ],
+      "training_videos": [
+        "C13_1"
+      ],
+      "frozen_model_used": false,
+      "selected_seed": 20261117,
+      "cv_sweeps": 3,
+      "final_sweeps": 6,
+      "final_seeds": 3,
+      "final_attempts": [
+        {
+          "candidate_rank": 1,
+          "penalty": 1.0,
+          "noise_variance": 0.5,
+          "cv_native_nll": -0.9732648102856237,
+          "identifiable_folds": 2,
+          "seed": 20261117,
+          "phase_labels": [
+            0,
+            1
+          ],
+          "slow_means": [
+            0.35012666280208393,
+            0.6747148592777658
+          ],
+          "eligible": true
+        },
+        {
+          "candidate_rank": 1,
+          "penalty": 1.0,
+          "noise_variance": 0.5,
+          "cv_native_nll": -0.9732648102856237,
+          "identifiable_folds": 2,
+          "seed": 20261118,
+          "phase_labels": [
+            -1,
+            -1
+          ],
+          "slow_means": [
+            0.5745827032782803,
+            0.5263483971851791
+          ],
+          "eligible": false
+        },
+        {
+          "candidate_rank": 1,
+          "penalty": 1.0,
+          "noise_variance": 0.5,
+          "cv_native_nll": -0.9732648102856237,
+          "identifiable_folds": 2,
+          "seed": 20261119,
+          "phase_labels": [
+            1,
+            0
+          ],
+          "slow_means": [
+            0.6877137365044573,
+            0.34840313920640337
+          ],
+          "eligible": true
+        }
+      ],
+      "phase_disagreement_between_seeds": [
+        [
+          0.0,
+          0.07331975560081466
+        ],
+        [
+          0.07331975560081466,
+          0.0
+        ]
+      ],
+      "boundary_stability_f1": [
+        0.9375
+      ],
+      "seed_stability_assessed": true,
+      "common_valid_observations": 500,
+      "known_phase_fraction_valid": 0.982,
+      "IC": 14,
+      "TO": 34,
+      "UNKNOWN_boundaries": 31,
+      "latent_segments": 132,
+      "segments_shorter_0167s": 123,
+      "median_latent_segment_duration_s": 0.06667000000000023,
+      "semantic_boundaries": 48,
+      "fit_final_seconds": 12.20299999999952,
+      "covariance": "train-only total feature covariance, tied across states, shrunk toward diagonal; invertible full-rank whitening",
+      "shrinkage": 0.5,
+      "covariance_is_latent_residual_estimate": false,
+      "mean_absolute_correlation_before": 0.38620452633763347,
+      "mean_absolute_correlation_after": 0.14407007073017986,
+      "ground_truth_available": false,
+      "density_warning": "Native NLL is for within-input tuning only; do not compare vector and embedding NLL as accuracy"
+    }
+  },
+  "comparison": {
+    "phase_disagreement": 0.5804480651731161,
+    "both_known_observations": 491,
+    "boundary_agreement_f1": 0.5466666666666666
+  },
+  "verification": {
+    "source_frames": 672,
+    "output_frames": 672,
+    "max_pts_error_s": 3.3333333604446125e-07,
+    "first_pts_s": 0.0,
+    "last_pts_s": 22.066666666666666,
+    "source_speed_preserved": true,
+    "audio_included": false,
+    "source_display_rotation_applied": 0.0,
+    "phase_bars": [
+      "HSMM vector-42",
+      "HSMM embedding-42"
+    ],
+    "regional_mask_overlay": true,
+    "mask_display_frames": 669
+  },
+  "full_decode": true,
+  "duration_s": 141.28200000000015,
+  "ground_truth_available": false,
+  "tracker_bypassed": true,
+  "shared_pixel_selection": true,
+  "experiment_config": {
+    "seed": 20261117,
+    "embedding_per_region": 14,
+    "shrinkage": 0.5,
+    "cv_sweeps": 3,
+    "final_sweeps": 6,
+    "final_seeds": 3
+  },
+  "code_sha256": {
+    "build_samples.py": "141a5cc5e6d14917b2db0daeb0d14d3f79b6f1fdddc0207b3c7c26a684a99cad",
+    "compare_hsmm_inputs.py": "c76c0d0a4c7ce1ea59a2ac6cf4937c4c1c4c910d13d34b2c4fd2ec1333253ad4",
+    "event_data.py": "1240461659fd8ef7eab4d62c9d3bac200216a5480b0cdceeb90db124a9cee5eb",
+    "export_videos.py": "37654204d900c54f76faaaf7962033f7d1f943215fcbca7dc9fdbf535db91a75",
+    "frechet_cpd.py": "acd3cec2e9906bf25980d4814437007727b567934543c28f5935e25fa4551b5c",
+    "hsmm_inputs.py": "de8ef050cce76a75265e64c3625c2983f0f602ac7c1d78c16f407efc1ca25350",
+    "mask_overlay.py": "53b8330530c39da8b088807ca87468119506a7432ad9871b91276f72f8cd114f",
+    "rebuild_flow.py": "47539aa3990ebb4b67a74141e5fee4ba24d18c692748d7d73af48d1721bb7a48",
+    "render_events.py": "4496e32e61bdb2319a9140e7675f9cf2c6c21ecdf62e7f1205e625972d8c90b8",
+    "rff_hsmm.py": "00d87967274cff9ba35fee1a7ea28a1c7f7409668ade2cba0f4d106ce0e91e23",
+    "run_events.py": "0aa2c394893c2a89da477119881873707e32b13a8d983fe34f43abe0ec261f92",
+    "tune_video.py": "a5bcef31ce8ce9906a0819a9179b5b90b35025193690a77e2a4608dd0c6c29a0"
+  },
+  "packaging_code_sha256": {
+    "build_samples.py": "fade4c762190db2d521c043eac6f16033bb871b71fc2d74ef2e116c477f7a474",
+    "event_data.py": "ec84cc7346117820d5ea928386a82ed5ef2a42a06d70fc807b355f8b0dea6333",
+    "export_probabilities.py": "ed4306bd4cc887daf2235e858c44417bfba67f397a315bc200d6baf03b4c3b4d",
+    "hsmm_inputs.py": "de8ef050cce76a75265e64c3625c2983f0f602ac7c1d78c16f407efc1ca25350",
+    "hsmm_validation.py": "466277e280fb964ad2b0483267c71cc9badc9d07e88d34752d31d6add6925d65",
+    "mask_overlay.py": "53b8330530c39da8b088807ca87468119506a7432ad9871b91276f72f8cd114f",
+    "probability_outputs.py": "cb53ba826c56097ab042328f70c95415f218faf463d5914a3232df4191cb2cec",
+    "rebuild_flow.py": "b976011c075161cefd376fc5d735f4480ceb85456c09bd6ccff5bc15435f6e50",
+    "render_events.py": "1edc5608cee3676abc7fa14e06fecfe407e979f1f1e8589a889314dad32d7182",
+    "rff_hsmm.py": "00d87967274cff9ba35fee1a7ea28a1c7f7409668ade2cba0f4d106ce0e91e23",
+    "run_events.py": "5b1554380178ebc51dad35e52c803b60e8f565cab2dddd37f5adb44b6323abe0"
+  },
+  "pipeline": "regional_flow_two_input_hsmm",
+  "probabilistic_output": {
+    "mode": "offline_soft_posterior",
+    "frame_csv": "probabilities_frames.csv",
+    "plot": "probability_scores.png",
+    "branch_summaries": {
+      "vector42": {
+        "source_frames": 672,
+        "phase_score_frames": 500,
+        "event_score_frames": 438,
+        "latent_posterior_frames": 500,
+        "phase_mapping_available": true
+      },
+      "embedding": {
+        "source_frames": 672,
+        "phase_score_frames": 500,
+        "event_score_frames": 438,
+        "latent_posterior_frames": 500,
+        "phase_mapping_available": true
+      }
+    },
+    "threshold_applied": false,
+    "viterbi_cuts_displayed": false,
+    "probability_conditioning": "all observations in each continuous run, fitted parameters and fixed class/phase mapping",
+    "observation_intervals": "phase posteriors held within their flow observation interval; not new independent measurements",
+    "event_timing": "IC/TO scores only at exact observation boundary frames; run starts/gaps/other display frames are NaN",
+    "missing_semantics": "state and latent-boundary posteriors remain available; stance/swing and IC/TO are NaN",
+    "calibration": "model-conditional posterior; no empirical calibration without ground truth",
+    "video": "C13_1_hsmm_probabilities.mp4",
+    "poster": "C13_1_hsmm_probabilities.jpg",
+    "verification": {
+      "source_frames": 672,
+      "output_frames": 672,
+      "max_pts_error_s": 3.3333333604446125e-07,
+      "first_pts_s": 0.0,
+      "last_pts_s": 22.066666666666666,
+      "source_speed_preserved": true,
+      "audio_included": false,
+      "source_display_rotation_applied": 0.0,
+      "phase_bars": [
+        "HSMM vector42",
+        "HSMM embedding"
+      ],
+      "regional_mask_overlay": true,
+      "mask_display_frames": 669,
+      "probabilistic_output": true,
+      "selected_cut_markers": false
+    }
+  },
+  "probability_export_code_sha256": {
+    "build_samples.py": "fade4c762190db2d521c043eac6f16033bb871b71fc2d74ef2e116c477f7a474",
+    "event_confidence.py": "f681258db39257886d8be9dcea8111680ab90c2cedad5889fbf0231af079101f",
+    "event_data.py": "ec84cc7346117820d5ea928386a82ed5ef2a42a06d70fc807b355f8b0dea6333",
+    "export_probabilities.py": "70eb5da822f3a5eee22407cc3283d65784265fb69f85cbaeb841e0defd5df819",
+    "hsmm_inputs.py": "de8ef050cce76a75265e64c3625c2983f0f602ac7c1d78c16f407efc1ca25350",
+    "hsmm_validation.py": "466277e280fb964ad2b0483267c71cc9badc9d07e88d34752d31d6add6925d65",
+    "mask_overlay.py": "53b8330530c39da8b088807ca87468119506a7432ad9871b91276f72f8cd114f",
+    "probability_outputs.py": "cb53ba826c56097ab042328f70c95415f218faf463d5914a3232df4191cb2cec",
+    "rebuild_flow.py": "b976011c075161cefd376fc5d735f4480ceb85456c09bd6ccff5bc15435f6e50",
+    "render_events.py": "1edc5608cee3676abc7fa14e06fecfe407e979f1f1e8589a889314dad32d7182",
+    "rff_hsmm.py": "2910d8101158d70fb9b93926147a869e2233d9c52af96fe5a07ac7543e97e962",
+    "run_events.py": "c5c95d6ee09538511b52f8b57f41df59e38b420c3fc8d4f9c13768d250c3a225"
+  },
+  "event_confidence": {
+    "csv": "event_confidence_frames.csv",
+    "plot": "event_confidence.png",
+    "frame_count": 672,
+    "orientation": {
+      "vector42": {
+        "class1_stance_support": 0.0,
+        "class0_stance_support": 1.0,
+        "contact_means": [
+          0.6820050978516399,
+          0.2828752658699107
+        ],
+        "blocks": 79
+      },
+      "embedding": {
+        "class1_stance_support": 1.0,
+        "class0_stance_support": 0.0,
+        "contact_means": [
+          0.24432135313701084,
+          0.5472653526955836
+        ],
+        "blocks": 79
+      }
+    },
+    "contact": "mean of the three regional slow ratios at 2 L_leg/s",
+    "contact_margin": 0.1,
+    "block_seconds": 0.2,
+    "bootstrap_draws": 1000,
+    "bootstrap_seed": 20261118,
+    "calibrated": false,
+    "unsupported_frames": "zero support, flagged by flow_supported=false",
+    "frame_alignment": "uniform over eligible source frames in (previous observation, current observation]"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "videos": [
+    "C01",
+    "C13_1",
+    "C30",
+    "C38_1"
+  ],
+  "pipeline": "regional_flow_two_input_hsmm",
+  "output_mode": "frame_event_confidence"
+}
